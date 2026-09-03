@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Flip One은 창업가가 시장을 탐색하고, 자금을 확보하며, 한국과 세계를 연결할 팀을 구축하도록 돕습니다.">
+  <meta name="theme-color" content="#09162f">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:title" content="Flip One | 스타트업의 길을 밝히는 등대">
+  <meta property="og:description" content="한국과 세계 사이에서 시장, 자금, 사람을 연결하는 창업가 플랫폼.">
+  <meta name="twitter:card" content="summary">
+  <title>Flip One | 스타트업의 길을 밝히는 등대</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">본문으로 건너뛰기</a>
+
+  <header class="site-header" id="site-header">
+    <a class="wordmark" href="./" aria-label="Flip One home">
+      <span>FLIP</span><span class="wordmark__slash">/</span><span>ONE</span>
+    </a>
+    <nav class="desktop-nav" aria-label="주요 내비게이션" data-i18n-aria="navLabel">
+      <a href="#people" data-i18n="navPeople">피플</a>
+      <a href="#resources" data-i18n="navResources">자료</a>
+      <a href="#events" data-i18n="navEvents">이벤트</a>
+      <a href="#services" data-i18n="navServices">서비스</a>
+    </nav>
+    <div class="header-actions">
+      <div class="language-switch" role="group" aria-label="언어 선택" data-i18n-aria="languageLabel">
+        <button class="language-switch__button is-active" type="button" data-language="ko" aria-pressed="true">한국어</button>
+        <button class="language-switch__button" type="button" data-language="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="nav-cta" href="#course"><span data-i18n="cta">항로를 그려보세요</span> <span aria-hidden="true">→</span></a>
+      <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav"><span data-i18n="menu">메뉴</span></button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="모바일 내비게이션" data-i18n-aria="mobileNavLabel" hidden>
+    <a href="#people" data-i18n="navPeople">피플</a>
+    <a href="#resources" data-i18n="navResources">자료</a>
+    <a href="#events" data-i18n="navEvents">이벤트</a>
+    <a href="#services" data-i18n="navServices">서비스</a>
+    <a href="#course" data-i18n="cta">항로를 그려보세요</a>
+  </nav>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__beam" aria-hidden="true"></div>
+      <div class="hero__destination" aria-hidden="true"><span></span></div>
+
+      <figure class="hero__visual" aria-hidden="true">
+        <img src="Assets/Reusable/flip-one-hero-boat-navy-v4.png" alt="">
+      </figure>
+
+      <div class="shell hero__content">
+        <p class="eyebrow" data-i18n="heroEyebrow">한국과 세계를 연결하며 성장하는 창업가를 위해</p>
+        <h1 id="hero-heading">
+          <span data-i18n="heroTitle1">스타트업의 길을</span>
+          <span class="hero__accent" data-i18n="heroTitle2">밝히는 등대.</span>
+        </h1>
+        <p class="hero__summary" data-i18n="heroSummary">스타트업을 만드는 일은 하나의 항해입니다. 가장 단단한 창업가도 때로는 방향을 잃습니다. Flip One은 앞으로 나아가는 데 필요한 방향, 사람, 기회를 연결합니다.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#course"><span data-i18n="cta">항로를 그려보세요</span> <span aria-hidden="true">→</span></a>
+          <a class="button button--ghost" href="#services" data-i18n="exploreServices">서비스 살펴보기</a>
+        </div>
+      </div>
+
+      <div class="shell hero__footer">
+        <span class="coordinate">37.5665° N · 126.9780° E</span>
+        <span data-i18n="heroKeywords">방향 · 자금 · 사람</span>
+      </div>
+    </section>
+
+    <section class="direction" id="services" aria-labelledby="direction-heading">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="coordinate" data-i18n="sectionLabel">01 · 방향 찾기</p>
+          </div>
+          <div>
+            <h2 id="direction-heading" data-i18n="directionTitle">앞으로의 여정을 위한 방향.</h2>
+            <p data-i18n="directionSummary">Flip One은 창업가가 한국과 글로벌 시장을 탐색하고, 프로젝트 보조금을 확보하며, 지속가능한 성장에 필요한 관계를 구축하도록 돕습니다.</p>
+          </div>
+        </div>
+
+        <div class="value-grid">
+          <article class="value-card">
+            <span class="value-card__index">01</span>
+            <h3 data-i18n="value1Title">시장 탐색</h3>
+            <p data-i18n="value1Body">한국과 글로벌 기회 사이의 경로를 이해합니다.</p>
+            <span class="value-card__line" aria-hidden="true"></span>
+          </article>
+          <article class="value-card">
+            <span class="value-card__index">02</span>
+            <h3 data-i18n="value2Title">자금 확보</h3>
+            <p data-i18n="value2Body">보조금, 투자자, 전략적 기회를 발굴하고 추진합니다.</p>
+            <span class="value-card__line" aria-hidden="true"></span>
+          </article>
+          <article class="value-card">
+            <span class="value-card__index">03</span>
+            <h3 data-i18n="value3Title">팀 구축</h3>
+            <p data-i18n="value3Body">앞으로 나아가는 데 필요한 사람, 전문성, 지원을 연결합니다.</p>
+            <span class="value-card__line" aria-hidden="true"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" aria-labelledby="services-heading">
+      <div class="shell">
+        <div class="section-heading">
+          <div><p class="coordinate" data-i18n="servicesLabel">02 · 서비스</p></div>
+          <div><h2 id="services-heading" data-i18n="servicesTitle">여정의 모든 단계에 필요한 지원.</h2><p data-i18n="servicesSummary">아이디어의 시작부터 확장과 지속가능한 성장까지, 지금 필요한 다음 단계를 함께 설계합니다.</p></div>
+        </div>
+        <div class="stage-grid">
+          <article class="stage-card" data-service-stage="ideation" role="button" tabindex="0" aria-selected="false">
+            <span class="stage-card__number">01</span><span class="stage-card__route" aria-hidden="true"></span>
+            <div class="stage-symbol" aria-hidden="true"><img src="Assets/Icons/compass.svg" alt=""></div>
+            <h3 data-i18n="ideationTitle">아이디어 구체화</h3>
+            <p data-i18n="ideationBody">초기 아이디어를 명확하고 신뢰할 수 있으며 자금 확보가 가능한 방향으로 발전시킵니다.</p>
+            <ul><li data-i18n="ideation1">시장 및 기회 탐색</li><li data-i18n="ideation2">공동창업자 매칭</li><li data-i18n="ideation3">초기 자금 전략</li></ul>
+          </article>
+          <article class="stage-card stage-card--active" data-service-stage="scaling" role="button" tabindex="0" aria-selected="true">
+            <span class="stage-card__number">02</span><span class="stage-card__route" aria-hidden="true"></span>
+            <div class="stage-symbol" aria-hidden="true"><img src="Assets/Icons/lighthouse.svg" alt=""></div>
+            <h3 data-i18n="scalingTitle">스케일업</h3>
+            <p data-i18n="scalingBody">성장에 필요한 파트너십, 자금, 글로벌 역량을 구축합니다.</p>
+            <ul><li data-i18n="scaling1">보조금 신청 지원</li><li data-i18n="scaling2">투자자 연결</li><li data-i18n="scaling3">글로벌 시장 진출</li></ul>
+          </article>
+          <article class="stage-card" data-service-stage="sustaining" role="button" tabindex="0" aria-selected="false">
+            <span class="stage-card__number">03</span><span class="stage-card__route" aria-hidden="true"></span>
+            <div class="stage-symbol" aria-hidden="true"><img src="Assets/Icons/sailboat.svg" alt=""></div>
+            <h3 data-i18n="sustainingTitle">지속가능한 성장</h3>
+            <p data-i18n="sustainingBody">창업가와 조직이 긴 여정을 이어갈 수 있도록 기반을 강화합니다.</p>
+            <ul><li data-i18n="sustaining1">창업가 코칭</li><li data-i18n="sustaining2">웰빙과 회복탄력성</li><li data-i18n="sustaining3">커뮤니티 지원</li></ul>
+          </article>
+        </div>
+        <aside class="service-detail" id="service-detail" aria-live="polite">
+          <div><span class="coordinate" data-i18n="expectedOutcome">기대 결과</span><h3 id="service-detail-title">스케일업</h3></div>
+          <div><p id="service-detail-copy">명확한 자금 조달 경로와 시장 진출 계획, 실행에 필요한 파트너 네트워크를 갖추게 됩니다.</p><button class="button button--primary" type="button" data-open-course data-course-stage="scaling"><span data-i18n="stageCta">이 단계의 항로 그리기</span><span aria-hidden="true">→</span></button></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="platform" id="people" aria-labelledby="platform-heading">
+      <div class="shell">
+        <div class="section-heading section-heading--light">
+          <div><p class="coordinate" data-i18n="platformLabel">03 · 플랫폼</p></div>
+          <div><h2 id="platform-heading" data-i18n="platformTitle">사람과 기회가 만나는 곳.</h2><p data-i18n="platformSummary">네트워크를 탐색하고, 필요한 전문성을 찾고, 다음 기회와 연결하세요.</p></div>
+        </div>
+        <div class="bento-grid">
+          <article class="bento bento--directory">
+            <div class="bento__top"><span class="bento__label" data-i18n="peopleLabel">피플 네트워크</span><span id="people-count">06</span></div>
+            <div class="directory-intro">
+              <div><h3 data-i18n="peopleTitle">함께 항해할 사람을 찾으세요.</h3><p data-i18n="peopleBody">창업가, 전문가, 협력자와 잠재적 파트너를 한곳에서 탐색합니다.</p></div>
+              <form class="people-ask" id="people-ask">
+                <label for="people-query"><span>ASK FLIP ONE</span><small class="beta">BETA</small></label>
+                <div class="people-ask__field"><input id="people-query" type="search" data-i18n-placeholder="askExample" placeholder="한국 바이오 보조금 경험이 있는 사람을 찾아주세요."><button type="submit" aria-label="검색" data-i18n-aria="search">→</button></div>
+                <p data-i18n="askBody">자연어로 필요한 경험과 연결을 검색하세요.</p>
+              </form>
+            </div>
+            <div class="directory-filters">
+              <label><span data-i18n="filterStage">단계</span><select id="people-stage"></select></label>
+              <label><span data-i18n="filterExpertise">전문 분야</span><select id="people-expertise"></select></label>
+              <button class="directory-reset" id="people-reset" type="button" data-i18n="filterReset">초기화</button>
+            </div>
+            <p class="match-note" id="match-note" aria-live="polite"></p>
+            <div class="people-grid" id="people-grid"></div>
+          </article>
+          <article class="bento bento--resource">
+            <div class="bento__top"><span class="bento__label" data-i18n="resourcesLabel">전문 자료</span><span>06</span></div>
+            <div class="document-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h3 data-i18n="resourceTitle">더 나은 결정을 위한 실용적인 지식.</h3>
+            <a href="#resources" class="text-link"><span data-i18n="browseResources">자료 살펴보기</span> <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="bento bento--event">
+            <div class="event-date"><b>18</b><span>SEP</span></div>
+            <div><span class="bento__label" data-i18n="eventsLabel">다가오는 이벤트</span><h3 data-i18n="eventTitle">Seoul Founder Night</h3><p data-i18n="eventMeta">서울 · 오후 7시</p><a href="#events" class="text-link"><span data-i18n="browseEvents">이벤트 살펴보기</span> <span aria-hidden="true">→</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="resources" id="resources" aria-labelledby="resources-heading">
+      <div class="shell">
+        <div class="section-heading">
+          <div><p class="coordinate" data-i18n="resourcesSectionLabel">04 · 자료</p></div>
+          <div><h2 id="resources-heading" data-i18n="resourcesSectionTitle">다음 결정을 위한 실용적인 지식.</h2><p data-i18n="resourcesSectionSummary">자금, 팀, 시장, 창업가의 지속가능성을 위한 간결하고 실행 가능한 가이드입니다.</p></div>
+        </div>
+        <div class="resource-filters" id="resource-filters" aria-label="Resource categories"></div>
+        <div class="resource-grid" id="resource-grid"></div>
+      </div>
+    </section>
+
+    <section class="events" id="events" aria-labelledby="events-heading">
+      <div class="shell">
+        <div class="section-heading section-heading--light">
+          <div><p class="coordinate" data-i18n="eventsSectionLabel">05 · 이벤트</p></div>
+          <div><h2 id="events-heading" data-i18n="eventsSectionTitle">좋은 연결은 함께 모일 때 시작됩니다.</h2><p data-i18n="eventsSectionSummary">창업가, 전문가, 투자자와 함께 배우고 연결하며 다시 에너지를 채우세요.</p></div>
+        </div>
+        <div class="events-toolbar">
+          <div class="event-filters" id="event-filters" aria-label="Event categories"></div>
+          <div class="view-switch" aria-label="Event view"><button type="button" data-event-view="grid" class="is-active" data-i18n="gridView">카드</button><button type="button" data-event-view="list" data-i18n="listView">목록</button></div>
+        </div>
+        <div class="event-grid" id="event-grid"></div>
+      </div>
+    </section>
+
+    <section class="community" aria-labelledby="community-heading">
+      <div class="shell community__grid">
+        <div>
+          <p class="coordinate" data-i18n="communityLabel">06 · 함께 항해하기</p>
+          <h2 id="community-heading" data-i18n="communityTitle">혼자 가는 여정이 아닙니다.</h2>
+        </div>
+        <div>
+          <p data-i18n="communityBody">Flip One과 함께하면 독점 이벤트, 전문 지식, 전략적 파트너십을 이용할 수 있는 강력한 스타트업 커뮤니티에 합류하게 됩니다.</p>
+          <div class="fleet-line" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="course" id="course" aria-labelledby="course-heading">
+      <div class="course__beam" aria-hidden="true"></div>
+      <div class="shell course__content">
+        <p class="coordinate" data-i18n="courseLabel">07 · 다음 단계</p>
+        <h2 id="course-heading" data-i18n="courseTitle">당신의 항로를 그릴 준비가 되셨나요?</h2>
+        <p data-i18n="courseBody">지금 어디에 있고 어디로 가고 싶은지 알려주세요. 다음 여정을 함께 설계하겠습니다.</p>
+        <button class="button button--primary" type="button" data-open-course><span data-i18n="cta">항로를 그려보세요</span> <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer__grid">
+      <div><span class="wordmark"><span>FLIP</span><span class="wordmark__slash">/</span><span>ONE</span></span><p data-i18n="footerLine">한국과 세계를 연결하는 스타트업 플랫폼.</p></div>
+      <div class="footer__links"><a href="#people" data-i18n="navPeople">피플</a><a href="#services" data-i18n="navServices">서비스</a><a href="#resources" data-i18n="navResources">자료</a><a href="#events" data-i18n="navEvents">이벤트</a></div>
+      <div class="footer__meta"><span>SEOUL · KOREA</span><span>© 2026 FLIP ONE</span></div>
+    </div>
+  </footer>
+
+  <dialog class="resource-dialog" id="resource-dialog" aria-labelledby="resource-dialog-title">
+    <article>
+      <div class="resource-dialog__head"><div><span class="resource-category" id="resource-dialog-category"></span><h2 id="resource-dialog-title"></h2></div><button class="dialog-close" type="button" data-close-resource aria-label="닫기" data-i18n-aria="close">×</button></div>
+      <p class="resource-attribution" id="resource-dialog-attribution" hidden>Powered by InsightMatches</p>
+      <p class="resource-dialog__summary" id="resource-dialog-summary"></p>
+      <div class="resource-dialog__body" id="resource-dialog-body"></div>
+      <button class="button button--primary" type="button" data-close-resource data-i18n="resourceDone">자료로 돌아가기</button>
+    </article>
+  </dialog>
+
+  <dialog class="event-dialog" id="event-dialog" aria-labelledby="event-dialog-title">
+    <article>
+      <div class="event-dialog__head"><div><span class="event-dialog__category" id="event-dialog-category"></span><h2 id="event-dialog-title"></h2></div><button class="dialog-close" type="button" data-close-event aria-label="닫기" data-i18n-aria="close">×</button></div>
+      <div class="event-dialog__meta" id="event-dialog-meta"></div>
+      <p class="event-dialog__summary" id="event-dialog-summary"></p>
+      <div class="event-dialog__body"><div><span class="coordinate" data-i18n="eventAgenda">프로그램</span><ol id="event-dialog-agenda"></ol></div><div><span class="coordinate" data-i18n="eventFor">추천 대상</span><p id="event-dialog-audience"></p><span class="coordinate" data-i18n="eventHost">호스트</span><p id="event-dialog-host"></p></div></div>
+      <div class="event-dialog__actions"><button class="button button--primary" type="button" id="event-calendar" data-i18n="addCalendar">캘린더에 추가</button><button class="button event-register" type="button" data-i18n="registerInterest">참가 관심 등록</button></div>
+      <p class="event-dialog__note" hidden></p>
+    </article>
+  </dialog>
+
+  <dialog class="course-dialog" id="course-dialog" aria-labelledby="dialog-title">
+    <form class="course-form" id="course-form" method="dialog">
+      <div class="course-form__head"><div><p class="coordinate" data-i18n="dialogLabel">항로 설계</p><h2 id="dialog-title" data-i18n="dialogTitle">어디로 향하고 있나요?</h2></div><button class="dialog-close" type="button" data-close-course aria-label="닫기" data-i18n-aria="close">×</button></div>
+      <label><span data-i18n="nameLabel">이름</span><input name="name" autocomplete="name" required></label>
+      <label><span data-i18n="emailLabel">이메일</span><input name="email" type="email" autocomplete="email" required></label>
+      <label><span data-i18n="stageLabel">현재 단계</span><select name="stage"><option data-i18n="stageIdea">아이디어 구체화</option><option data-i18n="stageScale">스케일업</option><option data-i18n="stageSustain">지속가능한 성장</option></select></label>
+      <label><span data-i18n="helpLabel">지금 가장 필요한 것은 무엇인가요?</span><textarea name="message" rows="4" required></textarea></label>
+      <button class="button button--primary" type="submit" data-i18n="send">문의 보내기</button>
+      <p class="form-note" data-i18n="formNote">현재 프레젠테이션용 문의 양식입니다.</p>
+      <p class="form-success" id="form-success" hidden data-i18n="formSuccess">감사합니다. 다음 항로를 함께 살펴보겠습니다.</p>
+    </form>
+  </dialog>
+</body>
+</html>
