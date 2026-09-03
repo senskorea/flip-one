@@ -26,14 +26,16 @@
       exploreServices: "서비스 살펴보기",
       heroKeywords: "방향 · 자금 · 사람",
       sectionLabel: "01 · 방향 찾기",
-      directionTitle: "앞으로의 여정을 위한 방향.",
-      directionSummary: "Flip One은 창업가가 한국과 글로벌 시장을 탐색하고, 프로젝트 보조금을 확보하며, 지속가능한 성장에 필요한 관계를 구축하도록 돕습니다.",
-      value1Title: "시장 탐색",
-      value1Body: "한국과 글로벌 기회 사이의 경로를 이해합니다.",
+      directionTitle: "항로를 찾으세요.",
+      directionSummary: "방향을 찾고, 자금을 확보하고, 함께 항해할 팀을 만드세요.",
+      value1Title: "항로 탐색",
+      value1Body: "한국과 세계를 잇는 가장 유망한 경로를 찾습니다.",
       value2Title: "자금 확보",
-      value2Body: "보조금, 투자자, 전략적 기회를 발굴하고 추진합니다.",
-      value3Title: "팀 구축",
-      value3Body: "앞으로 나아가는 데 필요한 사람, 전문성, 지원을 연결합니다.",
+      value2Body: "보조금과 투자를 연결해 성장하기 좋은 환경을 만듭니다.",
+      value3Title: "팀 구성",
+      value3Body: "항해에 필요한 공동창업자, 전문가, 파트너를 만납니다.",
+      value4Title: "지속적인 성장",
+      value4Body: "창업가와 조직이 긴 여정을 이어갈 기반을 다집니다.",
       pathwaysLabel: "두 개의 방향 · 하나의 플랫폼",
       pathwaysTitle: "어느 방향으로 성장하고 있나요?",
       pathwaysSummary: "방향을 선택하면 같은 Flip One 서비스가 당신의 시장 여정에 맞게 조정됩니다.",
@@ -85,6 +87,10 @@
       resourcesSectionLabel: "04 · 자료",
       resourcesSectionTitle: "다음 결정을 위한 실용적인 지식.",
       resourcesSectionSummary: "자금, 팀, 시장, 창업가의 지속가능성을 위한 간결하고 실행 가능한 가이드입니다.",
+      wikiSearch: "자료 검색",
+      wikiSearchPlaceholder: "가이드, 시장, 자금 검색",
+      wikiUpdated: "최근 업데이트",
+      wikiKnowledge: "지식 베이스",
       resourceDone: "자료로 돌아가기",
       eventsLabel: "다가오는 이벤트",
       eventTitle: "Seoul Founder Night",
@@ -147,14 +153,16 @@
       exploreServices: "Explore our services",
       heroKeywords: "Direction · Funding · People",
       sectionLabel: "01 · Find your bearings",
-      directionTitle: "Direction for the journey ahead.",
-      directionSummary: "Flip One helps founders navigate Korean and global markets, secure project grant funding and build the relationships required for sustainable growth.",
-      value1Title: "Navigate markets",
-      value1Body: "Understand the route between Korea and global opportunities.",
+      directionTitle: "Find your bearings.",
+      directionSummary: "Find your direction, secure the resources to move forward and build the crew for the journey.",
+      value1Title: "Navigate your path",
+      value1Body: "Find the most promising route between Korea and the world.",
       value2Title: "Secure funding",
-      value2Body: "Identify and pursue grants, investors and strategic opportunities.",
+      value2Body: "Connect grants and investment to create the conditions for growth.",
       value3Title: "Build your crew",
-      value3Body: "Find the people, expertise and support needed to keep moving.",
+      value3Body: "Meet the cofounders, specialists and partners the voyage requires.",
+      value4Title: "Sustain your journey",
+      value4Body: "Build the foundation that keeps founders and organisations moving.",
       pathwaysLabel: "Two directions · One platform",
       pathwaysTitle: "Which way are you growing?",
       pathwaysSummary: "Choose a direction and the same Flip One services adapt to your market journey.",
@@ -206,6 +214,10 @@
       resourcesSectionLabel: "04 · Resources",
       resourcesSectionTitle: "Practical knowledge for your next decision.",
       resourcesSectionSummary: "Concise, actionable guides for funding, teams, markets and sustainable founder performance.",
+      wikiSearch: "Search resources",
+      wikiSearchPlaceholder: "Search guides, markets or funding",
+      wikiUpdated: "Last updated",
+      wikiKnowledge: "Knowledge base",
       resourceDone: "Back to resources",
       eventsLabel: "Upcoming event",
       eventTitle: "Seoul Founder Night",
@@ -480,6 +492,7 @@
   var resourceGrid = document.getElementById("resource-grid");
   var resourceFilters = document.getElementById("resource-filters");
   var activeResourceCategory = "all";
+  var activeResourceQuery = "";
   var resourceDialog = document.getElementById("resource-dialog");
   var resourceDirections = { "korea-grants": "inbound", "horizon-europe": "outbound", cofounder: "both", "market-entry": "outbound", "investor-ready": "both", resilience: "both" };
 
@@ -498,7 +511,9 @@
     resources.filter(function (resource) {
       var resourceDirection = resourceDirections[resource.id] || "both";
       var categoryMatch = activeResourceCategory === "all" || resource.category === activeResourceCategory;
-      return categoryMatch && (resourceDirection === activeDirection || resourceDirection === "both");
+      var haystack = [resource.title, resource.titleEn, resource.summary, resource.summaryEn].join(" ").toLowerCase();
+      var queryMatch = !activeResourceQuery || haystack.indexOf(activeResourceQuery) !== -1;
+      return categoryMatch && queryMatch && (resourceDirection === activeDirection || resourceDirection === "both");
     }).forEach(function (resource, index) {
       var card = document.createElement("article");
       card.className = "resource-card";
@@ -524,6 +539,11 @@
     var button = event.target.closest("[data-resource-filter]");
     if (!button) return;
     activeResourceCategory = button.getAttribute("data-resource-filter");
+    renderResources();
+  });
+  var resourceSearch = document.getElementById("resource-search");
+  if (resourceSearch) resourceSearch.addEventListener("input", function () {
+    activeResourceQuery = resourceSearch.value.trim().toLowerCase();
     renderResources();
   });
   if (resourceGrid) resourceGrid.addEventListener("click", function (event) {

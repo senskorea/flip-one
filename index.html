@@ -84,28 +84,38 @@
             <p class="coordinate" data-i18n="sectionLabel">01 · 방향 찾기</p>
           </div>
           <div>
-            <h2 id="direction-heading" data-i18n="directionTitle">앞으로의 여정을 위한 방향.</h2>
-            <p data-i18n="directionSummary">Flip One은 창업가가 한국과 글로벌 시장을 탐색하고, 프로젝트 보조금을 확보하며, 지속가능한 성장에 필요한 관계를 구축하도록 돕습니다.</p>
+            <h2 id="direction-heading" data-i18n="directionTitle">항로를 찾으세요.</h2>
+            <p data-i18n="directionSummary">방향을 찾고, 자금을 확보하고, 함께 항해할 팀을 만드세요.</p>
           </div>
         </div>
 
-        <div class="value-grid">
+        <div class="value-grid value-grid--journey">
           <article class="value-card">
             <span class="value-card__index">01</span>
-            <h3 data-i18n="value1Title">시장 탐색</h3>
-            <p data-i18n="value1Body">한국과 글로벌 기회 사이의 경로를 이해합니다.</p>
+            <figure class="value-card__illustration"><img src="Assets/Journey/navigation-map.png" alt="" loading="lazy"></figure>
+            <h3 data-i18n="value1Title">항로 탐색</h3>
+            <p data-i18n="value1Body">한국과 세계를 잇는 가장 유망한 경로를 찾습니다.</p>
             <span class="value-card__line" aria-hidden="true"></span>
           </article>
           <article class="value-card">
             <span class="value-card__index">02</span>
+            <figure class="value-card__illustration"><img src="Assets/Journey/funding-weather.png" alt="" loading="lazy"></figure>
             <h3 data-i18n="value2Title">자금 확보</h3>
-            <p data-i18n="value2Body">보조금, 투자자, 전략적 기회를 발굴하고 추진합니다.</p>
+            <p data-i18n="value2Body">보조금과 투자를 연결해 성장하기 좋은 환경을 만듭니다.</p>
             <span class="value-card__line" aria-hidden="true"></span>
           </article>
           <article class="value-card">
             <span class="value-card__index">03</span>
-            <h3 data-i18n="value3Title">팀 구축</h3>
-            <p data-i18n="value3Body">앞으로 나아가는 데 필요한 사람, 전문성, 지원을 연결합니다.</p>
+            <figure class="value-card__illustration"><img src="Assets/Journey/build-crew.png" alt="" loading="lazy"></figure>
+            <h3 data-i18n="value3Title">팀 구성</h3>
+            <p data-i18n="value3Body">항해에 필요한 공동창업자, 전문가, 파트너를 만납니다.</p>
+            <span class="value-card__line" aria-hidden="true"></span>
+          </article>
+          <article class="value-card">
+            <span class="value-card__index">04</span>
+            <figure class="value-card__illustration"><img src="Assets/Journey/sustain-journey.png" alt="" loading="lazy"></figure>
+            <h3 data-i18n="value4Title">지속적인 성장</h3>
+            <p data-i18n="value4Body">창업가와 조직이 긴 여정을 이어갈 기반을 다집니다.</p>
             <span class="value-card__line" aria-hidden="true"></span>
           </article>
         </div>
@@ -175,8 +185,10 @@
           <div><p class="coordinate" data-i18n="platformLabel">03 · 플랫폼</p></div>
           <div><h2 id="platform-heading" data-i18n="platformTitle">사람과 기회가 만나는 곳.</h2><p data-i18n="platformSummary">네트워크를 탐색하고, 필요한 전문성을 찾고, 다음 기회와 연결하세요.</p></div>
         </div>
-        <figure class="section-metaphor section-metaphor--dark" aria-hidden="true"><img src="Assets/Metaphors/people-converging-boats.jpg" alt="" loading="lazy"></figure>
-        <div class="bento-grid">
+        <div class="platform-window">
+          <div class="platform-window__bar"><span class="platform-window__brand">FLIP / ONE</span><nav><button class="is-active" type="button">NETWORK</button><button type="button">OPPORTUNITIES</button><button type="button">LIBRARY</button></nav><span class="platform-window__status">● LIVE</span></div>
+          <div class="platform-window__body"><aside aria-hidden="true"><span>WORKSPACE</span><i class="is-active">People</i><i>Matches</i><i>Saved</i><i>Messages</i></aside>
+          <div class="bento-grid">
           <article class="bento bento--directory">
             <div class="bento__top"><span class="bento__label" data-i18n="peopleLabel">피플 네트워크</span><span id="people-count">06</span></div>
             <div class="directory-intro">
@@ -207,6 +219,8 @@
             <div><span class="bento__label" data-i18n="eventsLabel">다가오는 이벤트</span><h3 data-i18n="eventTitle">Seoul Founder Night</h3><p data-i18n="eventMeta">서울 · 오후 7시</p><a href="#events" class="text-link"><span data-i18n="browseEvents">이벤트 살펴보기</span> <span aria-hidden="true">→</span></a></div>
           </article>
         </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -216,9 +230,18 @@
           <div><p class="coordinate" data-i18n="resourcesSectionLabel">04 · 자료</p></div>
           <div><h2 id="resources-heading" data-i18n="resourcesSectionTitle">다음 결정을 위한 실용적인 지식.</h2><p data-i18n="resourcesSectionSummary">자금, 팀, 시장, 창업가의 지속가능성을 위한 간결하고 실행 가능한 가이드입니다.</p></div>
         </div>
-        <figure class="section-metaphor section-metaphor--light" aria-hidden="true"><img src="Assets/Metaphors/resources-compass-map.jpg" alt="" loading="lazy"></figure>
-        <div class="resource-filters" id="resource-filters" aria-label="Resource categories"></div>
-        <div class="resource-grid" id="resource-grid"></div>
+        <div class="wiki-shell">
+          <aside class="wiki-sidebar">
+            <span class="coordinate">FLIP ONE WIKI</span>
+            <label><span data-i18n="wikiSearch">자료 검색</span><input id="resource-search" type="search" data-i18n-placeholder="wikiSearchPlaceholder" placeholder="가이드, 시장, 자금 검색"></label>
+            <nav id="resource-filters" class="resource-filters" aria-label="Resource categories"></nav>
+            <div class="wiki-sidebar__meta"><span data-i18n="wikiUpdated">최근 업데이트</span><strong>03 SEP 2026</strong></div>
+          </aside>
+          <div class="wiki-content">
+            <div class="wiki-breadcrumb"><span>FLIP ONE</span><i>/</i><strong data-i18n="wikiKnowledge">지식 베이스</strong></div>
+            <div class="resource-grid" id="resource-grid"></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -228,7 +251,7 @@
           <div><p class="coordinate" data-i18n="eventsSectionLabel">05 · 이벤트</p></div>
           <div><h2 id="events-heading" data-i18n="eventsSectionTitle">좋은 연결은 함께 모일 때 시작됩니다.</h2><p data-i18n="eventsSectionSummary">창업가, 전문가, 투자자와 함께 배우고 연결하며 다시 에너지를 채우세요.</p></div>
         </div>
-        <figure class="section-metaphor section-metaphor--dark" aria-hidden="true"><img src="Assets/Metaphors/events-fleet-beacon.jpg" alt="" loading="lazy"></figure>
+        <div class="event-route" aria-hidden="true"><span class="event-route__boat"></span><i></i><i></i><i></i><i></i><strong>SEOUL</strong><strong>GLOBAL</strong></div>
         <div class="events-toolbar">
           <div class="event-filters" id="event-filters" aria-label="Event categories"></div>
           <div class="view-switch" aria-label="Event view"><button type="button" data-event-view="grid" class="is-active" data-i18n="gridView">카드</button><button type="button" data-event-view="list" data-i18n="listView">목록</button></div>
