@@ -34,6 +34,15 @@
       value2Body: "보조금, 투자자, 전략적 기회를 발굴하고 추진합니다.",
       value3Title: "팀 구축",
       value3Body: "앞으로 나아가는 데 필요한 사람, 전문성, 지원을 연결합니다.",
+      pathwaysLabel: "두 개의 방향 · 하나의 플랫폼",
+      pathwaysTitle: "어느 방향으로 성장하고 있나요?",
+      pathwaysSummary: "방향을 선택하면 같은 Flip One 서비스가 당신의 시장 여정에 맞게 조정됩니다.",
+      pathwaysAria: "성장 방향",
+      inboundTitle: "한국 진출",
+      inboundBody: "해외 창업가와 조직을 한국의 시장, 자금, 파트너와 연결합니다.",
+      outboundTitle: "글로벌 진출",
+      outboundBody: "한국 창업가를 글로벌 시장, 자금, 파트너와 연결합니다.",
+      bothDirection: "양쪽 시장 연결",
       servicesLabel: "02 · 서비스",
       servicesTitle: "여정의 모든 단계에 필요한 지원.",
       servicesSummary: "아이디어의 시작부터 확장과 지속가능한 성장까지, 지금 필요한 다음 단계를 함께 설계합니다.",
@@ -64,6 +73,7 @@
       askExample: "한국 바이오 보조금 경험이 있는 사람을 찾아주세요.",
       askBody: "자연어로 필요한 경험과 연결을 검색하세요.",
       filterStage: "단계",
+      filterDirection: "방향",
       filterExpertise: "전문 분야",
       filterReset: "초기화",
       filterAll: "전체",
@@ -104,6 +114,7 @@
       close: "닫기",
       nameLabel: "이름",
       emailLabel: "이메일",
+      directionLabel: "성장 방향",
       stageLabel: "현재 단계",
       stageIdea: "아이디어 구체화",
       stageScale: "스케일업",
@@ -144,6 +155,15 @@
       value2Body: "Identify and pursue grants, investors and strategic opportunities.",
       value3Title: "Build your crew",
       value3Body: "Find the people, expertise and support needed to keep moving.",
+      pathwaysLabel: "Two directions · One platform",
+      pathwaysTitle: "Which way are you growing?",
+      pathwaysSummary: "Choose a direction and the same Flip One services adapt to your market journey.",
+      pathwaysAria: "Growth direction",
+      inboundTitle: "Entering Korea",
+      inboundBody: "Connecting international founders and organisations with Korean markets, funding and partners.",
+      outboundTitle: "Expanding globally",
+      outboundBody: "Connecting Korean founders with global markets, funding and partners.",
+      bothDirection: "Connecting both markets",
       servicesLabel: "02 · Services",
       servicesTitle: "Support for every stage of the voyage.",
       servicesSummary: "From the first idea through scaling and sustainable growth, we help design the next step you need now.",
@@ -174,6 +194,7 @@
       askExample: "Find someone with Korean biotech funding experience.",
       askBody: "Search for the experience and connections you need in natural language.",
       filterStage: "Stage",
+      filterDirection: "Direction",
       filterExpertise: "Expertise",
       filterReset: "Reset",
       filterAll: "All",
@@ -214,6 +235,7 @@
       close: "Close",
       nameLabel: "Name",
       emailLabel: "Email",
+      directionLabel: "Growth direction",
       stageLabel: "Current stage",
       stageIdea: "Ideation",
       stageScale: "Scaling",
@@ -227,6 +249,7 @@
 
   var languageButtons = document.querySelectorAll("[data-language]");
   var activeLanguage = "ko";
+  var activeDirection = "inbound";
 
   function setLanguage(language) {
     activeLanguage = language;
@@ -270,12 +293,12 @@
   });
 
   var people = [
-    { initials: "JK", image: "jiwon-kim.jpg", name: "김지원", nameEn: "Jiwon Kim", role: "바이오 보조금 전략가", roleEn: "Biotech Grant Strategist", location: "서울", locationEn: "Seoul", stage: "scaling", expertise: "funding", tags: "바이오 보조금 정부지원사업 한국 유럽 funding grant biotech korea eu", bio: "한국 바이오 스타트업의 정부지원사업과 유럽 공동연구 자금 전략을 설계합니다.", bioEn: "Designs Korean and European grant strategies for biotech startups." },
-    { initials: "MP", image: "minseo-park.jpg", name: "박민서", nameEn: "Minseo Park", role: "AI 공동창업자", roleEn: "AI Cofounder", location: "서울", locationEn: "Seoul", stage: "ideation", expertise: "cofounder", tags: "인공지능 제품 기술 공동창업자 ai product technology cofounder", bio: "초기 AI 제품의 기술 방향과 팀 구성을 함께 만듭니다.", bioEn: "Shapes technical direction and founding teams for early AI products." },
-    { initials: "SL", image: "sophie-laurent.jpg", name: "소피 로랑", nameEn: "Sophie Laurent", role: "EU 펀딩 전문가", roleEn: "EU Funding Specialist", location: "브뤼셀", locationEn: "Brussels", stage: "scaling", expertise: "funding", tags: "유럽 호라이즌 보조금 컨소시엄 eu europe horizon funding grant consortium", bio: "유럽 연구개발 컨소시엄과 Horizon Europe 제안서를 연결합니다.", bioEn: "Connects R&D consortia and Horizon Europe proposals." },
-    { initials: "DC", image: "daniel-cho.jpg", name: "조다니엘", nameEn: "Daniel Cho", role: "글로벌 시장 진출 자문", roleEn: "Global Market Entry Advisor", location: "싱가포르", locationEn: "Singapore", stage: "scaling", expertise: "market", tags: "해외진출 아시아 한국 싱가포르 파트너십 market entry asia korea singapore partnership", bio: "한국 스타트업의 아시아 시장 진출과 현지 파트너십을 지원합니다.", bioEn: "Supports Asian market entry and local partnerships for Korean startups." },
-    { initials: "HL", image: "hana-lee.jpg", name: "이하나", nameEn: "Hana Lee", role: "창업가 웰빙 코치", roleEn: "Founder Wellbeing Coach", location: "서울", locationEn: "Seoul", stage: "sustaining", expertise: "wellbeing", tags: "코칭 웰빙 회복탄력성 번아웃 창업가 coaching wellbeing resilience burnout founder", bio: "성장 과정에서 창업가의 회복탄력성과 지속가능한 리더십을 강화합니다.", bioEn: "Builds founder resilience and sustainable leadership through growth." },
-    { initials: "MC", image: "marcus-chen.jpg", name: "마커스 첸", nameEn: "Marcus Chen", role: "하드웨어 투자 파트너", roleEn: "Hardware Investment Partner", location: "타이베이", locationEn: "Taipei", stage: "scaling", expertise: "investment", tags: "투자자 하드웨어 제조 대만 투자 investor hardware manufacturing taiwan capital", bio: "하드웨어 창업팀을 아시아 투자자와 제조 네트워크에 연결합니다.", bioEn: "Connects hardware teams with Asian investors and manufacturing networks." }
+    { initials: "JK", image: "jiwon-kim.jpg", name: "김지원", nameEn: "Jiwon Kim", role: "바이오 보조금 전략가", roleEn: "Biotech Grant Strategist", location: "서울", locationEn: "Seoul", direction: "both", stage: "scaling", expertise: "funding", tags: "바이오 보조금 정부지원사업 한국 유럽 funding grant biotech korea eu", bio: "한국 바이오 스타트업의 정부지원사업과 유럽 공동연구 자금 전략을 설계합니다.", bioEn: "Designs Korean and European grant strategies for biotech startups." },
+    { initials: "MP", image: "minseo-park.jpg", name: "박민서", nameEn: "Minseo Park", role: "AI 공동창업자", roleEn: "AI Cofounder", location: "서울", locationEn: "Seoul", direction: "inbound", stage: "ideation", expertise: "cofounder", tags: "인공지능 제품 기술 공동창업자 ai product technology cofounder", bio: "초기 AI 제품의 기술 방향과 팀 구성을 함께 만듭니다.", bioEn: "Shapes technical direction and founding teams for early AI products." },
+    { initials: "SL", image: "sophie-laurent.jpg", name: "소피 로랑", nameEn: "Sophie Laurent", role: "EU 펀딩 전문가", roleEn: "EU Funding Specialist", location: "브뤼셀", locationEn: "Brussels", direction: "outbound", stage: "scaling", expertise: "funding", tags: "유럽 호라이즌 보조금 컨소시엄 eu europe horizon funding grant consortium", bio: "유럽 연구개발 컨소시엄과 Horizon Europe 제안서를 연결합니다.", bioEn: "Connects R&D consortia and Horizon Europe proposals." },
+    { initials: "DC", image: "daniel-cho.jpg", name: "조다니엘", nameEn: "Daniel Cho", role: "글로벌 시장 진출 자문", roleEn: "Global Market Entry Advisor", location: "싱가포르", locationEn: "Singapore", direction: "outbound", stage: "scaling", expertise: "market", tags: "해외진출 아시아 한국 싱가포르 파트너십 market entry asia korea singapore partnership", bio: "한국 스타트업의 아시아 시장 진출과 현지 파트너십을 지원합니다.", bioEn: "Supports Asian market entry and local partnerships for Korean startups." },
+    { initials: "HL", image: "hana-lee.jpg", name: "이하나", nameEn: "Hana Lee", role: "창업가 웰빙 코치", roleEn: "Founder Wellbeing Coach", location: "서울", locationEn: "Seoul", direction: "both", stage: "sustaining", expertise: "wellbeing", tags: "코칭 웰빙 회복탄력성 번아웃 창업가 coaching wellbeing resilience burnout founder", bio: "성장 과정에서 창업가의 회복탄력성과 지속가능한 리더십을 강화합니다.", bioEn: "Builds founder resilience and sustainable leadership through growth." },
+    { initials: "MC", image: "marcus-chen.jpg", name: "마커스 첸", nameEn: "Marcus Chen", role: "하드웨어 투자 파트너", roleEn: "Hardware Investment Partner", location: "타이베이", locationEn: "Taipei", direction: "inbound", stage: "scaling", expertise: "investment", tags: "투자자 하드웨어 제조 대만 투자 investor hardware manufacturing taiwan capital", bio: "하드웨어 창업팀을 아시아 투자자와 제조 네트워크에 연결합니다.", bioEn: "Connects hardware teams with Asian investors and manufacturing networks." }
   ];
 
   var stageNames = {
@@ -290,9 +313,15 @@
     wellbeing: { ko: "코칭 및 웰빙", en: "Coaching and wellbeing" },
     investment: { ko: "투자", en: "Investment" }
   };
+  var directionNames = {
+    inbound: { ko: "한국 진출", en: "Entering Korea" },
+    outbound: { ko: "글로벌 진출", en: "Expanding globally" },
+    both: { ko: "양쪽 시장 연결", en: "Connecting both markets" }
+  };
   var peopleGrid = document.getElementById("people-grid");
   var peopleCount = document.getElementById("people-count");
   var peopleStage = document.getElementById("people-stage");
+  var peopleDirection = document.getElementById("people-direction");
   var peopleExpertise = document.getElementById("people-expertise");
   var peopleAsk = document.getElementById("people-ask");
   var peopleQuery = document.getElementById("people-query");
@@ -316,6 +345,7 @@
   function renderPeopleDirectory() {
     if (!peopleGrid) return;
     setFilterOptions(peopleStage, stageNames);
+    setFilterOptions(peopleDirection, directionNames);
     setFilterOptions(peopleExpertise, expertiseNames);
     var tokens = activePeopleQuery.toLowerCase().split(/\s+/).filter(function (token) { return token.length > 1; });
     var matches = people.map(function (person) {
@@ -324,7 +354,7 @@
       return { person: person, score: score };
     }).filter(function (entry) {
       var person = entry.person;
-      var filtersMatch = (!peopleStage.value || person.stage === peopleStage.value) && (!peopleExpertise.value || person.expertise === peopleExpertise.value);
+      var filtersMatch = (!peopleDirection.value || person.direction === peopleDirection.value || person.direction === "both") && (!peopleStage.value || person.stage === peopleStage.value) && (!peopleExpertise.value || person.expertise === peopleExpertise.value);
       return filtersMatch && (!tokens.length || entry.score > 0);
     }).sort(function (a, b) { return b.score - a.score; });
 
@@ -342,6 +372,7 @@
   }
 
   if (peopleStage) peopleStage.addEventListener("change", renderPeopleDirectory);
+  if (peopleDirection) peopleDirection.addEventListener("change", renderPeopleDirectory);
   if (peopleExpertise) peopleExpertise.addEventListener("change", renderPeopleDirectory);
   if (peopleAsk) peopleAsk.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -350,24 +381,23 @@
   });
   if (peopleReset) peopleReset.addEventListener("click", function () {
     peopleStage.value = "";
+    peopleDirection.value = "";
     peopleExpertise.value = "";
     peopleQuery.value = "";
     activePeopleQuery = "";
     renderPeopleDirectory();
   });
 
-  var serviceOutcomes = {
-    ideation: {
-      ko: "검증된 문제 정의, 명확한 시장 가설, 함께 시작할 사람과 첫 자금 전략을 갖추게 됩니다.",
-      en: "Leave with a validated problem, a clear market hypothesis, the right early collaborators and a first funding strategy."
+  var servicePathCopy = {
+    inbound: {
+      ideation: { ko: ["한국 시장에 맞는 아이디어와 진입 가설을 검증합니다.", "한국 시장 및 고객 검증", "현지 공동창업자와 전문가", "한국 초기 자금 전략", "검증된 한국 시장 가설과 첫 현지 실행 계획을 갖추게 됩니다."], en: ["Validate your idea and entry assumptions for the Korean market.", "Korean market and customer validation", "Local cofounders and specialists", "Korean early funding strategy", "Leave with a validated Korean market hypothesis and a first local action plan."] },
+      scaling: { ko: ["한국에서 성장하는 데 필요한 자금, 파트너십, 현지 역량을 구축합니다.", "한국 보조금 신청 지원", "국내 투자자 및 파트너 연결", "현지화와 시장 진입", "명확한 한국 진입 경로와 자금 전략, 실행 파트너 네트워크를 갖추게 됩니다."], en: ["Build the funding, partnerships and local capability required to grow in Korea.", "Korean grant application support", "Local investor and partner connections", "Localisation and market entry", "Leave with a clear Korean entry route, funding strategy and local partner network."] },
+      sustaining: { ko: ["한국에서 장기적으로 운영할 수 있는 조직과 리더십 기반을 강화합니다.", "현지 운영과 리더십", "창업가 웰빙과 회복탄력성", "한국 스타트업 커뮤니티", "한국에서 지속적으로 성장할 수 있는 현지 운영 리듬과 지원망을 구축합니다."], en: ["Strengthen the organisation and leadership needed to operate in Korea for the long term.", "Local operations and leadership", "Founder wellbeing and resilience", "Korean startup community", "Build a sustainable local operating rhythm and support network in Korea."] }
     },
-    scaling: {
-      ko: "명확한 자금 조달 경로와 시장 진출 계획, 실행에 필요한 파트너 네트워크를 갖추게 됩니다.",
-      en: "Leave with a clear funding route, a practical market-entry plan and the partner network required to execute it."
-    },
-    sustaining: {
-      ko: "창업가의 에너지와 조직의 실행력을 함께 보호하는 지속가능한 운영 방식을 구축하게 됩니다.",
-      en: "Build a sustainable operating rhythm that protects founder energy while strengthening the organisation's ability to deliver."
+    outbound: {
+      ideation: { ko: ["해외 시장에 맞는 기회와 첫 진출 가설을 검증합니다.", "글로벌 시장 우선순위 설정", "해외 고객 및 기회 검증", "국제 자금 전략", "우선 진출 시장과 검증 가능한 첫 해외 실험을 갖추게 됩니다."], en: ["Validate the opportunity and first entry hypothesis for overseas markets.", "Global market prioritisation", "Overseas customer validation", "International funding strategy", "Leave with a priority market and a testable first overseas experiment."] },
+      scaling: { ko: ["글로벌 성장에 필요한 자금, 파트너십, 국제 역량을 구축합니다.", "국제 보조금 신청 지원", "글로벌 투자자 연결", "해외 파트너십과 시장 진출", "명확한 해외 진출 계획과 국제 자금 경로, 실행 파트너를 갖추게 됩니다."], en: ["Build the funding, partnerships and international capability required for global growth.", "International grant support", "Global investor connections", "Overseas partnerships and market entry", "Leave with a clear overseas plan, international funding route and execution partners."] },
+      sustaining: { ko: ["국경을 넘어 성장하는 팀과 창업가의 지속가능성을 강화합니다.", "국제 운영과 분산 팀", "창업가 코칭과 회복탄력성", "글로벌 창업가 커뮤니티", "국제 조직의 실행력과 창업가의 에너지를 보호하는 운영 방식을 구축합니다."], en: ["Strengthen the team and founder for sustainable growth across borders.", "International operations and distributed teams", "Founder coaching and resilience", "Global founder community", "Build an operating model that protects founder energy and international execution."] }
     }
   };
   var activeServiceStage = "scaling";
@@ -378,13 +408,23 @@
 
   function renderServiceStage() {
     if (!serviceDetailTitle) return;
+    var pathway = servicePathCopy[activeDirection];
+    Object.keys(pathway).forEach(function (stage) {
+      var copy = pathway[stage][activeLanguage];
+      var body = document.querySelector('[data-service-body="' + stage + '"]');
+      if (body) body.textContent = copy[0];
+      copy.slice(1, 4).forEach(function (item, index) {
+        var element = document.querySelector('[data-service-item="' + stage + '-' + index + '"]');
+        if (element) element.textContent = item;
+      });
+    });
     serviceCards.forEach(function (card) {
       var isActive = card.getAttribute("data-service-stage") === activeServiceStage;
       card.classList.toggle("stage-card--active", isActive);
       card.setAttribute("aria-selected", String(isActive));
     });
     serviceDetailTitle.textContent = stageNames[activeServiceStage][activeLanguage];
-    serviceDetailCopy.textContent = serviceOutcomes[activeServiceStage][activeLanguage];
+    serviceDetailCopy.textContent = pathway[activeServiceStage][activeLanguage][4];
     serviceDetailButton.setAttribute("data-course-stage", activeServiceStage);
   }
 
@@ -401,6 +441,25 @@
         selectServiceStage(card);
       }
     });
+  });
+
+  var pathwayButtons = document.querySelectorAll("[data-direction]");
+  function selectDirection(direction) {
+    activeDirection = direction;
+    pathwayButtons.forEach(function (button) {
+      var isActive = button.getAttribute("data-direction") === direction;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+    if (peopleDirection) peopleDirection.value = direction;
+    var formDirection = document.querySelector('#course-form select[name="direction"]');
+    if (formDirection) formDirection.value = direction;
+    renderServiceStage();
+    renderPeopleDirectory();
+    renderResources();
+  }
+  pathwayButtons.forEach(function (button) {
+    button.addEventListener("click", function () { selectDirection(button.getAttribute("data-direction")); });
   });
 
   var resourceCategories = {
@@ -422,6 +481,7 @@
   var resourceFilters = document.getElementById("resource-filters");
   var activeResourceCategory = "all";
   var resourceDialog = document.getElementById("resource-dialog");
+  var resourceDirections = { "korea-grants": "inbound", "horizon-europe": "outbound", cofounder: "both", "market-entry": "outbound", "investor-ready": "both", resilience: "both" };
 
   function renderResources() {
     if (!resourceGrid || !resourceFilters) return;
@@ -435,10 +495,15 @@
       resourceFilters.appendChild(button);
     });
     resourceGrid.innerHTML = "";
-    resources.filter(function (resource) { return activeResourceCategory === "all" || resource.category === activeResourceCategory; }).forEach(function (resource, index) {
+    resources.filter(function (resource) {
+      var resourceDirection = resourceDirections[resource.id] || "both";
+      var categoryMatch = activeResourceCategory === "all" || resource.category === activeResourceCategory;
+      return categoryMatch && (resourceDirection === activeDirection || resourceDirection === "both");
+    }).forEach(function (resource, index) {
       var card = document.createElement("article");
       card.className = "resource-card";
-      card.innerHTML = '<div class="resource-card__top"><span class="resource-icon"><img src="Assets/Icons/' + resource.icon + '" alt=""></span><span class="resource-index">0' + (index + 1) + '</span></div><span class="resource-category">' + resourceCategories[resource.category][activeLanguage] + ' · ' + resource.time + ' MIN</span><h3>' + (activeLanguage === "ko" ? resource.title : resource.titleEn) + '</h3><p>' + (activeLanguage === "ko" ? resource.summary : resource.summaryEn) + '</p>' + (resource.powered ? '<span class="powered-badge">Powered by InsightMatches</span>' : '') + '<button type="button" data-resource-id="' + resource.id + '" aria-label="' + translations[activeLanguage].openResource + '">→</button>';
+      var resourceDirection = resourceDirections[resource.id] || "both";
+      card.innerHTML = '<div class="resource-card__top"><span class="resource-icon"><img src="Assets/Icons/' + resource.icon + '" alt=""></span><span class="resource-index">0' + (index + 1) + '</span></div><span class="resource-category">' + directionNames[resourceDirection][activeLanguage] + ' · ' + resourceCategories[resource.category][activeLanguage] + ' · ' + resource.time + ' MIN</span><h3>' + (activeLanguage === "ko" ? resource.title : resource.titleEn) + '</h3><p>' + (activeLanguage === "ko" ? resource.summary : resource.summaryEn) + '</p>' + (resource.powered ? '<span class="powered-badge">Powered by InsightMatches</span>' : '') + '<button type="button" data-resource-id="' + resource.id + '" aria-label="' + translations[activeLanguage].openResource + '">→</button>';
       resourceGrid.appendChild(card);
     });
   }
@@ -574,6 +639,7 @@
   var savedLanguage = "ko";
   try { savedLanguage = localStorage.getItem("flip-one-language") || "ko"; } catch (error) {}
   setLanguage(savedLanguage === "en" ? "en" : "ko");
+  selectDirection(activeDirection);
 
   var menuButton = document.getElementById("menu-button");
   var mobileNav = document.getElementById("mobile-nav");

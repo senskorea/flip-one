@@ -18,6 +18,7 @@
 10. GitHub Pages hosts the MVP. Vercel and Supabase are deferred.
 11. Generated diorama artwork is editorial support material only.
 12. Animation is lightweight and non-essential, with reduced-motion support.
+13. Inbound and outbound are market directions, not separate service lines. Visitors choose Entering Korea or Expanding globally, then use the same Ideation, Scaling and Sustaining service stages with direction-specific examples. The selection also carries into People, Resources and the enquiry form.
 
 ## 2026 trends: adopted
 
