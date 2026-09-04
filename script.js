@@ -5,7 +5,15 @@
   var translations = {
     ko: {
       title: "Flip One | 스타트업의 길을 밝히는 등대",
-      description: "Flip One은 창업가가 시장을 탐색하고, 자금을 확보하며, 한국과 세계를 연결할 팀을 구축하도록 돕습니다.",
+      description: "Flip One은 해외 벤처의 한국 진출과 한국 기반 비즈니스의 글로벌 확장을 지원하는 서울 기반 벤처 플랫폼입니다.",
+      platformPageTitle: "Flip One | 피플",
+      servicesPageTitle: "Flip One | 서비스",
+      resourcesPageTitle: "Flip One | 가이드",
+      eventsPageTitle: "Flip One | 이벤트",
+      platformDescription: "Flip One의 창업가, 전문가, 파트너 네트워크를 탐색하세요.",
+      servicesDescription: "아이디어 구체화부터 확장과 지속가능한 성장까지 지원하는 Flip One 서비스입니다.",
+      resourcesDescription: "자금, 팀, 시장과 지속가능한 성장을 위한 Flip One 실용 가이드입니다.",
+      eventsDescription: "Flip One 창업가 커뮤니티의 모임, 클리닉, 워크숍을 확인하세요.",
       skip: "본문으로 건너뛰기",
       languageLabel: "언어 선택",
       mobileNavLabel: "모바일 내비게이션",
@@ -18,36 +26,58 @@
       navResources: "자료",
       navEvents: "이벤트",
       navServices: "서비스",
-      cta: "항로를 그려보세요",
-      heroEyebrow: "한국과 세계를 연결하며 성장하는 창업가를 위해",
+      cta: "성장 방향 상담하기",
+      heroEyebrow: "한국과 세계 사이에서 성장하는 창업가를 위해",
       heroTitle1: "스타트업의 길을",
       heroTitle2: "밝히는 등대.",
-      heroSummary: "스타트업을 만드는 일은 하나의 항해입니다. 가장 단단한 창업가도 때로는 방향을 잃습니다. Flip One은 앞으로 나아가는 데 필요한 방향, 사람, 기회를 연결합니다.",
+      heroSummary: "Flip One은 한국과 세계 사이에서 성장하는 창업가를 위한 서울 기반 벤처 플랫폼입니다. 해외 벤처의 한국 진출과 한국 기반 비즈니스의 글로벌 확장을 지원합니다.",
+      heroAudience: "기술 스타트업, AI 기반 크리에이터, 콘텐츠 및 엔터테인먼트 비즈니스와 함께합니다.",
       exploreServices: "서비스 살펴보기",
+      exploreLabel: "02 · 더 알아보기",
+      exploreTitle: "필요한 곳으로 바로 이동하세요.",
+      exploreSummary: "플랫폼을 탐색하고, 서비스를 살펴보고, 지식과 이벤트를 찾아보세요.",
+      portalPlatformTitle: "함께 항해할 사람을 찾으세요.",
+      portalPlatformBody: "네트워크를 검색하고 필요한 경험과 연결을 발견하세요.",
+      portalServicesTitle: "다음 성장 단계를 설계하세요.",
+      portalServicesBody: "아이디어, 확장, 지속가능성에 맞는 지원을 확인하세요.",
+      portalResourcesTitle: "실용적인 지식을 탐색하세요.",
+      portalResourcesBody: "자금, 시장, 팀을 위한 가이드를 검색하세요.",
+      portalEventsTitle: "커뮤니티와 만나세요.",
+      portalEventsBody: "다가오는 모임, 클리닉, 워크숍을 확인하세요.",
       heroKeywords: "방향 · 자금 · 사람",
       sectionLabel: "01 · 방향 찾기",
       directionTitle: "항로를 찾으세요.",
-      directionSummary: "방향을 찾고, 자금을 확보하고, 함께 항해할 팀을 만드세요.",
-      value1Title: "항로 탐색",
-      value1Body: "한국과 세계를 잇는 가장 유망한 경로를 찾습니다.",
-      value2Title: "자금 확보",
-      value2Body: "보조금과 투자를 연결해 성장하기 좋은 환경을 만듭니다.",
-      value3Title: "팀 구성",
-      value3Body: "항해에 필요한 공동창업자, 전문가, 파트너를 만납니다.",
-      value4Title: "지속적인 성장",
-      value4Body: "창업가와 조직이 긴 여정을 이어갈 기반을 다집니다.",
+      directionSummary: "시장과 기회를 정의하고, 자금 전략을 세우며, 실행에 필요한 사람을 연결합니다.",
+      value1Title: "성장 경로 정의",
+      value1Body: "적합한 시장, 기회와 프로그램을 찾아 우선순위를 정합니다.",
+      value2Title: "자금 전략 수립",
+      value2Body: "보조금, 투자 경로와 신청 우선순위를 구체화합니다.",
+      value3Title: "적합한 사람 연결",
+      value3Body: "전문가, 파트너, 공동창업자와 투자자를 연결합니다.",
+      value4Title: "시장 진입과 성장",
+      value4Body: "전략을 실제 시장 활동과 지속 가능한 성장으로 전환합니다.",
       pathwaysLabel: "두 개의 방향 · 하나의 플랫폼",
       pathwaysTitle: "어느 방향으로 성장하고 있나요?",
-      pathwaysSummary: "방향을 선택하면 같은 Flip One 서비스가 당신의 시장 여정에 맞게 조정됩니다.",
+      pathwaysSummary: "공통된 실행 방식에 각 시장에 필요한 전문성과 자금 경로를 결합합니다.",
+      homePathwaysTitle: "한국으로, 그리고 세계로.",
+      homePathwaysSummary: "같은 실행 방식으로 서로 다른 시장 진출 과제를 해결합니다.",
+      homeInbound1: "한국 시장 및 기회 검증",
+      homeInbound2: "정부지원사업과 자금 경로",
+      homeInbound3: "현지 파트너와 전문가",
+      homeInbound4: "실행 가능한 진입 계획",
+      homeOutbound1: "해외 시장 우선순위 설정",
+      homeOutbound2: "국제 보조금과 자금 전략",
+      homeOutbound3: "글로벌 파트너와 컨소시엄",
+      homeOutbound4: "검증 가능한 확장 계획",
       pathwaysAria: "성장 방향",
       inboundTitle: "한국 진출",
       inboundBody: "해외 창업가와 조직을 한국의 시장, 자금, 파트너와 연결합니다.",
       outboundTitle: "글로벌 진출",
       outboundBody: "한국 창업가를 글로벌 시장, 자금, 파트너와 연결합니다.",
       bothDirection: "양쪽 시장 연결",
-      servicesLabel: "02 · 서비스",
-      servicesTitle: "여정의 모든 단계에 필요한 지원.",
-      servicesSummary: "아이디어의 시작부터 확장과 지속가능한 성장까지, 지금 필요한 다음 단계를 함께 설계합니다.",
+      servicesLabel: "01 · 서비스",
+      servicesTitle: "국제 성장을 실행 가능한 계획으로.",
+      servicesSummary: "시장 진출 진단, 자금 전략과 파트너 연결을 통해 한국과 글로벌 시장에서의 다음 단계를 구체화합니다.",
       ideationTitle: "아이디어 구체화",
       ideationBody: "초기 아이디어를 명확하고 신뢰할 수 있으며 자금 확보가 가능한 방향으로 발전시킵니다.",
       ideation1: "시장 및 기회 탐색",
@@ -63,9 +93,9 @@
       sustaining1: "창업가 코칭",
       sustaining2: "웰빙과 회복탄력성",
       sustaining3: "커뮤니티 지원",
-      expectedOutcome: "기대 결과",
-      stageCta: "이 단계의 항로 그리기",
-      platformLabel: "03 · 플랫폼",
+      expectedOutcome: "제공 결과물",
+      stageCta: "이 단계 상담하기",
+      platformLabel: "02 · 피플",
       platformTitle: "사람과 기회가 만나는 곳.",
       platformSummary: "네트워크를 탐색하고, 필요한 전문성을 찾고, 다음 기회와 연결하세요.",
       peopleLabel: "피플 네트워크",
@@ -73,32 +103,45 @@
       peopleBody: "창업가, 전문가, 협력자와 잠재적 파트너를 한곳에서 탐색합니다.",
       exploreNetwork: "네트워크 살펴보기",
       askExample: "한국 바이오 보조금 경험이 있는 사람을 찾아주세요.",
-      askBody: "자연어로 필요한 경험과 연결을 검색하세요.",
+      askBody: "키워드나 짧은 설명으로 필요한 경험과 연결을 검색하세요.",
+      directoryLabel: "피플 디렉토리",
       filterStage: "단계",
       filterDirection: "방향",
       filterExpertise: "전문 분야",
       filterReset: "초기화",
       filterAll: "전체",
       noMatches: "조건에 맞는 사람을 찾지 못했습니다. 더 넓은 표현으로 다시 검색해 보세요.",
-      showingMatches: "명의 추천 인물을 찾았습니다.",
+      showingMatches: "명의 인물을 찾았습니다.",
+      matchedBecause: "일치 항목",
+      viewProfile: "프로필 보기",
+      canHelpWith: "도움을 드릴 수 있는 분야",
+      marketsLabel: "시장",
+      languagesLabel: "언어",
+      requestIntro: "소개 요청하기",
+      introReasonLabel: "연결을 원하는 이유",
+      sendIntro: "요청 준비하기",
+      introNote: "이 프로토타입은 정보를 전송하거나 저장하지 않습니다.",
+      introSuccess: "요청 미리보기가 완료되었습니다. 입력한 정보는 전송되지 않았습니다.",
       resourcesLabel: "전문 자료",
       resourceTitle: "더 나은 결정을 위한 실용적인 지식.",
       browseResources: "자료 살펴보기",
-      resourcesSectionLabel: "04 · 자료",
+      resourcesSectionLabel: "03 · 가이드",
       resourcesSectionTitle: "다음 결정을 위한 실용적인 지식.",
       resourcesSectionSummary: "자금, 팀, 시장, 창업가의 지속가능성을 위한 간결하고 실행 가능한 가이드입니다.",
-      wikiSearch: "자료 검색",
+      wikiSearch: "가이드 검색",
       wikiSearchPlaceholder: "가이드, 시장, 자금 검색",
       wikiUpdated: "최근 업데이트",
-      wikiKnowledge: "지식 베이스",
+      wikiKnowledge: "가이드 라이브러리",
       resourceDone: "자료로 돌아가기",
       eventsLabel: "다가오는 이벤트",
       eventTitle: "Seoul Founder Night",
       eventMeta: "서울 · 오후 7시",
       browseEvents: "이벤트 살펴보기",
-      eventsSectionLabel: "05 · 이벤트",
+      eventsSectionLabel: "04 · 이벤트",
       eventsSectionTitle: "좋은 연결은 함께 모일 때 시작됩니다.",
       eventsSectionSummary: "창업가, 전문가, 투자자와 함께 배우고 연결하며 다시 에너지를 채우세요.",
+      eventWallLabel: "세 가지 방식으로 함께하세요",
+      eventWallCopy: "어디서나 배우고, 테이블에서 깊이 만나고, 커뮤니티와 함께 성장하세요.",
       gridView: "카드",
       listView: "목록",
       eventAgenda: "프로그램",
@@ -106,17 +149,25 @@
       eventHost: "호스트",
       addCalendar: "캘린더에 추가",
       registerInterest: "참가 관심 등록",
-      eventDemoNote: "프레젠테이션용 이벤트 미리보기입니다.",
+      eventEnquire: "이벤트 문의",
       interestSaved: "관심이 등록되었습니다. 정식 출시 시 이 단계에서 신청을 연결합니다.",
-      communityLabel: "06 · 함께 항해하기",
+      communityLabel: "03 · 함께 항해하기",
       communityTitle: "혼자 가는 여정이 아닙니다.",
-      communityBody: "Flip One과 함께하면 독점 이벤트, 전문 지식, 전략적 파트너십을 이용할 수 있는 강력한 스타트업 커뮤니티에 합류하게 됩니다.",
-      courseLabel: "07 · 다음 단계",
-      courseTitle: "당신의 항로를 그릴 준비가 되셨나요?",
-      courseBody: "지금 어디에 있고 어디로 가고 싶은지 알려주세요. 다음 여정을 함께 설계하겠습니다.",
+      communityBody: "Flip One은 실용적인 이벤트, 전문 지식과 선별된 연결을 통해 창업가가 혼자 해결하기 어려운 국제 성장 과제를 함께 풀어갑니다.",
+      credibilityLabel: "전문성을 기반으로",
+      credibilityTitle: "서울에서 시작해 세계와 연결합니다.",
+      credibility1Title: "국제 자금 전문성",
+      credibility1Body: "InsightMatches의 국제 보조금 및 컨소시엄 경험을 기반으로 합니다.",
+      credibility2Title: "한국 시장 실행력",
+      credibility2Body: "한국 진출에 필요한 시장 이해와 현지 연결을 제공합니다.",
+      credibility3Title: "엄선된 네트워크",
+      credibility3Body: "창업가의 과제에 맞는 전문가, 운영자와 파트너를 연결합니다.",
+      courseLabel: "04 · 다음 단계",
+      courseTitle: "어디에서, 어디로 성장하고 있나요?",
+      courseBody: "현재 시장, 목표 시장과 가장 큰 과제를 알려주세요. 실행 가능한 다음 단계를 함께 살펴보겠습니다.",
       footerLine: "한국과 세계를 연결하는 스타트업 플랫폼.",
-      dialogLabel: "항로 설계",
-      dialogTitle: "어디로 향하고 있나요?",
+      dialogLabel: "성장 방향 상담",
+      dialogTitle: "어디에서, 어디로 성장하고 있나요?",
       close: "닫기",
       nameLabel: "이름",
       emailLabel: "이메일",
@@ -126,13 +177,21 @@
       stageScale: "스케일업",
       stageSustain: "지속가능한 성장",
       helpLabel: "지금 가장 필요한 것은 무엇인가요?",
-      send: "문의 보내기",
-      formNote: "현재 프레젠테이션용 문의 양식입니다.",
-      formSuccess: "감사합니다. 다음 항로를 함께 살펴보겠습니다."
+      send: "상담 내용 준비하기",
+      formNote: "이 미리보기에서는 개인정보가 전송되거나 저장되지 않습니다.",
+      formSuccess: "미리보기가 완료되었습니다. 입력한 정보는 전송되지 않았습니다."
     },
     en: {
       title: "Flip One | Your startup lighthouse",
-      description: "Flip One helps founders navigate markets, secure funding and build the right crew between Korea and the world.",
+      description: "Flip One is a Seoul-based venture platform helping international ventures enter Korea and Korea-based businesses expand globally.",
+      platformPageTitle: "Flip One | People",
+      servicesPageTitle: "Flip One | Services",
+      resourcesPageTitle: "Flip One | Guides",
+      eventsPageTitle: "Flip One | Events",
+      platformDescription: "Explore the Flip One network of founders, specialists and potential partners.",
+      servicesDescription: "Flip One support from ideation through scaling and sustainable growth.",
+      resourcesDescription: "Practical Flip One guides for funding, teams, markets and sustainable growth.",
+      eventsDescription: "Discover Flip One founder gatherings, clinics and workshops.",
       skip: "Skip to content",
       languageLabel: "Language selection",
       mobileNavLabel: "Mobile navigation",
@@ -145,36 +204,58 @@
       navResources: "Resources",
       navEvents: "Events",
       navServices: "Services",
-      cta: "Chart your course",
+      cta: "Discuss your route",
       heroEyebrow: "For founders building between Korea and the world",
       heroTitle1: "Your startup",
       heroTitle2: "lighthouse.",
-      heroSummary: "Building a startup is a voyage, and even the most determined founders can lose their bearings. Flip One brings the direction, people and opportunities you need to move forward.",
+      heroSummary: "Flip One is a Seoul-based venture platform for founders building between Korea and the world. We help international ventures enter Korea and Korea-based businesses expand globally.",
+      heroAudience: "Built for technology startups, AI-enabled creators, content companies and entertainment ventures.",
       exploreServices: "Explore our services",
+      exploreLabel: "02 · Explore",
+      exploreTitle: "Go directly where you need to be.",
+      exploreSummary: "Enter the platform, explore our services, or find useful knowledge and events.",
+      portalPlatformTitle: "Find the people for your voyage.",
+      portalPlatformBody: "Search the network and discover the experience and connections you need.",
+      portalServicesTitle: "Design your next stage of growth.",
+      portalServicesBody: "Explore support for ideation, scaling and sustainable growth.",
+      portalResourcesTitle: "Explore practical knowledge.",
+      portalResourcesBody: "Search guides for funding, markets and founding teams.",
+      portalEventsTitle: "Meet the community.",
+      portalEventsBody: "Discover upcoming gatherings, clinics and workshops.",
       heroKeywords: "Direction · Funding · People",
       sectionLabel: "01 · Find your bearings",
       directionTitle: "Find your bearings.",
-      directionSummary: "Find your direction, secure the resources to move forward and build the crew for the journey.",
-      value1Title: "Navigate your path",
-      value1Body: "Find the most promising route between Korea and the world.",
-      value2Title: "Secure funding",
-      value2Body: "Connect grants and investment to create the conditions for growth.",
-      value3Title: "Build your crew",
-      value3Body: "Meet the cofounders, specialists and partners the voyage requires.",
-      value4Title: "Sustain your journey",
-      value4Body: "Build the foundation that keeps founders and organisations moving.",
+      directionSummary: "Define the market and opportunity, build a funding strategy and connect with the people required to execute it.",
+      value1Title: "Define your route",
+      value1Body: "Identify and prioritise the right market, opportunity and programme.",
+      value2Title: "Build your funding strategy",
+      value2Body: "Map relevant grants, investment pathways and application priorities.",
+      value3Title: "Find the right people",
+      value3Body: "Connect with specialists, partners, cofounders and investors.",
+      value4Title: "Enter and grow",
+      value4Body: "Turn the strategy into market activity and sustainable progress.",
       pathwaysLabel: "Two directions · One platform",
       pathwaysTitle: "Which way are you growing?",
-      pathwaysSummary: "Choose a direction and the same Flip One services adapt to your market journey.",
+      pathwaysSummary: "One operating method, adapted with the expertise and funding routes each market requires.",
+      homePathwaysTitle: "Into Korea, and out to the world.",
+      homePathwaysSummary: "One operating method for two distinct market-entry challenges.",
+      homeInbound1: "Korean market and opportunity validation",
+      homeInbound2: "Public programmes and funding routes",
+      homeInbound3: "Local partners and specialists",
+      homeInbound4: "An executable entry plan",
+      homeOutbound1: "International market prioritisation",
+      homeOutbound2: "International grants and funding strategy",
+      homeOutbound3: "Global partners and consortia",
+      homeOutbound4: "A testable expansion plan",
       pathwaysAria: "Growth direction",
       inboundTitle: "Entering Korea",
       inboundBody: "Connecting international founders and organisations with Korean markets, funding and partners.",
       outboundTitle: "Expanding globally",
       outboundBody: "Connecting Korean founders with global markets, funding and partners.",
       bothDirection: "Connecting both markets",
-      servicesLabel: "02 · Services",
-      servicesTitle: "Support for every stage of the voyage.",
-      servicesSummary: "From the first idea through scaling and sustainable growth, we help design the next step you need now.",
+      servicesLabel: "01 · Services",
+      servicesTitle: "Turn international ambition into an executable plan.",
+      servicesSummary: "Market-entry diagnostics, funding strategy and partner connections for building in Korea and expanding globally.",
       ideationTitle: "Ideation",
       ideationBody: "Turn an early idea into a clear, credible and fundable direction.",
       ideation1: "Market and opportunity discovery",
@@ -190,9 +271,9 @@
       sustaining1: "Founder coaching",
       sustaining2: "Wellbeing and resilience",
       sustaining3: "Community support",
-      expectedOutcome: "Expected outcome",
-      stageCta: "Chart this stage",
-      platformLabel: "03 · Platform",
+      expectedOutcome: "What we deliver",
+      stageCta: "Discuss this stage",
+      platformLabel: "02 · People",
       platformTitle: "Where people meet opportunity.",
       platformSummary: "Explore the network, find the expertise you need and connect with what comes next.",
       peopleLabel: "People network",
@@ -200,32 +281,45 @@
       peopleBody: "Explore founders, experts, collaborators and potential partners in one place.",
       exploreNetwork: "Explore the network",
       askExample: "Find someone with Korean biotech funding experience.",
-      askBody: "Search for the experience and connections you need in natural language.",
+      askBody: "Search for the experience and connections you need using keywords or a short description.",
+      directoryLabel: "People directory",
       filterStage: "Stage",
       filterDirection: "Direction",
       filterExpertise: "Expertise",
       filterReset: "Reset",
       filterAll: "All",
       noMatches: "No matching people found. Try a broader description.",
-      showingMatches: "recommended people found.",
+      showingMatches: "people found.",
+      matchedBecause: "Matched on",
+      viewProfile: "View profile",
+      canHelpWith: "Can help with",
+      marketsLabel: "Markets",
+      languagesLabel: "Languages",
+      requestIntro: "Request an introduction",
+      introReasonLabel: "Why would you like to connect?",
+      sendIntro: "Prepare request",
+      introNote: "This prototype does not transmit or store your information.",
+      introSuccess: "Request preview complete. Your information was not submitted.",
       resourcesLabel: "Expert knowledge",
       resourceTitle: "Practical knowledge for better decisions.",
       browseResources: "Browse resources",
-      resourcesSectionLabel: "04 · Resources",
+      resourcesSectionLabel: "03 · Guides",
       resourcesSectionTitle: "Practical knowledge for your next decision.",
       resourcesSectionSummary: "Concise, actionable guides for funding, teams, markets and sustainable founder performance.",
-      wikiSearch: "Search resources",
+      wikiSearch: "Search guides",
       wikiSearchPlaceholder: "Search guides, markets or funding",
       wikiUpdated: "Last updated",
-      wikiKnowledge: "Knowledge base",
+      wikiKnowledge: "Guide library",
       resourceDone: "Back to resources",
       eventsLabel: "Upcoming event",
       eventTitle: "Seoul Founder Night",
       eventMeta: "Seoul · 7:00 PM",
       browseEvents: "Explore events",
-      eventsSectionLabel: "05 · Events",
+      eventsSectionLabel: "04 · Events",
       eventsSectionTitle: "Strong connections begin by coming together.",
       eventsSectionSummary: "Learn, connect and recharge alongside founders, experts and investors.",
+      eventWallLabel: "Three ways to take part",
+      eventWallCopy: "Learn from anywhere, meet deeply around the table and grow with the wider community.",
       gridView: "Grid",
       listView: "List",
       eventAgenda: "Agenda",
@@ -233,17 +327,25 @@
       eventHost: "Host",
       addCalendar: "Add to calendar",
       registerInterest: "Register interest",
-      eventDemoNote: "This is a presentation preview of the event experience.",
+      eventEnquire: "Ask about this event",
       interestSaved: "Interest noted. The production version will connect registration here.",
-      communityLabel: "06 · Sail together",
+      communityLabel: "03 · Sail together",
       communityTitle: "You are not making the journey alone.",
-      communityBody: "When you build with Flip One, you join a powerful startup community with access to exclusive events, expert knowledge and strategic partnerships.",
-      courseLabel: "07 · Next step",
-      courseTitle: "Ready to chart your course?",
-      courseBody: "Tell us where you are now and where you want to go. We will help design the next stage of your journey.",
+      communityBody: "Flip One combines practical events, specialist knowledge and carefully selected connections to help founders solve international growth challenges together.",
+      credibilityLabel: "Built on specialist experience",
+      credibilityTitle: "Based in Seoul. Connected internationally.",
+      credibility1Title: "International funding expertise",
+      credibility1Body: "Built on InsightMatches experience in international grants and consortium development.",
+      credibility2Title: "Korean market execution",
+      credibility2Body: "Market understanding and local connections for ventures entering Korea.",
+      credibility3Title: "A carefully selected network",
+      credibility3Body: "Specialists, operators and partners matched to the founder’s actual challenge.",
+      courseLabel: "04 · Next step",
+      courseTitle: "Where are you building from, and where do you want to grow?",
+      courseBody: "Tell us your current market, target market and biggest challenge. We will explore a practical next step with you.",
       footerLine: "A startup platform connecting Korea with the world.",
-      dialogLabel: "Chart your course",
-      dialogTitle: "Where are you heading?",
+      dialogLabel: "Discuss your route",
+      dialogTitle: "Where are you building from, and where do you want to grow?",
       close: "Close",
       nameLabel: "Name",
       emailLabel: "Email",
@@ -253,22 +355,23 @@
       stageScale: "Scaling",
       stageSustain: "Sustaining",
       helpLabel: "What do you need most right now?",
-      send: "Send enquiry",
-      formNote: "This is currently a presentation enquiry form.",
-      formSuccess: "Thank you. We will explore the next course together."
+      send: "Prepare discussion",
+      formNote: "This preview does not transmit or store personal information.",
+      formSuccess: "Preview complete. The information you entered was not submitted."
     }
   };
 
   var languageButtons = document.querySelectorAll("[data-language]");
   var activeLanguage = "ko";
-  var activeDirection = "inbound";
+  var activeDirection = document.querySelector("[data-direction]") ? "inbound" : "all";
 
   function setLanguage(language) {
     activeLanguage = language;
     var copy = translations[language] || translations.ko;
     document.documentElement.lang = language;
-    document.title = copy.title;
-    document.querySelector('meta[name="description"]').setAttribute("content", copy.description);
+    var pageKey = document.body.classList.contains("platform-page") ? "platform" : document.body.classList.contains("services-page") ? "services" : document.body.classList.contains("resources-page") ? "resources" : document.body.classList.contains("events-page") ? "events" : "";
+    document.title = pageKey ? copy[pageKey + "PageTitle"] : copy.title;
+    document.querySelector('meta[name="description"]').setAttribute("content", pageKey ? copy[pageKey + "Description"] : copy.description);
 
     document.querySelectorAll("[data-i18n]").forEach(function (element) {
       var key = element.getAttribute("data-i18n");
@@ -304,14 +407,7 @@
     });
   });
 
-  var people = [
-    { initials: "JK", image: "jiwon-kim.jpg", name: "김지원", nameEn: "Jiwon Kim", role: "바이오 보조금 전략가", roleEn: "Biotech Grant Strategist", location: "서울", locationEn: "Seoul", direction: "both", stage: "scaling", expertise: "funding", tags: "바이오 보조금 정부지원사업 한국 유럽 funding grant biotech korea eu", bio: "한국 바이오 스타트업의 정부지원사업과 유럽 공동연구 자금 전략을 설계합니다.", bioEn: "Designs Korean and European grant strategies for biotech startups." },
-    { initials: "MP", image: "minseo-park.jpg", name: "박민서", nameEn: "Minseo Park", role: "AI 공동창업자", roleEn: "AI Cofounder", location: "서울", locationEn: "Seoul", direction: "inbound", stage: "ideation", expertise: "cofounder", tags: "인공지능 제품 기술 공동창업자 ai product technology cofounder", bio: "초기 AI 제품의 기술 방향과 팀 구성을 함께 만듭니다.", bioEn: "Shapes technical direction and founding teams for early AI products." },
-    { initials: "SL", image: "sophie-laurent.jpg", name: "소피 로랑", nameEn: "Sophie Laurent", role: "EU 펀딩 전문가", roleEn: "EU Funding Specialist", location: "브뤼셀", locationEn: "Brussels", direction: "outbound", stage: "scaling", expertise: "funding", tags: "유럽 호라이즌 보조금 컨소시엄 eu europe horizon funding grant consortium", bio: "유럽 연구개발 컨소시엄과 Horizon Europe 제안서를 연결합니다.", bioEn: "Connects R&D consortia and Horizon Europe proposals." },
-    { initials: "DC", image: "daniel-cho.jpg", name: "조다니엘", nameEn: "Daniel Cho", role: "글로벌 시장 진출 자문", roleEn: "Global Market Entry Advisor", location: "싱가포르", locationEn: "Singapore", direction: "outbound", stage: "scaling", expertise: "market", tags: "해외진출 아시아 한국 싱가포르 파트너십 market entry asia korea singapore partnership", bio: "한국 스타트업의 아시아 시장 진출과 현지 파트너십을 지원합니다.", bioEn: "Supports Asian market entry and local partnerships for Korean startups." },
-    { initials: "HL", image: "hana-lee.jpg", name: "이하나", nameEn: "Hana Lee", role: "창업가 웰빙 코치", roleEn: "Founder Wellbeing Coach", location: "서울", locationEn: "Seoul", direction: "both", stage: "sustaining", expertise: "wellbeing", tags: "코칭 웰빙 회복탄력성 번아웃 창업가 coaching wellbeing resilience burnout founder", bio: "성장 과정에서 창업가의 회복탄력성과 지속가능한 리더십을 강화합니다.", bioEn: "Builds founder resilience and sustainable leadership through growth." },
-    { initials: "MC", image: "marcus-chen.jpg", name: "마커스 첸", nameEn: "Marcus Chen", role: "하드웨어 투자 파트너", roleEn: "Hardware Investment Partner", location: "타이베이", locationEn: "Taipei", direction: "inbound", stage: "scaling", expertise: "investment", tags: "투자자 하드웨어 제조 대만 투자 investor hardware manufacturing taiwan capital", bio: "하드웨어 창업팀을 아시아 투자자와 제조 네트워크에 연결합니다.", bioEn: "Connects hardware teams with Asian investors and manufacturing networks." }
-  ];
+  var people = [];
 
   var stageNames = {
     ideation: { ko: "아이디어 구체화", en: "Ideation" },
@@ -340,6 +436,52 @@
   var peopleReset = document.getElementById("people-reset");
   var matchNote = document.getElementById("match-note");
   var activePeopleQuery = "";
+  var activePersonId = "";
+
+  var searchAliases = {
+    funding: ["funding", "fund", "grant", "자금", "보조금"],
+    europe: ["europe", "eu", "horizon", "유럽", "호라이즌"],
+    korea: ["korea", "korean", "한국", "국내"],
+    market: ["market", "entry", "expansion", "시장", "진출"],
+    cofounder: ["cofounder", "founder", "team", "공동창업자", "창업자", "팀"],
+    wellbeing: ["wellbeing", "coach", "burnout", "resilience", "웰빙", "코칭", "번아웃", "회복탄력성"],
+    biotech: ["biotech", "bio", "life science", "바이오", "생명과학"]
+  };
+  var stopWords = ["the", "a", "an", "and", "or", "for", "with", "who", "can", "help", "find", "someone", "person", "need", "looking", "있는", "사람", "찾아", "주세요", "관련", "경험이", "도와줄"];
+
+  function localValue(value) { return value && value[activeLanguage] ? value[activeLanguage] : ""; }
+  function normaliseQuery(query) {
+    return query.toLowerCase().replace(/[.,!?()]/g, " ").split(/\s+/).map(function (token) {
+      return token.replace(/(으로|에서|에게|하고|과|와|을|를|이|가|은|는|의|에|도)$/u, "");
+    }).filter(function (token) { return token.length > 1 && stopWords.indexOf(token) === -1; });
+  }
+  function expandedTokens(tokens) {
+    var expanded = tokens.slice();
+    Object.keys(searchAliases).forEach(function (key) {
+      if (searchAliases[key].some(function (alias) { return tokens.indexOf(alias) !== -1; })) expanded = expanded.concat(searchAliases[key]);
+    });
+    return expanded.filter(function (token, index) { return expanded.indexOf(token) === index; });
+  }
+  function scorePerson(person, tokens) {
+    var fields = [
+      { text: localValue(person.help).join(" "), weight: 4 },
+      { text: localValue(person.role), weight: 3 },
+      { text: localValue(person.markets).join(" "), weight: 3 },
+      { text: person.keywords, weight: 2 },
+      { text: [localValue(person.name), localValue(person.location), localValue(person.bio), localValue(person.longBio)].join(" "), weight: 1 }
+    ];
+    var labels = [];
+    var score = 0;
+    tokens.forEach(function (token) {
+      fields.forEach(function (field) {
+        if (field.text.toLowerCase().split(/\s+/).some(function (word) { return word === token || word.indexOf(token) === 0; })) {
+          score += field.weight;
+          if (labels.length < 3 && labels.indexOf(token) === -1) labels.push(token);
+        }
+      });
+    });
+    return { score: score, labels: labels };
+  }
 
   function setFilterOptions(select, names) {
     if (!select) return;
@@ -359,11 +501,10 @@
     setFilterOptions(peopleStage, stageNames);
     setFilterOptions(peopleDirection, directionNames);
     setFilterOptions(peopleExpertise, expertiseNames);
-    var tokens = activePeopleQuery.toLowerCase().split(/\s+/).filter(function (token) { return token.length > 1; });
+    var tokens = expandedTokens(normaliseQuery(activePeopleQuery));
     var matches = people.map(function (person) {
-      var haystack = [person.name, person.nameEn, person.role, person.roleEn, person.location, person.locationEn, person.tags, person.bio, person.bioEn].join(" ").toLowerCase();
-      var score = tokens.reduce(function (total, token) { return total + (haystack.indexOf(token) !== -1 ? 1 : 0); }, 0);
-      return { person: person, score: score };
+      var result = scorePerson(person, tokens);
+      return { person: person, score: result.score, labels: result.labels };
     }).filter(function (entry) {
       var person = entry.person;
       var filtersMatch = (!peopleDirection.value || person.direction === peopleDirection.value || person.direction === "both") && (!peopleStage.value || person.stage === peopleStage.value) && (!peopleExpertise.value || person.expertise === peopleExpertise.value);
@@ -375,7 +516,8 @@
       var person = entry.person;
       var card = document.createElement("article");
       card.className = "person-card";
-      card.innerHTML = '<div class="person-card__portrait"><img src="Assets/People/' + person.image + '" alt="' + (activeLanguage === "ko" ? person.name : person.nameEn) + '" loading="lazy"></div><div class="person-card__head"><span class="person-location">' + (activeLanguage === "ko" ? person.location : person.locationEn) + '</span></div><h4>' + (activeLanguage === "ko" ? person.name : person.nameEn) + '</h4><strong>' + (activeLanguage === "ko" ? person.role : person.roleEn) + '</strong><p>' + (activeLanguage === "ko" ? person.bio : person.bioEn) + '</p><div class="person-tags"><span>' + stageNames[person.stage][activeLanguage] + '</span><span>' + expertiseNames[person.expertise][activeLanguage] + '</span></div>';
+      var reason = tokens.length && entry.labels.length ? '<p class="person-match"><b>' + translations[activeLanguage].matchedBecause + ':</b> ' + entry.labels.join(" · ") + '</p>' : "";
+      card.innerHTML = '<button class="person-card__button" type="button" data-person-id="' + person.id + '"><div class="person-card__portrait"><img src="Assets/People/' + person.image + '" alt="' + localValue(person.name) + '" loading="lazy"></div><div class="person-card__head"><span class="person-direction">' + directionNames[person.direction][activeLanguage] + '</span><span class="person-location">' + localValue(person.location) + '</span></div><h4>' + localValue(person.name) + '</h4><strong>' + localValue(person.role) + '</strong><p>' + localValue(person.bio) + '</p><div class="person-tags"><span>' + stageNames[person.stage][activeLanguage] + '</span><span>' + expertiseNames[person.expertise][activeLanguage] + '</span><span>' + person.languages.join(" · ") + '</span></div>' + reason + '<span class="person-card__cta">' + translations[activeLanguage].viewProfile + ' →</span></button>';
       peopleGrid.appendChild(card);
     });
     peopleCount.textContent = String(matches.length).padStart(2, "0");
@@ -400,16 +542,49 @@
     renderPeopleDirectory();
   });
 
+  var personDialog = document.getElementById("person-dialog");
+  var introForm = document.getElementById("intro-form");
+  function openPerson(id) {
+    var person = people.find(function (item) { return item.id === id; });
+    if (!person || !personDialog) return;
+    activePersonId = id;
+    document.getElementById("person-dialog-image").src = "Assets/People/" + person.image;
+    document.getElementById("person-dialog-image").alt = localValue(person.name);
+    document.getElementById("person-dialog-name").textContent = localValue(person.name);
+    document.getElementById("person-dialog-role").textContent = localValue(person.role);
+    document.getElementById("person-dialog-location").textContent = localValue(person.location) + " · " + stageNames[person.stage][activeLanguage];
+    document.getElementById("person-dialog-direction").textContent = directionNames[person.direction][activeLanguage];
+    document.getElementById("person-dialog-bio").textContent = localValue(person.longBio);
+    document.getElementById("person-dialog-help").innerHTML = localValue(person.help).map(function (item) { return "<span>" + item + "</span>"; }).join("");
+    document.getElementById("person-dialog-markets").textContent = localValue(person.markets).join(" · ");
+    document.getElementById("person-dialog-languages").textContent = person.languages.join(" · ");
+    document.getElementById("intro-person-id").value = person.id;
+    introForm.hidden = true;
+    document.getElementById("intro-success").hidden = true;
+    personDialog.showModal();
+  }
+  if (peopleGrid) peopleGrid.addEventListener("click", function (event) {
+    var button = event.target.closest("[data-person-id]");
+    if (button) openPerson(button.getAttribute("data-person-id"));
+  });
+  document.querySelectorAll("[data-close-person]").forEach(function (button) { button.addEventListener("click", function () { personDialog.close(); }); });
+  var introButton = document.getElementById("person-intro-button");
+  if (introButton) introButton.addEventListener("click", function () { introForm.hidden = false; introButton.hidden = true; introForm.querySelector("input[name=name]").focus(); });
+  if (introForm) introForm.addEventListener("submit", function (event) { event.preventDefault(); document.getElementById("intro-success").hidden = false; });
+  if (personDialog) personDialog.addEventListener("close", function () { if (introButton) introButton.hidden = false; activePersonId = ""; });
+
+  if (peopleGrid) fetch("people.json").then(function (response) { if (!response.ok) throw new Error("Directory unavailable"); return response.json(); }).then(function (data) { people = data; renderPeopleDirectory(); }).catch(function () { matchNote.textContent = activeLanguage === "ko" ? "디렉토리를 불러오지 못했습니다." : "The directory could not be loaded."; });
+
   var servicePathCopy = {
     inbound: {
-      ideation: { ko: ["한국 시장에 맞는 아이디어와 진입 가설을 검증합니다.", "한국 시장 및 고객 검증", "현지 공동창업자와 전문가", "한국 초기 자금 전략", "검증된 한국 시장 가설과 첫 현지 실행 계획을 갖추게 됩니다."], en: ["Validate your idea and entry assumptions for the Korean market.", "Korean market and customer validation", "Local cofounders and specialists", "Korean early funding strategy", "Leave with a validated Korean market hypothesis and a first local action plan."] },
-      scaling: { ko: ["한국에서 성장하는 데 필요한 자금, 파트너십, 현지 역량을 구축합니다.", "한국 보조금 신청 지원", "국내 투자자 및 파트너 연결", "현지화와 시장 진입", "명확한 한국 진입 경로와 자금 전략, 실행 파트너 네트워크를 갖추게 됩니다."], en: ["Build the funding, partnerships and local capability required to grow in Korea.", "Korean grant application support", "Local investor and partner connections", "Localisation and market entry", "Leave with a clear Korean entry route, funding strategy and local partner network."] },
-      sustaining: { ko: ["한국에서 장기적으로 운영할 수 있는 조직과 리더십 기반을 강화합니다.", "현지 운영과 리더십", "창업가 웰빙과 회복탄력성", "한국 스타트업 커뮤니티", "한국에서 지속적으로 성장할 수 있는 현지 운영 리듬과 지원망을 구축합니다."], en: ["Strengthen the organisation and leadership needed to operate in Korea for the long term.", "Local operations and leadership", "Founder wellbeing and resilience", "Korean startup community", "Build a sustainable local operating rhythm and support network in Korea."] }
+      ideation: { ko: ["한국 시장에서 검증할 기회와 진입 가설을 정의합니다.", "시장 진출 진단", "한국 시장 및 고객 가설", "초기 자금 경로", "목표 고객, 우선 프로그램과 첫 30일 실행안을 담은 한국 진출 진단 메모를 제공합니다."], en: ["Define the opportunity and entry assumptions to test in Korea.", "Market-entry diagnostic", "Korean customer and market hypothesis", "Early funding route", "A Korea entry memo defining the target customer, priority programme and first 30-day action plan."] },
+      scaling: { ko: ["한국에서 실행하는 데 필요한 자금과 현지 파트너를 구체화합니다.", "지원사업 및 자금 기회 목록", "현지 파트너와 전문가 탐색", "신청 및 진입 실행 계획", "우선 자금 기회, 파트너 후보와 단계별 실행 계획을 제공합니다."], en: ["Specify the funding and local partners required to execute in Korea.", "Programme and funding opportunity shortlist", "Local partner and specialist search", "Application and entry action plan", "A prioritised funding shortlist, partner candidates and phased execution plan."] },
+      sustaining: { ko: ["한국에서 지속적으로 운영할 수 있는 조직과 창업가의 기반을 강화합니다.", "창업가 운영 리듬 진단", "리더십 및 웰빙 코칭 계획", "선별된 커뮤니티 연결", "창업가의 에너지, 리더십과 현지 네트워크를 위한 분기별 운영 계획을 제공합니다."], en: ["Strengthen the founder and organisation for sustained operation in Korea.", "Founder operating-rhythm review", "Leadership and wellbeing coaching plan", "Selected community connections", "A quarterly operating plan for founder energy, leadership and local network development."] }
     },
     outbound: {
-      ideation: { ko: ["해외 시장에 맞는 기회와 첫 진출 가설을 검증합니다.", "글로벌 시장 우선순위 설정", "해외 고객 및 기회 검증", "국제 자금 전략", "우선 진출 시장과 검증 가능한 첫 해외 실험을 갖추게 됩니다."], en: ["Validate the opportunity and first entry hypothesis for overseas markets.", "Global market prioritisation", "Overseas customer validation", "International funding strategy", "Leave with a priority market and a testable first overseas experiment."] },
-      scaling: { ko: ["글로벌 성장에 필요한 자금, 파트너십, 국제 역량을 구축합니다.", "국제 보조금 신청 지원", "글로벌 투자자 연결", "해외 파트너십과 시장 진출", "명확한 해외 진출 계획과 국제 자금 경로, 실행 파트너를 갖추게 됩니다."], en: ["Build the funding, partnerships and international capability required for global growth.", "International grant support", "Global investor connections", "Overseas partnerships and market entry", "Leave with a clear overseas plan, international funding route and execution partners."] },
-      sustaining: { ko: ["국경을 넘어 성장하는 팀과 창업가의 지속가능성을 강화합니다.", "국제 운영과 분산 팀", "창업가 코칭과 회복탄력성", "글로벌 창업가 커뮤니티", "국제 조직의 실행력과 창업가의 에너지를 보호하는 운영 방식을 구축합니다."], en: ["Strengthen the team and founder for sustainable growth across borders.", "International operations and distributed teams", "Founder coaching and resilience", "Global founder community", "Build an operating model that protects founder energy and international execution."] }
+      ideation: { ko: ["우선 진출할 해외 시장과 검증할 기회를 정의합니다.", "해외 시장 우선순위 진단", "현지 고객 및 기회 가설", "국제 자금 경로", "우선 시장, 검증 가설과 첫 30일 실험을 담은 글로벌 확장 진단 메모를 제공합니다."], en: ["Define the priority international market and opportunity to validate.", "International market-priority diagnostic", "Local customer and opportunity hypothesis", "International funding route", "A global expansion memo defining the priority market, validation hypothesis and first 30-day experiment."] },
+      scaling: { ko: ["해외 확장에 필요한 자금, 컨소시엄과 실행 파트너를 구체화합니다.", "국제 보조금 기회 목록", "파트너 및 컨소시엄 탐색", "제안서와 시장 진입 계획", "우선 자금 기회, 파트너 후보와 국제 실행 로드맵을 제공합니다."], en: ["Specify the funding, consortia and execution partners required for expansion.", "International grant opportunity shortlist", "Partner and consortium search", "Proposal and market-entry plan", "A prioritised funding shortlist, partner candidates and international execution roadmap."] },
+      sustaining: { ko: ["국경을 넘어 운영하는 팀과 창업가의 지속가능성을 강화합니다.", "국제 운영 리듬 진단", "창업가 코칭 계획", "선별된 글로벌 커뮤니티 연결", "국제 실행력과 창업가의 에너지를 보호하는 분기별 운영 계획을 제공합니다."], en: ["Strengthen the founder and team operating across borders.", "International operating-rhythm review", "Founder coaching plan", "Selected global community connections", "A quarterly operating plan designed to protect founder energy and international execution."] }
     }
   };
   var activeServiceStage = "scaling";
@@ -433,7 +608,7 @@
     serviceCards.forEach(function (card) {
       var isActive = card.getAttribute("data-service-stage") === activeServiceStage;
       card.classList.toggle("stage-card--active", isActive);
-      card.setAttribute("aria-selected", String(isActive));
+      card.setAttribute("aria-pressed", String(isActive));
     });
     serviceDetailTitle.textContent = stageNames[activeServiceStage][activeLanguage];
     serviceDetailCopy.textContent = pathway[activeServiceStage][activeLanguage][4];
@@ -463,9 +638,9 @@
       button.classList.toggle("is-active", isActive);
       button.setAttribute("aria-pressed", String(isActive));
     });
-    if (peopleDirection) peopleDirection.value = direction;
+    if (peopleDirection) peopleDirection.value = direction === "all" ? "" : direction;
     var formDirection = document.querySelector('#course-form select[name="direction"]');
-    if (formDirection) formDirection.value = direction;
+    if (formDirection && direction !== "all") formDirection.value = direction;
     renderServiceStage();
     renderPeopleDirectory();
     renderResources();
@@ -511,9 +686,9 @@
     resources.filter(function (resource) {
       var resourceDirection = resourceDirections[resource.id] || "both";
       var categoryMatch = activeResourceCategory === "all" || resource.category === activeResourceCategory;
-      var haystack = [resource.title, resource.titleEn, resource.summary, resource.summaryEn].join(" ").toLowerCase();
+      var haystack = [resource.title, resource.titleEn, resource.summary, resource.summaryEn, resourceCategories[resource.category].ko, resourceCategories[resource.category].en].concat(resource.points, resource.pointsEn).join(" ").toLowerCase();
       var queryMatch = !activeResourceQuery || haystack.indexOf(activeResourceQuery) !== -1;
-      return categoryMatch && queryMatch && (resourceDirection === activeDirection || resourceDirection === "both");
+      return categoryMatch && queryMatch && (activeDirection === "all" || resourceDirection === activeDirection || resourceDirection === "both");
     }).forEach(function (resource, index) {
       var card = document.createElement("article");
       card.className = "resource-card";
@@ -556,18 +731,17 @@
 
   var eventCategories = {
     all: { ko: "전체", en: "All" },
-    networking: { ko: "네트워킹", en: "Networking" },
-    funding: { ko: "자금", en: "Funding" },
-    learning: { ko: "러닝", en: "Learning" },
-    wellbeing: { ko: "웰빙", en: "Wellbeing" }
+    online: { ko: "온라인 세션", en: "Online Sessions" },
+    table: { ko: "파운더스 테이블", en: "Founders’ Table" },
+    community: { ko: "커뮤니티 이벤트", en: "Community Events" }
   };
   var events = [
-    { id: "founder-night", category: "networking", icon: "users-three.svg", day: "18", month: "SEP", dateKo: "2026년 9월 18일 · 오후 7시", dateEn: "18 September 2026 · 7:00 PM", start: "20260918T100000Z", end: "20260918T120000Z", location: "서울 성수", locationEn: "Seongsu, Seoul", capacity: 60, title: "Seoul Founder Night", titleEn: "Seoul Founder Night", summary: "국경과 산업을 넘어 새로운 동료와 협력자를 만나는 편안한 창업가 모임입니다.", summaryEn: "A relaxed founder gathering for meeting new collaborators across borders and industries.", agenda: ["환영과 연결", "창업가 이야기", "오픈 네트워킹"], agendaEn: ["Welcome and connections", "Founder stories", "Open networking"], audience: "초기 및 성장 단계 창업가", audienceEn: "Early and growth-stage founders", host: "Flip One Community" },
-    { id: "grant-clinic", category: "funding", icon: "funding.svg", day: "02", month: "OCT", dateKo: "2026년 10월 2일 · 오후 4시", dateEn: "2 October 2026 · 4:00 PM", start: "20261002T070000Z", end: "20261002T090000Z", location: "온라인", locationEn: "Online", capacity: 30, title: "보조금 전략 클리닉", titleEn: "Grant Strategy Clinic", summary: "현재 프로젝트에 맞는 지원사업과 다음 신청 단계를 전문가와 함께 점검합니다.", summaryEn: "Review suitable funding routes and the next application step with specialists.", agenda: ["기회 적합성 진단", "신청 논리 점검", "공개 질의응답"], agendaEn: ["Opportunity fit diagnostic", "Application logic review", "Open Q&A"], audience: "보조금 신청을 준비하는 팀", audienceEn: "Teams preparing grant applications", host: "Flip One Funding Team" },
-    { id: "horizon-briefing", category: "learning", icon: "learning.svg", day: "15", month: "OCT", dateKo: "2026년 10월 15일 · 오후 6시", dateEn: "15 October 2026 · 6:00 PM", start: "20261015T090000Z", end: "20261015T103000Z", location: "서울 종로", locationEn: "Jongno, Seoul", capacity: 45, title: "Horizon Europe 브리핑", titleEn: "Horizon Europe Briefing", summary: "한국 스타트업을 위한 유럽 공동연구 자금과 컨소시엄 참여의 핵심을 소개합니다.", summaryEn: "An introduction to European collaborative funding and consortium participation for Korean startups.", agenda: ["Horizon Europe 구조", "스타트업의 역할", "파트너 탐색 전략"], agendaEn: ["Horizon Europe structure", "The startup role", "Partner search strategy"], audience: "연구개발 중심 스타트업", audienceEn: "Research-led startups", host: "Flip One × InsightMatches" },
-    { id: "cofounder-table", category: "networking", icon: "users-three.svg", day: "29", month: "OCT", dateKo: "2026년 10월 29일 · 오후 7시", dateEn: "29 October 2026 · 7:00 PM", start: "20261029T100000Z", end: "20261029T120000Z", location: "서울 강남", locationEn: "Gangnam, Seoul", capacity: 24, title: "Cofounder Table", titleEn: "Cofounder Table", summary: "역할과 가치관을 중심으로 잠재적 공동창업자를 깊이 있게 알아가는 소규모 세션입니다.", summaryEn: "A small-group session for meeting potential cofounders through roles and values.", agenda: ["창업 동기 소개", "역할 기반 대화", "후속 연결 선택"], agendaEn: ["Founder motivations", "Role-based conversations", "Choose follow-up connections"], audience: "공동창업자를 찾는 예비 창업가", audienceEn: "Prospective founders seeking a cofounder", host: "Flip One People" },
-    { id: "market-lab", category: "learning", icon: "globe.svg", day: "12", month: "NOV", dateKo: "2026년 11월 12일 · 오후 5시", dateEn: "12 November 2026 · 5:00 PM", start: "20261112T080000Z", end: "20261112T100000Z", location: "서울 마포", locationEn: "Mapo, Seoul", capacity: 36, title: "Global Market Entry Lab", titleEn: "Global Market Entry Lab", summary: "해외 시장 가설을 검증하고 가장 작은 현지 실험을 설계하는 워크숍입니다.", summaryEn: "A workshop for validating an overseas market and designing the smallest local experiment.", agenda: ["시장 우선순위", "고객 가설", "30일 실험 설계"], agendaEn: ["Market prioritisation", "Customer assumptions", "Design a 30-day experiment"], audience: "해외 진출을 준비하는 팀", audienceEn: "Teams preparing international expansion", host: "Flip One Market Team" },
-    { id: "founder-reset", category: "wellbeing", icon: "heart.svg", day: "27", month: "NOV", dateKo: "2026년 11월 27일 · 오전 10시", dateEn: "27 November 2026 · 10:00 AM", start: "20261127T010000Z", end: "20261127T030000Z", location: "서울 한남", locationEn: "Hannam, Seoul", capacity: 20, title: "Founder Reset Morning", titleEn: "Founder Reset Morning", summary: "집중력과 에너지를 회복하고 지속가능한 주간 리듬을 설계하는 아침 세션입니다.", summaryEn: "A morning session to restore focus and design a more sustainable weekly rhythm.", agenda: ["에너지 체크인", "움직임과 호흡", "주간 리듬 설계"], agendaEn: ["Energy check-in", "Movement and breathing", "Weekly rhythm design"], audience: "회복과 재정비가 필요한 창업가", audienceEn: "Founders needing recovery and reset", host: "Flip One Wellbeing" }
+    { id: "founder-night", category: "community", image: "reference-01.jpg", accessKo: "오픈 RSVP", accessEn: "Open RSVP", icon: "users-three.svg", day: "18", month: "SEP", dateKo: "2026년 9월 18일 · 오후 7시", dateEn: "18 September 2026 · 7:00 PM", start: "20260918T100000Z", end: "20260918T120000Z", location: "서울 성수", locationEn: "Seongsu, Seoul", capacity: 60, title: "Seoul Founder Night", titleEn: "Seoul Founder Night", summary: "국경과 산업을 넘어 새로운 동료와 협력자를 만나는 편안한 창업가 모임입니다.", summaryEn: "A relaxed founder gathering for meeting new collaborators across borders and industries.", agenda: ["환영과 연결", "창업가 이야기", "오픈 네트워킹"], agendaEn: ["Welcome and connections", "Founder stories", "Open networking"], audience: "초기 및 성장 단계 창업가", audienceEn: "Early and growth-stage founders", host: "Flip One Community" },
+    { id: "grant-clinic", category: "online", image: "reference-02.jpg", accessKo: "온라인 · 오픈", accessEn: "Online · Open", icon: "funding.svg", day: "02", month: "OCT", dateKo: "2026년 10월 2일 · 오후 4시", dateEn: "2 October 2026 · 4:00 PM", start: "20261002T070000Z", end: "20261002T090000Z", location: "온라인", locationEn: "Online", capacity: 30, title: "보조금 전략 클리닉", titleEn: "Grant Strategy Clinic", summary: "현재 프로젝트에 맞는 지원사업과 다음 신청 단계를 전문가와 함께 점검합니다.", summaryEn: "Review suitable funding routes and the next application step with specialists.", agenda: ["기회 적합성 진단", "신청 논리 점검", "공개 질의응답"], agendaEn: ["Opportunity fit diagnostic", "Application logic review", "Open Q&A"], audience: "보조금 신청을 준비하는 팀", audienceEn: "Teams preparing grant applications", host: "Flip One Funding Team" },
+    { id: "horizon-briefing", category: "online", image: "reference-03.jpg", accessKo: "라이브 웨비나", accessEn: "Live webinar", icon: "learning.svg", day: "15", month: "OCT", dateKo: "2026년 10월 15일 · 오후 6시", dateEn: "15 October 2026 · 6:00 PM", start: "20261015T090000Z", end: "20261015T103000Z", location: "서울 종로", locationEn: "Jongno, Seoul", capacity: 45, title: "Horizon Europe 브리핑", titleEn: "Horizon Europe Briefing", summary: "한국 스타트업을 위한 유럽 공동연구 자금과 컨소시엄 참여의 핵심을 소개합니다.", summaryEn: "An introduction to European collaborative funding and consortium participation for Korean startups.", agenda: ["Horizon Europe 구조", "스타트업의 역할", "파트너 탐색 전략"], agendaEn: ["Horizon Europe structure", "The startup role", "Partner search strategy"], audience: "연구개발 중심 스타트업", audienceEn: "Research-led startups", host: "Flip One × InsightMatches" },
+    { id: "cofounder-table", category: "table", image: "reference-05.jpg", accessKo: "신청제 · 24석", accessEn: "Application · 24 seats", icon: "users-three.svg", day: "29", month: "OCT", dateKo: "2026년 10월 29일 · 오후 7시", dateEn: "29 October 2026 · 7:00 PM", start: "20261029T100000Z", end: "20261029T120000Z", location: "서울 강남", locationEn: "Gangnam, Seoul", capacity: 24, title: "Cofounder Table", titleEn: "Cofounder Table", summary: "역할과 가치관을 중심으로 잠재적 공동창업자를 깊이 있게 알아가는 소규모 세션입니다.", summaryEn: "A small-group session for meeting potential cofounders through roles and values.", agenda: ["창업 동기 소개", "역할 기반 대화", "후속 연결 선택"], agendaEn: ["Founder motivations", "Role-based conversations", "Choose follow-up connections"], audience: "공동창업자를 찾는 예비 창업가", audienceEn: "Prospective founders seeking a cofounder", host: "Flip One People" },
+    { id: "market-lab", category: "community", image: "reference-04.jpg", accessKo: "오픈 워크숍", accessEn: "Open workshop", icon: "globe.svg", day: "12", month: "NOV", dateKo: "2026년 11월 12일 · 오후 5시", dateEn: "12 November 2026 · 5:00 PM", start: "20261112T080000Z", end: "20261112T100000Z", location: "서울 마포", locationEn: "Mapo, Seoul", capacity: 36, title: "Global Market Entry Lab", titleEn: "Global Market Entry Lab", summary: "해외 시장 가설을 검증하고 가장 작은 현지 실험을 설계하는 워크숍입니다.", summaryEn: "A workshop for validating an overseas market and designing the smallest local experiment.", agenda: ["시장 우선순위", "고객 가설", "30일 실험 설계"], agendaEn: ["Market prioritisation", "Customer assumptions", "Design a 30-day experiment"], audience: "해외 진출을 준비하는 팀", audienceEn: "Teams preparing international expansion", host: "Flip One Market Team" },
+    { id: "founder-reset", category: "table", image: "reference-06.jpg", accessKo: "초대 및 신청", accessEn: "Invite or apply", icon: "heart.svg", day: "27", month: "NOV", dateKo: "2026년 11월 27일 · 오전 10시", dateEn: "27 November 2026 · 10:00 AM", start: "20261127T010000Z", end: "20261127T030000Z", location: "서울 한남", locationEn: "Hannam, Seoul", capacity: 20, title: "Founder Reset Morning", titleEn: "Founder Reset Morning", summary: "집중력과 에너지를 회복하고 지속가능한 주간 리듬을 설계하는 아침 세션입니다.", summaryEn: "A morning session to restore focus and design a more sustainable weekly rhythm.", agenda: ["에너지 체크인", "움직임과 호흡", "주간 리듬 설계"], agendaEn: ["Energy check-in", "Movement and breathing", "Weekly rhythm design"], audience: "회복과 재정비가 필요한 창업가", audienceEn: "Founders needing recovery and reset", host: "Flip One Wellbeing" }
   ];
   var eventGrid = document.getElementById("event-grid");
   var eventFilters = document.getElementById("event-filters");
@@ -592,7 +766,7 @@
     events.filter(function (item) { return activeEventCategory === "all" || item.category === activeEventCategory; }).forEach(function (item, index) {
       var card = document.createElement("article");
       card.className = "event-card" + (index === 0 && activeEventCategory === "all" ? " event-card--featured" : "");
-      card.innerHTML = '<div class="event-card__date"><b>' + item.day + '</b><span>' + item.month + '</span></div><div class="event-card__content"><div class="event-card__category"><img src="Assets/Icons/' + item.icon + '" alt=""><span>' + eventCategories[item.category][activeLanguage] + '</span></div><h3>' + (activeLanguage === "ko" ? item.title : item.titleEn) + '</h3><p>' + (activeLanguage === "ko" ? item.summary : item.summaryEn) + '</p><div class="event-card__meta"><span>' + (activeLanguage === "ko" ? item.location : item.locationEn) + '</span><span>' + item.capacity + (activeLanguage === "ko" ? '명' : ' seats') + '</span></div></div><button type="button" data-event-id="' + item.id + '" aria-label="' + translations[activeLanguage].openEvent + '">→</button>';
+      card.innerHTML = '<button class="event-card__hit" type="button" data-event-id="' + item.id + '" aria-label="' + translations[activeLanguage].openEvent + '"><img class="event-card__poster" src="Assets/Events/' + item.image + '" alt="" loading="lazy"><span class="event-card__shade"></span><div class="event-card__date"><b>' + item.day + '</b><span>' + item.month + '</span></div><div class="event-card__content"><div class="event-card__category"><span>' + eventCategories[item.category][activeLanguage] + '</span><em>' + (activeLanguage === "ko" ? item.accessKo : item.accessEn) + '</em></div><h3>' + (activeLanguage === "ko" ? item.title : item.titleEn) + '</h3><p>' + (activeLanguage === "ko" ? item.summary : item.summaryEn) + '</p><div class="event-card__meta"><span>' + (activeLanguage === "ko" ? item.location : item.locationEn) + '</span><span>' + item.capacity + (activeLanguage === "ko" ? '명' : ' seats') + '</span></div></div><span class="event-card__arrow">↗</span></button>';
       eventGrid.appendChild(card);
     });
   }
@@ -602,13 +776,14 @@
     if (!activeEvent || !eventDialog) return;
     document.getElementById("event-dialog-category").textContent = eventCategories[activeEvent.category][activeLanguage];
     document.getElementById("event-dialog-title").textContent = activeLanguage === "ko" ? activeEvent.title : activeEvent.titleEn;
-    document.getElementById("event-dialog-meta").innerHTML = '<span>' + (activeLanguage === "ko" ? activeEvent.dateKo : activeEvent.dateEn) + '</span><span>' + (activeLanguage === "ko" ? activeEvent.location : activeEvent.locationEn) + '</span><span>' + activeEvent.capacity + '</span>';
+    document.getElementById("event-dialog-meta").innerHTML = '<span>' + (activeLanguage === "ko" ? activeEvent.dateKo : activeEvent.dateEn) + '</span><span>' + (activeLanguage === "ko" ? activeEvent.location : activeEvent.locationEn) + '</span><span>' + activeEvent.capacity + (activeLanguage === "ko" ? '명' : ' seats') + '</span>';
     document.getElementById("event-dialog-summary").textContent = activeLanguage === "ko" ? activeEvent.summary : activeEvent.summaryEn;
     var agenda = activeLanguage === "ko" ? activeEvent.agenda : activeEvent.agendaEn;
     document.getElementById("event-dialog-agenda").innerHTML = agenda.map(function (item) { return "<li>" + item + "</li>"; }).join("");
     document.getElementById("event-dialog-audience").textContent = activeLanguage === "ko" ? activeEvent.audience : activeEvent.audienceEn;
     document.getElementById("event-dialog-host").textContent = activeEvent.host;
-    document.querySelector(".event-dialog__note").hidden = true;
+    var eventNote = document.querySelector(".event-dialog__note");
+    if (eventNote) eventNote.hidden = true;
     if (typeof eventDialog.showModal === "function") eventDialog.showModal();
   }
 
@@ -649,13 +824,6 @@
   });
   var eventCalendarButton = document.getElementById("event-calendar");
   if (eventCalendarButton) eventCalendarButton.addEventListener("click", downloadEventCalendar);
-  var eventRegisterButton = document.querySelector(".event-register");
-  if (eventRegisterButton) eventRegisterButton.addEventListener("click", function () {
-    var note = document.querySelector(".event-dialog__note");
-    note.textContent = translations[activeLanguage].interestSaved;
-    note.hidden = false;
-  });
-
   var savedLanguage = "ko";
   try { savedLanguage = localStorage.getItem("flip-one-language") || "ko"; } catch (error) {}
   setLanguage(savedLanguage === "en" ? "en" : "ko");
