@@ -6,7 +6,7 @@
   var copy = {
     en: {
       eyebrow: "What you build with", title: "Your venture. Supported by a connected studio.",
-      lead: "Practical tools to move work forward, relevant people and preparation for suitable funding pathways.", venture: "Your venture",
+      lead: "Practical tools to move work forward, relevant people and preparation for suitable funding pathways.",
       name0: "Build & operate", short0: "Turn ideas into practical work",
       name1: "People & network", short1: "Bring relevant experience around you",
       name2: "Funding & readiness", short2: "Prepare for appropriate capital pathways",
@@ -18,7 +18,7 @@
     },
     ko: {
       eyebrow: "함께 만드는 기반", title: "당신의 벤처를 지원하는 세 가지 기반.",
-      lead: "실행을 돕는 도구, 필요한 경험을 가진 사람, 적합한 자금 경로를 위한 준비.", venture: "당신의 벤처",
+      lead: "실행을 돕는 도구, 필요한 경험을 가진 사람, 적합한 자금 경로를 위한 준비.",
       name0: "개발과 운영", short0: "아이디어를 실질적인 실행으로",
       name1: "사람과 네트워크", short1: "필요한 경험을 연결합니다",
       name2: "자금 전략과 준비", short2: "적합한 자금 경로를 준비합니다",

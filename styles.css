@@ -504,6 +504,10 @@ html[lang="ko"] :is(button, input, select, textarea, label, .desktop-nav, .mobil
 }
 
 .value-card p { max-width: 280px; margin: 0; color: var(--muted); font-size: 0.92rem; }
+.value-grid--method { grid-template-columns: repeat(3, 1fr); border: 0; border-radius: 0; background: transparent; gap: 32px; }
+.value-grid--method .value-card { min-height: 0; padding: 24px 0; border: 0; border-top: 1px solid var(--line); }
+.value-grid--method .value-card__index { display: block; margin-bottom: 28px; font-size: .8125rem; }
+.value-grid--method .value-card__line { display: none; }
 
 .value-card__line {
   position: absolute;
@@ -906,8 +910,6 @@ html.person-panel-open { overflow: hidden; scrollbar-gutter: stable; }
 .layers-stack { position: relative; height: 480px; isolation: isolate; }
 .layers-stack::before { content: ''; position: absolute; inset: 16% -3% 0; z-index: -1; background: radial-gradient(ellipse, #cbdcff70, transparent 68%); }
 .layers-stack::after { content: ''; position: absolute; width: 65%; height: 38px; bottom: 10px; left: 18%; border-radius: 50%; background: #173d8c22; filter: blur(22px); }
-.layers-venture { position: absolute; top: 0; left: 12%; font-size: .75rem; letter-spacing: .12em; font-weight: 600; color: #536176; }
-.layers-venture::before { content: ''; display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 10px; background: #1647d8; box-shadow: 0 0 0 5px #1647d810; }
 .layers-stack button { position: absolute; left: 10%; top: 64px; z-index: 3; display: flex; align-items: center; gap: 18px; width: 80%; height: 174px; padding: 28px; border: 1px solid #c5d0e0; border-radius: 20px; background: linear-gradient(135deg, #fffffff5, #eef3fbea); color: #18304e; text-align: left; font: inherit; cursor: pointer; transform: perspective(950px) rotateX(48deg) rotateZ(-22deg); box-shadow: -2px 5px 0 #c9d4e5, -8px 22px 35px #20365b16, inset 0 1px 0 #fff; transition: transform 250ms ease, box-shadow 250ms ease; }
 .layers-stack button:nth-of-type(2) { top: 168px; z-index: 2; background: linear-gradient(135deg, #e5f1fff5, #a9c9f6eb); border-color: #9ebbe4; box-shadow: -2px 5px 0 #8caedb, -8px 22px 35px #20365b20, inset 0 1px 0 #fff9; }
 .layers-stack button:nth-of-type(3) { top: 272px; z-index: 1; background: linear-gradient(135deg, #3264e8, #163bba); color: #fff; border-color: #507ced; box-shadow: -2px 5px 0 #102c87, -8px 22px 35px #20365b26, inset 0 1px 0 #ffffff60; }
