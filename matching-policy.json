@@ -1,0 +1,15 @@
+{
+  "marketIntent": "market|expan|enter|launch|시장|진출|확장",
+  "countries": [
+    {"name":"France","aliases":["france","french","français","francais","프랑스"]},
+    {"name":"Korea","aliases":["korea","korean","한국"]},
+    {"name":"Germany","aliases":["germany","german","독일"]},
+    {"name":"Thailand","aliases":["thailand","thai","태국"]},
+    {"name":"Japan","aliases":["japan","japanese","일본"]},
+    {"name":"United States","aliases":["united states","usa","미국"]},
+    {"name":"United Kingdom","aliases":["united kingdom","uk","british","영국"]},
+    {"name":"China","aliases":["china","chinese","중국"]},
+    {"name":"Russia","aliases":["russia","russian","러시아"]},
+    {"name":"Singapore","aliases":["singapore","singaporean","싱가포르"]}
+  ]
+}

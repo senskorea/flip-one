@@ -5,9 +5,23 @@
   var translations = {
     ko: {
       title: "Flip One | 스타트업의 길을 밝히는 등대",
-      description: "Flip One은 해외 벤처의 한국 진출과 한국 기반 비즈니스의 글로벌 확장을 지원하는 서울 기반 벤처 플랫폼입니다.",
+      description: "Flip One은 해외 벤처의 한국 진출과 한국 기반 비즈니스의 글로벌 확장을 지원하는 한국 기반 벤처 플랫폼입니다.",
       platformPageTitle: "Flip One | 피플",
       servicesPageTitle: "Flip One | 서비스",
+      fundingBoundary: "투자와 공공지원사업에 적합하도록 준비합니다. TIPS는 자격을 갖춘 운영사의 별도 투자 검토와 추천, 정부 평가가 필요한 잠재적 경로이며 투자나 선정을 보장하지 않습니다.",
+      engagementPartner: "파트너십 논의",
+      engagementGrow: "기존 비즈니스 성장",
+      engagementBuild: "벤처 공동 개발",
+      engagementQuestion: "어떤 협업을 원하시나요?",
+      supportCta: "지원 서비스 살펴보기",
+      routeContext: "두 방식 모두 한국 진출과 글로벌 확장을 지원합니다.",
+      growItems: "시장 진출 진단 · 자금 경로 검토 · 파트너와 전문가 연결",
+      buildItems: "기회 검증 · MVP 개발 · 팀 구성 · 투자 준비",
+      growBody: "이미 운영 중인 비즈니스의 시장 진출, 자금 전략과 전문 인력 연결을 지원합니다.",
+      buildBody: "선별된 벤처를 창업가와 공동으로 개발하고 지분을 보유합니다. 기회 검증부터 제품 개발과 팀 구성까지, 기여 범위와 역할 및 조건은 벤처별로 합의합니다.",
+      growTitle: "함께 성장하기",
+      buildTitle: "함께 벤처 만들기",
+      engagementLabel: "함께하는 방식",
       resourcesPageTitle: "Flip One | 가이드",
       eventsPageTitle: "Flip One | 이벤트",
       platformDescription: "Flip One의 창업가, 전문가, 파트너 네트워크를 탐색하세요.",
@@ -28,9 +42,9 @@
       navServices: "서비스",
       cta: "성장 방향 상담하기",
       heroEyebrow: "한국과 세계 사이에서 성장하는 창업가를 위해",
-      heroTitle1: "스타트업의 길을",
-      heroTitle2: "밝히는 등대.",
-      heroSummary: "Flip One은 한국과 세계 사이에서 성장하는 창업가를 위한 서울 기반 벤처 플랫폼입니다. 해외 벤처의 한국 진출과 한국 기반 비즈니스의 글로벌 확장을 지원합니다.",
+      heroTitle1: "벤처를 만들고,",
+      heroTitle2: "시장을 연결합니다.",
+      heroSummary: "Flip One은 한국과 세계를 연결하는 한국 기반 벤처 스튜디오이자 창업가 플랫폼입니다. 선별된 벤처를 창업가와 함께 개발하고, 기존 비즈니스의 시장 진출, 투자 준비와 필요한 인재 연결을 지원합니다.",
       heroAudience: "기술 스타트업, AI 기반 크리에이터, 콘텐츠 및 엔터테인먼트 비즈니스와 함께합니다.",
       exploreServices: "서비스 살펴보기",
       exploreLabel: "02 · 더 알아보기",
@@ -76,8 +90,8 @@
       outboundBody: "한국 창업가를 글로벌 시장, 자금, 파트너와 연결합니다.",
       bothDirection: "양쪽 시장 연결",
       servicesLabel: "01 · 서비스",
-      servicesTitle: "국제 성장을 실행 가능한 계획으로.",
-      servicesSummary: "시장 진출 진단, 자금 전략과 파트너 연결을 통해 한국과 글로벌 시장에서의 다음 단계를 구체화합니다.",
+      servicesTitle: "함께 만들고, 함께 성장합니다.",
+      servicesSummary: "새로운 벤처의 검증과 MVP 개발부터 기존 비즈니스의 시장 진출과 투자 준비까지. 범위와 적합성을 함께 확인한 뒤 실행합니다.",
       ideationTitle: "아이디어 구체화",
       ideationBody: "초기 아이디어를 명확하고 신뢰할 수 있으며 자금 확보가 가능한 방향으로 발전시킵니다.",
       ideation1: "시장 및 기회 탐색",
@@ -102,8 +116,9 @@
       peopleTitle: "함께 항해할 사람을 찾으세요.",
       peopleBody: "창업가, 전문가, 협력자와 잠재적 파트너를 한곳에서 탐색합니다.",
       exploreNetwork: "네트워크 살펴보기",
-      askExample: "한국 바이오 보조금 경험이 있는 사람을 찾아주세요.",
-      askBody: "키워드나 짧은 설명으로 필요한 경험과 연결을 검색하세요.",
+      askExample: "어떤 일을 하고 계신가요? 필요한 경험이나 도움을 알려주세요. 예: 프랑스 시장 진출을 논의할 사람을 찾고 있어요.",
+      askBody: "Enter로 검색 · Shift+Enter로 줄바꿈. AI를 끄면 키워드로 검색합니다.",
+      findHelp: "어떤 도움이 필요하세요?",
       directoryLabel: "피플 디렉토리",
       filterStage: "단계",
       filterDirection: "방향",
@@ -154,8 +169,12 @@
       communityLabel: "03 · 함께 항해하기",
       communityTitle: "혼자 가는 여정이 아닙니다.",
       communityBody: "Flip One은 실용적인 이벤트, 전문 지식과 선별된 연결을 통해 창업가가 혼자 해결하기 어려운 국제 성장 과제를 함께 풀어갑니다.",
-      credibilityLabel: "전문성을 기반으로",
-      credibilityTitle: "서울에서 시작해 세계와 연결합니다.",
+      credibilityLabel: "우리가 만드는 제품",
+      credibilityTitle: "Flip One 팀이 만드는 제품입니다.",
+      proofIntro: "자금 탐색과 행사 네트워킹 분야에서 쌓아온 제품 개발 경험입니다. 투자 성과가 아닌 팀의 작업 사례를 소개합니다.",
+      proofIM: "연구개발팀을 위한 AI 기반 자금 지원 플랫폼. 지원사업 탐색, 파트너 구성과 제안서 준비를 하나의 흐름으로 연결합니다.",
+      proofSENS: "참가자와 행사 운영자를 위한 네트워킹 제품. 관련성 있는 사람을 발견하고 대화를 시작하도록 돕는 경험을 개발합니다.",
+      proofDetail: "제품 개발 사례",
       credibility1Title: "국제 자금 전문성",
       credibility1Body: "InsightMatches의 국제 보조금 및 컨소시엄 경험을 기반으로 합니다.",
       credibility2Title: "한국 시장 실행력",
@@ -163,11 +182,11 @@
       credibility3Title: "엄선된 네트워크",
       credibility3Body: "창업가의 과제에 맞는 전문가, 운영자와 파트너를 연결합니다.",
       courseLabel: "04 · 다음 단계",
-      courseTitle: "어디에서, 어디로 성장하고 있나요?",
-      courseBody: "현재 시장, 목표 시장과 가장 큰 과제를 알려주세요. 실행 가능한 다음 단계를 함께 살펴보겠습니다.",
-      footerLine: "한국과 세계를 연결하는 스타트업 플랫폼.",
+      courseTitle: "무엇을 함께 만들고 싶으신가요?",
+      courseBody: "벤처 공동 개발, 기존 비즈니스 성장 또는 파트너십 중 관심 분야와 현재 과제를 알려주세요.",
+      footerLine: "한국과 세계를 연결하는 벤처 스튜디오와 창업가 플랫폼.",
       dialogLabel: "성장 방향 상담",
-      dialogTitle: "어디에서, 어디로 성장하고 있나요?",
+      dialogTitle: "어떻게 함께할까요?",
       close: "닫기",
       nameLabel: "이름",
       emailLabel: "이메일",
@@ -183,9 +202,23 @@
     },
     en: {
       title: "Flip One | Your startup lighthouse",
-      description: "Flip One is a Seoul-based venture platform helping international ventures enter Korea and Korea-based businesses expand globally.",
+      description: "Flip One is a Korea-based venture platform helping international ventures enter Korea and Korea-based businesses expand globally.",
       platformPageTitle: "Flip One | People",
       servicesPageTitle: "Flip One | Services",
+      fundingBoundary: "We help prepare ventures for investment and suitable public-funding programmes. TIPS is a potential pathway through qualified operators, subject to separate investment review, nomination and government evaluation. Investment and selection are not guaranteed.",
+      engagementPartner: "Explore a partnership",
+      engagementGrow: "Grow an existing business",
+      engagementBuild: "Build a venture",
+      engagementQuestion: "What brings you to Flip One?",
+      supportCta: "Explore our support",
+      routeContext: "Both routes support entering Korea and expanding globally.",
+      growItems: "Market-entry diagnostics · Funding pathways · Partner and expert connections",
+      buildItems: "Opportunity validation · MVP development · Team formation · Investment preparation",
+      growBody: "For existing businesses seeking market-entry support, funding strategy and relevant expertise.",
+      buildBody: "We co-build selected ventures in exchange for equity. Contributions, responsibilities and terms are agreed for each venture, from validating the opportunity to developing the product and team.",
+      growTitle: "Grow with us",
+      buildTitle: "Build with us",
+      engagementLabel: "How we work together",
       resourcesPageTitle: "Flip One | Guides",
       eventsPageTitle: "Flip One | Events",
       platformDescription: "Explore the Flip One network of founders, specialists and potential partners.",
@@ -206,9 +239,9 @@
       navServices: "Services",
       cta: "Discuss your route",
       heroEyebrow: "For founders building between Korea and the world",
-      heroTitle1: "Your startup",
-      heroTitle2: "lighthouse.",
-      heroSummary: "Flip One is a Seoul-based venture platform for founders building between Korea and the world. We help international ventures enter Korea and Korea-based businesses expand globally.",
+      heroTitle1: "Build ventures.",
+      heroTitle2: "Connect markets.",
+      heroSummary: "Flip One is a Korea-based venture studio and founder platform connecting Korea with the world. We develop selected ventures alongside founders and support existing businesses with market entry, investment preparation and the people needed to move forward.",
       heroAudience: "Built for technology startups, AI-enabled creators, content companies and entertainment ventures.",
       exploreServices: "Explore our services",
       exploreLabel: "02 · Explore",
@@ -254,8 +287,8 @@
       outboundBody: "Connecting Korean founders with global markets, funding and partners.",
       bothDirection: "Connecting both markets",
       servicesLabel: "01 · Services",
-      servicesTitle: "Turn international ambition into an executable plan.",
-      servicesSummary: "Market-entry diagnostics, funding strategy and partner connections for building in Korea and expanding globally.",
+      servicesTitle: "Build with us. Grow with us.",
+      servicesSummary: "From validating a new venture and developing an MVP to market entry and investment preparation for an existing business. We agree fit and scope before starting.",
       ideationTitle: "Ideation",
       ideationBody: "Turn an early idea into a clear, credible and fundable direction.",
       ideation1: "Market and opportunity discovery",
@@ -280,8 +313,9 @@
       peopleTitle: "Find the people who can move the journey forward.",
       peopleBody: "Explore founders, experts, collaborators and potential partners in one place.",
       exploreNetwork: "Explore the network",
-      askExample: "Find someone with Korean biotech funding experience.",
-      askBody: "Search for the experience and connections you need using keywords or a short description.",
+      askExample: "What are you working on? Tell us the experience or help you need. For example: I’m looking for someone to discuss entering the French market.",
+      askBody: "Enter to search · Shift+Enter for a new line. With AI off, search uses keywords.",
+      findHelp: "What can we help you with?",
       directoryLabel: "People directory",
       filterStage: "Stage",
       filterDirection: "Direction",
@@ -332,8 +366,12 @@
       communityLabel: "03 · Sail together",
       communityTitle: "You are not making the journey alone.",
       communityBody: "Flip One combines practical events, specialist knowledge and carefully selected connections to help founders solve international growth challenges together.",
-      credibilityLabel: "Built on specialist experience",
-      credibilityTitle: "Based in Seoul. Connected internationally.",
+      credibilityLabel: "Our work",
+      credibilityTitle: "Built by the team behind Flip One.",
+      proofIntro: "Product-building experience across funding discovery and event networking. These are examples of the team’s work, not claims of investment returns.",
+      proofIM: "An AI-assisted funding platform for R&D teams, connecting opportunity discovery, partner coordination and proposal preparation.",
+      proofSENS: "A networking product for attendees and event organisers, designed to help people discover relevant connections and start useful conversations.",
+      proofDetail: "Product development",
       credibility1Title: "International funding expertise",
       credibility1Body: "Built on InsightMatches experience in international grants and consortium development.",
       credibility2Title: "Korean market execution",
@@ -341,11 +379,11 @@
       credibility3Title: "A carefully selected network",
       credibility3Body: "Specialists, operators and partners matched to the founder’s actual challenge.",
       courseLabel: "04 · Next step",
-      courseTitle: "Where are you building from, and where do you want to grow?",
-      courseBody: "Tell us your current market, target market and biggest challenge. We will explore a practical next step with you.",
-      footerLine: "A startup platform connecting Korea with the world.",
+      courseTitle: "What would you like to build together?",
+      courseBody: "Tell us whether you want to build a venture, grow an existing business or explore a partnership—and what you need next.",
+      footerLine: "A venture studio and founder platform connecting Korea with the world.",
       dialogLabel: "Discuss your route",
-      dialogTitle: "Where are you building from, and where do you want to grow?",
+      dialogTitle: "How would you like to work together?",
       close: "Close",
       nameLabel: "Name",
       emailLabel: "Email",
@@ -415,6 +453,11 @@
     sustaining: { ko: "지속가능한 성장", en: "Sustaining" }
   };
   var expertiseNames = {
+    foodtech: { ko: "푸드테크", en: "Foodtech" },
+    robotics: { ko: "AI · 로보틱스", en: "AI & robotics" },
+    talent: { ko: "인재 · 커리어 · 팀", en: "Talent, careers & teams" },
+    analytics: { ko: "데이터 분석", en: "Analytics" },
+    growth: { ko: "전환율 최적화", en: "Conversion optimisation" },
     funding: { ko: "자금 및 보조금", en: "Funding and grants" },
     cofounder: { ko: "공동창업 및 제품", en: "Cofounding and product" },
     market: { ko: "시장 진출", en: "Market entry" },
@@ -439,6 +482,7 @@
   var activePersonId = "";
 
   var searchAliases = {
+    france: ["france", "french", "français", "francais", "프랑스"],
     funding: ["funding", "fund", "grant", "자금", "보조금"],
     europe: ["europe", "eu", "horizon", "유럽", "호라이즌"],
     korea: ["korea", "korean", "한국", "국내"],
@@ -450,6 +494,10 @@
   var stopWords = ["the", "a", "an", "and", "or", "for", "with", "who", "can", "help", "find", "someone", "person", "need", "looking", "있는", "사람", "찾아", "주세요", "관련", "경험이", "도와줄"];
 
   function localValue(value) { return value && value[activeLanguage] ? value[activeLanguage] : ""; }
+  function escapePerson(value) { return String(value == null ? "" : value).replace(/[&<>"']/g, function (c) { return {"&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"}[c]; }); }
+  function personValues(person, plural, singular) { return person[plural] || (person[singular] ? [person[singular]] : []); }
+  function personLabels(values, names) { return values.filter(function (v) { return names[v]; }).map(function (v) { return names[v][activeLanguage]; }).join(" · "); }
+  function portraitPath(person) { return typeof person.image === "string" && /^[a-zA-Z0-9_.-]+$/.test(person.image) ? "Assets/People/" + person.image : ""; }
   function normaliseQuery(query) {
     return query.toLowerCase().replace(/[.,!?()]/g, " ").split(/\s+/).map(function (token) {
       return token.replace(/(으로|에서|에게|하고|과|와|을|를|이|가|은|는|의|에|도)$/u, "");
@@ -496,44 +544,163 @@
     select.value = selected;
   }
 
+  var pilot = null;
+  var matchingPolicy = null;
+  var aiMatches = null;
+  var aiQueryKey = "";
+  var searchVersion = 0;
+  var peopleLoading = null;
+  var examplePrompts = [
+    {en: "Help improving conversion rates", ko: "전환율 개선을 도와줄 사람"},
+    {en: "Experience with robotics and AI", ko: "로봇과 AI 경험이 있는 사람"},
+    {en: "Help finding developer jobs in Korea", ko: "한국 개발자 취업을 도와줄 사람"}
+  ];
+  var exampleBar, filterToggle, clearSearch, aiSettings;
+  if (peopleAsk) {
+    exampleBar = document.createElement("div"); exampleBar.className = "people-examples";
+    peopleAsk.after(exampleBar);
+    var filters = document.querySelector(".directory-filters");
+    filters.id = "people-filters"; filters.hidden = true;
+    var toolbar = document.createElement("div"); toolbar.className = "people-toolbar";
+    filterToggle = document.createElement("button"); filterToggle.type = "button";
+    filterToggle.setAttribute("aria-controls", filters.id); filterToggle.setAttribute("aria-expanded", "false");
+    filterToggle.addEventListener("click", function () { filters.hidden = !filters.hidden; filterToggle.setAttribute("aria-expanded", String(!filters.hidden)); });
+    clearSearch = document.createElement("button"); clearSearch.type = "button";
+    clearSearch.addEventListener("click", function () { peopleReset.click(); peopleQuery.focus(); });
+    toolbar.append(filterToggle, clearSearch); filters.before(toolbar);
+  }
+  if (peopleGrid) {
+    peopleLoading = document.createElement("div");
+    peopleLoading.className = "people-loading";
+    peopleLoading.hidden = true;
+    peopleLoading.setAttribute("role", "status");
+    peopleLoading.innerHTML = '<span class="people-loading__orbit" aria-hidden="true"></span><div><strong></strong><p></p></div><span class="people-loading__track" aria-hidden="true"></span>';
+    peopleGrid.before(peopleLoading);
+  }
+  function setPeopleLoading(busy) {
+    if (!peopleLoading) return;
+    peopleLoading.hidden = !busy;
+    peopleGrid.setAttribute("aria-busy", String(busy));
+    peopleGrid.classList.toggle("is-matching", busy);
+    [peopleStage, peopleDirection, peopleExpertise, peopleQuery, peopleAsk.querySelector('button[type="submit"]')].forEach(function (control) { if (control) control.disabled = busy; });
+    if (busy) {
+      peopleLoading.querySelector("strong").textContent = activeLanguage === "ko" ? "필요한 사람을 찾고 있습니다" : "Finding relevant people";
+      peopleLoading.querySelector("p").textContent = activeLanguage === "ko" ? "요청 내용과 프로필의 경험을 비교하고 있습니다. 잠시만 기다려 주세요." : "Comparing your request with profile experience. This may take a moment.";
+    }
+  }
+  function queryKey() { return [activePeopleQuery, activeLanguage, peopleDirection.value, peopleStage.value, peopleExpertise.value].join("|"); }
   function renderPeopleDirectory() {
     if (!peopleGrid) return;
+    document.body.classList.toggle("people-results", Boolean(activePeopleQuery));
+    if (exampleBar) {
+      exampleBar.replaceChildren();
+      examplePrompts.forEach(function (prompt) {
+        var button = document.createElement("button"); button.type = "button"; button.textContent = prompt[activeLanguage];
+        button.addEventListener("click", function () { if (!peopleQuery.disabled) { peopleQuery.value = prompt[activeLanguage]; peopleQuery.focus(); } });
+        exampleBar.appendChild(button);
+      });
+      var filterCount = [peopleStage, peopleDirection, peopleExpertise].filter(function (el) { return el.value; }).length;
+      filterToggle.textContent = (activeLanguage === "ko" ? "필터" : "Filters") + (filterCount ? " (" + filterCount + ")" : "");
+      clearSearch.textContent = activeLanguage === "ko" ? "검색 지우기" : "Clear search";
+      clearSearch.hidden = !activePeopleQuery && !filterCount;
+      var aiDisclosure = document.getElementById("gemini-disclosure");
+      if (aiSettings) aiSettings.querySelector("summary").textContent = (activeLanguage === "ko" ? "⚙ 설정 · AI " : "⚙ Settings · AI ") + (document.getElementById("gemini-consent").checked ? "on" : "off");
+      if (aiDisclosure) aiDisclosure.textContent = activeLanguage === "ko" ? "Gemini AI 사용: 검색 내용과 프로필을 Google에 전송합니다. 민감한 정보는 입력하지 마세요." : "Use Gemini AI: sends your query and profiles to Google. Avoid sensitive information.";
+      var localDisclosure = document.getElementById("intro-storage-disclosure");
+      if (localDisclosure) localDisclosure.textContent = activeLanguage === "ko" ? "이 컴퓨터에 정보를 저장하고 Flip One이 검토하는 데 동의합니다." : "I agree to local storage and Flip One review of my request.";
+    }
     setFilterOptions(peopleStage, stageNames);
     setFilterOptions(peopleDirection, directionNames);
     setFilterOptions(peopleExpertise, expertiseNames);
     var tokens = expandedTokens(normaliseQuery(activePeopleQuery));
+    var targetMarket = window.FlipOneMatchingPolicy ? window.FlipOneMatchingPolicy.requiredMarket(activePeopleQuery, matchingPolicy) : null;
     var matches = people.map(function (person) {
       var result = scorePerson(person, tokens);
       return { person: person, score: result.score, labels: result.labels };
     }).filter(function (entry) {
       var person = entry.person;
-      var filtersMatch = (!peopleDirection.value || person.direction === peopleDirection.value || person.direction === "both") && (!peopleStage.value || person.stage === peopleStage.value) && (!peopleExpertise.value || person.expertise === peopleExpertise.value);
-      return filtersMatch && (!tokens.length || entry.score > 0);
+      var directions = personValues(person, "directions", "direction");
+      var filtersMatch = (!peopleDirection.value || directions.indexOf(peopleDirection.value) >= 0 || directions.indexOf("both") >= 0) && (!peopleStage.value || personValues(person, "stages", "stage").indexOf(peopleStage.value) >= 0) && (!peopleExpertise.value || personValues(person, "expertises", "expertise").indexOf(peopleExpertise.value) >= 0);
+      return filtersMatch && (!targetMarket || window.FlipOneMatchingPolicy.supportsMarket(person, targetMarket)) && (!tokens.length || entry.score > 0);
     }).sort(function (a, b) { return b.score - a.score; });
 
+    var useAI = aiMatches && aiQueryKey === queryKey();
+    if (useAI) matches = aiMatches.matches.map(function (m) { return {person: people.find(function (p) { return p.id === m.person_id; }), ai: m, labels: []}; }).filter(function (m) { return m.person; });
     peopleGrid.innerHTML = "";
     matches.forEach(function (entry) {
       var person = entry.person;
       var card = document.createElement("article");
       card.className = "person-card";
       var reason = tokens.length && entry.labels.length ? '<p class="person-match"><b>' + translations[activeLanguage].matchedBecause + ':</b> ' + entry.labels.join(" · ") + '</p>' : "";
-      card.innerHTML = '<button class="person-card__button" type="button" data-person-id="' + person.id + '"><div class="person-card__portrait"><img src="Assets/People/' + person.image + '" alt="' + localValue(person.name) + '" loading="lazy"></div><div class="person-card__head"><span class="person-direction">' + directionNames[person.direction][activeLanguage] + '</span><span class="person-location">' + localValue(person.location) + '</span></div><h4>' + localValue(person.name) + '</h4><strong>' + localValue(person.role) + '</strong><p>' + localValue(person.bio) + '</p><div class="person-tags"><span>' + stageNames[person.stage][activeLanguage] + '</span><span>' + expertiseNames[person.expertise][activeLanguage] + '</span><span>' + person.languages.join(" · ") + '</span></div>' + reason + '<span class="person-card__cta">' + translations[activeLanguage].viewProfile + ' →</span></button>';
+      if (entry.ai) reason = '<div class="person-match"><p><b>' + (activeLanguage === "ko" ? '도움을 줄 수 있는 이유' : 'Why this person could help') + '</b><br>' + escapePerson(entry.ai.reason) + '</p><p class="match-gap">' + escapePerson(entry.ai.gaps) + '</p></div>';
+      var tags = personValues(person, "expertises", "expertise").slice(0, 2).map(function (key) { return personLabels([key], expertiseNames); }).filter(Boolean);
+      var photo = portraitPath(person);
+      var portrait = photo ? '<img src="' + photo + '" alt="' + escapePerson(localValue(person.name)) + '" loading="lazy">' : '<span class="person-initials">' + escapePerson(localValue(person.name).split(/\s+/).slice(0,2).map(function (s) { return s[0]; }).join("")) + '</span>';
+      card.innerHTML = '<button class="person-card__button" type="button" data-person-id="' + escapePerson(person.id) + '"><div class="person-card__portrait">' + portrait + '</div><div class="person-card__head"><span class="person-direction">' + escapePerson(personLabels(personValues(person, "directions", "direction"), directionNames)) + '</span><span class="person-location">' + escapePerson(localValue(person.location)) + '</span></div><h4>' + escapePerson(localValue(person.name)) + '</h4><strong>' + escapePerson(localValue(person.role)) + '</strong><p>' + escapePerson(localValue(person.bio)) + '</p><div class="person-tags">' + tags.map(function (t) { return '<span>' + escapePerson(t) + '</span>'; }).join("") + '</div>' + reason + '<span class="person-card__cta">' + translations[activeLanguage].viewProfile + ' →</span></button>';
       peopleGrid.appendChild(card);
+      if (entry.ai) {
+        var evidence = document.createElement("details"); evidence.className = "match-evidence";
+        var summary = document.createElement("summary"); summary.textContent = activeLanguage === "ko" ? "근거 보기" : "View supporting experience";
+        evidence.appendChild(summary);
+        entry.ai.evidence.forEach(function (item) { var p = document.createElement("p"); p.textContent = item.section + ": " + item.excerpt; evidence.appendChild(p); });
+        card.appendChild(evidence);
+      }
     });
     peopleCount.textContent = String(matches.length).padStart(2, "0");
     if (activePeopleQuery) matchNote.textContent = matches.length ? matches.length + " " + translations[activeLanguage].showingMatches : translations[activeLanguage].noMatches;
     else matchNote.textContent = "";
+    if (useAI) matchNote.textContent = aiMatches.clarification || (activeLanguage === "ko" ? "Gemini 추천 · " : "Gemini suggestions · ") + matches.length;
+    if (!useAI && targetMarket) matchNote.textContent += activeLanguage === "ko" ? " · 해당 국가가 명시된 프로필만 표시합니다. 시장 진출 실적은 별도 확인이 필요합니다." : " · Only profiles listing the target country. Market-entry delivery experience still needs confirmation.";
+    if (!matches.length) {
+      var empty = document.createElement("div"); empty.className = "people-empty";
+      empty.textContent = activeLanguage === "ko" ? "현재 프로필에서 충분한 관련 경험을 찾지 못했습니다. 필터를 줄이거나, 가장 중요한 도움 한 가지로 검색해 보세요." : "We couldn’t find enough relevant experience in the current profiles. Try fewer filters or focus on the one thing you need most.";
+      peopleGrid.appendChild(empty);
+    }
+    if (pilot && pilot.intake && introForm && !demoDirectory) {
+      var note = introForm.querySelector('[data-i18n="introNote"]');
+      if (note) note.textContent = activeLanguage === "ko" ? "이름, 이메일과 요청 내용을 이 컴퓨터에 저장하여 Flip One이 검토합니다. 이메일은 발송되지 않습니다." : "Your name, email and request are saved on this computer for Flip One review. No email is sent.";
+    }
   }
 
   if (peopleStage) peopleStage.addEventListener("change", renderPeopleDirectory);
+  if (peopleQuery && peopleQuery.tagName === "TEXTAREA") peopleQuery.addEventListener("keydown", function (event) {
+    if (event.key === "Enter" && !event.shiftKey && !event.isComposing && event.keyCode !== 229) {
+      event.preventDefault();
+      if (!peopleQuery.disabled && peopleQuery.value.trim()) peopleAsk.requestSubmit();
+    }
+  });
   if (peopleDirection) peopleDirection.addEventListener("change", renderPeopleDirectory);
   if (peopleExpertise) peopleExpertise.addEventListener("change", renderPeopleDirectory);
-  if (peopleAsk) peopleAsk.addEventListener("submit", function (event) {
+  if (peopleAsk) peopleAsk.addEventListener("submit", async function (event) {
     event.preventDefault();
+    var version = ++searchVersion;
+    setPeopleLoading(false);
+    aiMatches = null;
     activePeopleQuery = peopleQuery.value.trim();
     renderPeopleDirectory();
+    var consent = document.getElementById("gemini-consent");
+    if (!pilot || pilot.matching !== "gemini" || !consent || !consent.checked || !activePeopleQuery) return;
+    var key = queryKey();
+    matchNote.textContent = "";
+    setPeopleLoading(true);
+    try {
+      var response = await fetch("/api/match", {method:"POST", headers:{"Content-Type":"application/json", "X-Pilot-Token":pilot.csrf}, body:JSON.stringify({query:activePeopleQuery,locale:activeLanguage,filters:{direction:peopleDirection.value,stage:peopleStage.value,expertise:peopleExpertise.value}}), signal:AbortSignal.timeout(35000)});
+      if (!response.ok) throw new Error("Matching failed");
+      var result = await response.json();
+      if (version !== searchVersion || key !== queryKey()) return;
+      aiMatches = result;
+      aiQueryKey = key;
+      renderPeopleDirectory();
+    } catch (_) {
+      if (version === searchVersion && key === queryKey()) matchNote.textContent = activeLanguage === "ko" ? "AI 검색에 실패했습니다. 아래는 키워드 검색 결과입니다." : "AI matching failed. The results below are keyword matches.";
+    } finally {
+      if (version === searchVersion) setPeopleLoading(false);
+    }
   });
   if (peopleReset) peopleReset.addEventListener("click", function () {
+    ++searchVersion;
+    setPeopleLoading(false);
+    aiMatches = null;
     peopleStage.value = "";
     peopleDirection.value = "";
     peopleExpertise.value = "";
@@ -548,20 +715,43 @@
     var person = people.find(function (item) { return item.id === id; });
     if (!person || !personDialog) return;
     activePersonId = id;
-    document.getElementById("person-dialog-image").src = "Assets/People/" + person.image;
+    document.getElementById("person-dialog-image").hidden = !portraitPath(person);
+    if (portraitPath(person)) document.getElementById("person-dialog-image").src = portraitPath(person);
     document.getElementById("person-dialog-image").alt = localValue(person.name);
     document.getElementById("person-dialog-name").textContent = localValue(person.name);
     document.getElementById("person-dialog-role").textContent = localValue(person.role);
-    document.getElementById("person-dialog-location").textContent = localValue(person.location) + " · " + stageNames[person.stage][activeLanguage];
-    document.getElementById("person-dialog-direction").textContent = directionNames[person.direction][activeLanguage];
+    document.getElementById("person-dialog-location").textContent = [localValue(person.location), personLabels(personValues(person, "stages", "stage"), stageNames)].filter(Boolean).join(" · ");
+    document.getElementById("person-dialog-direction").textContent = personLabels(personValues(person, "directions", "direction"), directionNames);
     document.getElementById("person-dialog-bio").textContent = localValue(person.longBio);
-    document.getElementById("person-dialog-help").innerHTML = localValue(person.help).map(function (item) { return "<span>" + item + "</span>"; }).join("");
+    var panelIntro = document.getElementById("person-dialog-intro");
+    if (panelIntro) {
+      panelIntro.textContent = localValue(person.longBio).split(/(?<=[.!?])\s+/).slice(0, 2).join(" ");
+      document.getElementById("person-background").open = false;
+      document.getElementById("person-background-label").textContent = activeLanguage === "ko" ? "더 알아보기" : "More about me";
+      document.getElementById("person-help-hint").textContent = activeLanguage === "ko" ? "관심 있는 주제를 선택해 연결 요청을 시작하세요." : "Choose a topic to start an introduction.";
+      document.getElementById("person-form-title").textContent = activeLanguage === "ko" ? "어떤 도움이 필요하신가요?" : "What would you like to discuss?";
+      document.getElementById("person-connect-note").textContent = activeLanguage === "ko" ? "Flip One이 양측의 동의를 확인한 후 연결을 조율합니다. 현재는 요청 미리보기만 가능합니다." : "Flip One would coordinate an introduction with both parties’ agreement. For now, this is a request preview only.";
+      introButton.textContent = activeLanguage === "ko" ? localValue(person.name) + "님과 연결하기" : "Connect with " + localValue(person.name).split(" ")[0];
+      introButton.hidden = false;
+      document.getElementById("person-submit-button").hidden = true;
+      introForm.reset();
+    }
+    document.getElementById("person-dialog-help").innerHTML = localValue(person.help).map(function (item) { return panelIntro ? '<button type="button" class="person-help-topic" data-help-topic="' + escapePerson(item) + '"><span>' + escapePerson(item) + '</span><span aria-hidden="true">↗</span></button>' : "<span>" + escapePerson(item) + "</span>"; }).join("");
     document.getElementById("person-dialog-markets").textContent = localValue(person.markets).join(" · ");
-    document.getElementById("person-dialog-languages").textContent = person.languages.join(" · ");
+    document.getElementById("person-dialog-languages").textContent = person.languages.join(" · ") || (activeLanguage === "ko" ? "확인 예정" : "To be confirmed");
     document.getElementById("intro-person-id").value = person.id;
+    if (pilot && pilot.intake && !demoDirectory) {
+      introForm.dataset.requestId = crypto.randomUUID();
+      document.getElementById("person-submit-button").textContent = activeLanguage === "ko" ? "검토 요청 저장" : "Save request for review";
+      document.getElementById("person-connect-note").textContent = activeLanguage === "ko" ? "요청은 이 컴퓨터에 저장됩니다. 실제 소개는 양측의 동의를 확인한 후 진행합니다." : "Requests are saved on this computer. Introductions require both parties’ agreement.";
+    }
     introForm.hidden = true;
     document.getElementById("intro-success").hidden = true;
     personDialog.showModal();
+    if (panelIntro) {
+      document.documentElement.classList.add("person-panel-open");
+      personDialog.querySelector(".person-panel__body").scrollTop = 0;
+    }
   }
   if (peopleGrid) peopleGrid.addEventListener("click", function (event) {
     var button = event.target.closest("[data-person-id]");
@@ -569,11 +759,83 @@
   });
   document.querySelectorAll("[data-close-person]").forEach(function (button) { button.addEventListener("click", function () { personDialog.close(); }); });
   var introButton = document.getElementById("person-intro-button");
-  if (introButton) introButton.addEventListener("click", function () { introForm.hidden = false; introButton.hidden = true; introForm.querySelector("input[name=name]").focus(); });
-  if (introForm) introForm.addEventListener("submit", function (event) { event.preventDefault(); document.getElementById("intro-success").hidden = false; });
-  if (personDialog) personDialog.addEventListener("close", function () { if (introButton) introButton.hidden = false; activePersonId = ""; });
+  function startIntroduction(topic) {
+    introForm.hidden = false;
+    introButton.hidden = true;
+    var submit = document.getElementById("person-submit-button");
+    if (submit) submit.hidden = false;
+    if (topic) introForm.elements.reason.value = (activeLanguage === "ko" ? "다음 주제로 이야기하고 싶습니다: " : "I'd like to discuss: ") + topic;
+    if (!introForm.elements.reason.value && activePeopleQuery) introForm.elements.reason.value = activePeopleQuery;
+    else if (topic && activePeopleQuery) introForm.elements.reason.value += "\n\n" + activePeopleQuery;
+    document.getElementById("intro-success").hidden = true;
+    introForm.querySelector(topic ? "textarea" : "input[name=name]").focus();
+  }
+  if (introButton) introButton.addEventListener("click", function () { startIntroduction(); });
+  if (personDialog) personDialog.addEventListener("click", function (event) {
+    var topic = event.target.closest("[data-help-topic]");
+    if (topic) startIntroduction(topic.getAttribute("data-help-topic"));
+  });
+  if (introForm) introForm.addEventListener("submit", async function (event) {
+    event.preventDefault();
+    var status = document.getElementById("intro-success");
+    status.hidden = false;
+    if (!pilot || !pilot.intake || demoDirectory) { status.textContent = translations[activeLanguage].introSuccess; return; }
+    var button = document.getElementById("person-submit-button");
+    if (button.disabled) return;
+    button.disabled = true;
+    status.textContent = activeLanguage === "ko" ? "저장 중…" : "Saving…";
+    var recordId = introForm.dataset.requestId;
+    try {
+      var response = await fetch("/api/introductions", {method:"POST",headers:{"Content-Type":"application/json","X-Pilot-Token":pilot.csrf},body:JSON.stringify({requestId:recordId,personId:introForm.elements.personId.value,name:introForm.elements.name.value,email:introForm.elements.email.value,reason:introForm.elements.reason.value,locale:activeLanguage,consent:introForm.elements.consent.checked}),signal:AbortSignal.timeout(12000)});
+      if (!response.ok) throw new Error("Save failed");
+      var result = await response.json();
+      if (recordId !== introForm.dataset.requestId) return;
+      status.textContent = (activeLanguage === "ko" ? "이 컴퓨터에 저장되었습니다. 이메일은 발송되지 않았습니다. 요청 번호: " : "Saved on this computer. No email has been sent. Reference: ") + result.id;
+    } catch (_) {
+      if (recordId === introForm.dataset.requestId) status.textContent = activeLanguage === "ko" ? "저장을 확인할 수 없습니다. 입력 내용은 유지됩니다. 다시 시도해 주세요." : "Could not confirm saving. Your details are preserved. Please retry.";
+    } finally { button.disabled = false; }
+  });
+  if (personDialog) personDialog.addEventListener("close", function () { document.documentElement.classList.remove("person-panel-open"); if (introButton) introButton.hidden = false; activePersonId = ""; });
 
-  if (peopleGrid) fetch("people.json").then(function (response) { if (!response.ok) throw new Error("Directory unavailable"); return response.json(); }).then(function (data) { people = data; renderPeopleDirectory(); }).catch(function () { matchNote.textContent = activeLanguage === "ko" ? "디렉토리를 불러오지 못했습니다." : "The directory could not be loaded."; });
+  if (peopleGrid) {
+    var demoDirectory = new URLSearchParams(window.location.search).get("dataset") === "demo";
+    if (!demoDirectory) fetch("/api/pilot").then(function (r) { return r.ok ? r.json() : null; }).then(function (config) {
+      pilot = config;
+      if (!pilot) return;
+      var consentLabel = document.createElement("label");
+      consentLabel.className = "pilot-consent";
+      var checkbox = document.createElement("input");
+      checkbox.type = "checkbox"; checkbox.name = "consent"; checkbox.required = true;
+      var labelText = document.createElement("span");
+      labelText.id = "intro-storage-disclosure";
+      labelText.textContent = "이 컴퓨터에 정보를 저장하고 Flip One이 검토하는 데 동의합니다. / I agree to local storage and Flip One review of my request.";
+      consentLabel.append(checkbox, labelText);
+      introForm.appendChild(consentLabel);
+      if (pilot.matching === "gemini") {
+        var aiLabel = document.createElement("label");
+        aiLabel.className = "pilot-consent";
+        var aiCheck = document.createElement("input"); aiCheck.type = "checkbox"; aiCheck.id = "gemini-consent"; aiCheck.checked = true;
+        var aiText = document.createElement("span"); aiText.id = "gemini-disclosure";
+        aiLabel.append(aiCheck, aiText);
+        aiSettings = document.createElement("details"); aiSettings.className = "people-settings";
+        var settingsSummary = document.createElement("summary");
+        var settingsPanel = document.createElement("div"); settingsPanel.className = "people-settings__panel";
+        settingsPanel.appendChild(aiLabel); aiSettings.append(settingsSummary, settingsPanel);
+        filterToggle.after(aiSettings);
+        aiCheck.addEventListener("change", function () {
+          ++searchVersion; setPeopleLoading(false); aiMatches = null; renderPeopleDirectory();
+        });
+      }
+      renderPeopleDirectory();
+    }).catch(function () { pilot = null; });
+    var directorySwitch = document.createElement("p");
+    var directoryLink = document.createElement("a");
+    directoryLink.href = demoDirectory ? "people.html" : "people.html?dataset=demo";
+    directoryLink.textContent = demoDirectory ? "실제 네트워크 보기 / View network" : "샘플 디렉토리 보기 / View demo directory";
+    directorySwitch.appendChild(directoryLink);
+    peopleGrid.parentNode.insertBefore(directorySwitch, peopleGrid);
+    Promise.all([demoDirectory ? "people.json" : "people-network.json", "matching-policy.json"].map(function (path) { return fetch(path).then(function (response) { if (!response.ok) throw new Error("Directory unavailable"); return response.json(); }); })).then(function (data) { people = data[0]; matchingPolicy = data[1]; renderPeopleDirectory(); }).catch(function () { matchNote.textContent = activeLanguage === "ko" ? "디렉토리를 불러오지 못했습니다." : "The directory could not be loaded."; });
+  }
 
   var servicePathCopy = {
     inbound: {
@@ -853,6 +1115,10 @@
 
   document.querySelectorAll("[data-open-course]").forEach(function (button) {
     button.addEventListener("click", function () {
+      var engagement = button.getAttribute("data-engagement");
+      var engagementSelect = courseForm && courseForm.querySelector('select[name="engagement"]');
+      if (engagement && engagementSelect) engagementSelect.value = engagement;
+      if (formSuccess) formSuccess.hidden = true;
       var requestedStage = button.getAttribute("data-course-stage");
       var stageSelect = courseForm && courseForm.querySelector('select[name="stage"]');
       if (requestedStage && stageSelect) {
