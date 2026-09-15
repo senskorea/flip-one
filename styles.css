@@ -336,9 +336,17 @@ a { color: inherit; }
   margin: 0 0 26px;
   font-size: clamp(4.2rem, 10vw, 9.4rem);
   font-weight: 600;
-  letter-spacing: -0.08em;
-  line-height: 0.84;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
 }
+
+html[lang="en"] .hero h1 { letter-spacing: -.08em; line-height: .94; }
+html[lang="ko"] :is(.subpage-hero, .platform--page, .resources--page, .events--page) h1 { letter-spacing: -.02em; line-height: 1.08; }
+html[lang="ko"] :is(button, input, select, textarea, label, .desktop-nav, .mobile-nav, .coordinate) { font-size: max(.8125rem, 13px); letter-spacing: 0; }
+.site-header:not(.is-light) .language-switch__button { color: #f3f6ff; opacity: 1; }
+:is(.services-page, .resources-page, .events-page, .platform-page) .site-header .language-switch__button,
+.site-header.is-light .language-switch__button { color: #23324b; opacity: 1; }
+.mobile-nav a { min-height: 44px; padding-block: 12px; }
 
 .hero h1 span {
   display: block;

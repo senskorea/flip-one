@@ -37,6 +37,7 @@
       openEvent: "이벤트 열기",
       menu: "메뉴",
       navPeople: "피플",
+      growthSecondary: "이미 운영 중인 사업인가요? 성장 지원 서비스 보기 →",
       navResources: "자료",
       navEvents: "이벤트",
       navServices: "서비스",
@@ -44,7 +45,7 @@
       heroEyebrow: "한국과 세계 사이에서 성장하는 창업가를 위해",
       heroTitle1: "벤처를 만들고,",
       heroTitle2: "시장을 연결합니다.",
-      heroSummary: "Flip One은 한국과 세계를 연결하는 한국 기반 벤처 스튜디오이자 창업가 플랫폼입니다. 선별된 벤처를 창업가와 함께 개발하고, 기존 비즈니스의 시장 진출, 투자 준비와 필요한 인재 연결을 지원합니다.",
+      heroSummary: "Flip One은 창업가와 함께 벤처를 만드는 한국 기반 벤처 스튜디오입니다. 선별된 아이디어의 검증부터 MVP 개발, 팀 구성과 투자 준비까지 함께하며, 기여 범위와 지분 조건은 벤처별로 합의합니다.",
       heroAudience: "기술 스타트업, AI 기반 크리에이터, 콘텐츠 및 엔터테인먼트 비즈니스와 함께합니다.",
       exploreServices: "서비스 살펴보기",
       exploreLabel: "02 · 더 알아보기",
@@ -111,11 +112,11 @@
       stageCta: "이 단계 상담하기",
       platformLabel: "02 · 피플",
       platformTitle: "사람과 기회가 만나는 곳.",
-      platformSummary: "네트워크를 탐색하고, 필요한 전문성을 찾고, 다음 기회와 연결하세요.",
-      peopleLabel: "피플 네트워크",
+      platformSummary: "선별된 창업가와 전문가의 소규모 디렉토리입니다. 필요한 경험을 살펴보고 소개를 요청하세요.",
+      peopleLabel: "선별된 전문가 디렉토리",
       peopleTitle: "함께 항해할 사람을 찾으세요.",
       peopleBody: "창업가, 전문가, 협력자와 잠재적 파트너를 한곳에서 탐색합니다.",
-      exploreNetwork: "네트워크 살펴보기",
+      exploreNetwork: "디렉토리 살펴보기",
       askExample: "어떤 일을 하고 계신가요? 필요한 경험이나 도움을 알려주세요. 예: 프랑스 시장 진출을 논의할 사람을 찾고 있어요.",
       askBody: "Enter로 검색 · Shift+Enter로 줄바꿈. AI를 끄면 키워드로 검색합니다.",
       findHelp: "어떤 도움이 필요하세요?",
@@ -221,7 +222,7 @@
       engagementLabel: "How we work together",
       resourcesPageTitle: "Flip One | Guides",
       eventsPageTitle: "Flip One | Events",
-      platformDescription: "Explore the Flip One network of founders, specialists and potential partners.",
+      platformDescription: "Browse a curated directory of founders and specialists, with experience-based search and introduction requests.",
       servicesDescription: "Flip One support from ideation through scaling and sustainable growth.",
       resourcesDescription: "Practical Flip One guides for funding, teams, markets and sustainable growth.",
       eventsDescription: "Discover Flip One founder gatherings, clinics and workshops.",
@@ -234,6 +235,7 @@
       openEvent: "Open event",
       menu: "Menu",
       navPeople: "People",
+      growthSecondary: "Already running a business? Explore growth services →",
       navResources: "Resources",
       navEvents: "Events",
       navServices: "Services",
@@ -241,14 +243,14 @@
       heroEyebrow: "For founders building between Korea and the world",
       heroTitle1: "Build ventures.",
       heroTitle2: "Connect markets.",
-      heroSummary: "Flip One is a Korea-based venture studio and founder platform connecting Korea with the world. We develop selected ventures alongside founders and support existing businesses with market entry, investment preparation and the people needed to move forward.",
+      heroSummary: "Flip One is a Korea-based venture studio that builds alongside founders. We help selected ventures validate ideas, develop MVPs, assemble teams and prepare for investment, with our contribution and equity terms agreed for each venture.",
       heroAudience: "Built for technology startups, AI-enabled creators, content companies and entertainment ventures.",
       exploreServices: "Explore our services",
       exploreLabel: "02 · Explore",
       exploreTitle: "Go directly where you need to be.",
       exploreSummary: "Enter the platform, explore our services, or find useful knowledge and events.",
       portalPlatformTitle: "Find the people for your voyage.",
-      portalPlatformBody: "Search the network and discover the experience and connections you need.",
+      portalPlatformBody: "Browse selected profiles and discover experience relevant to your next step.",
       portalServicesTitle: "Design your next stage of growth.",
       portalServicesBody: "Explore support for ideation, scaling and sustainable growth.",
       portalResourcesTitle: "Explore practical knowledge.",
@@ -308,11 +310,11 @@
       stageCta: "Discuss this stage",
       platformLabel: "02 · People",
       platformTitle: "Where people meet opportunity.",
-      platformSummary: "Explore the network, find the expertise you need and connect with what comes next.",
-      peopleLabel: "People network",
+      platformSummary: "Browse a small, curated directory of founders and specialists. Explore relevant experience and request an introduction.",
+      peopleLabel: "Curated directory",
       peopleTitle: "Find the people who can move the journey forward.",
       peopleBody: "Explore founders, experts, collaborators and potential partners in one place.",
-      exploreNetwork: "Explore the network",
+      exploreNetwork: "Browse the directory",
       askExample: "What are you working on? Tell us the experience or help you need. For example: I’m looking for someone to discuss entering the French market.",
       askBody: "Enter to search · Shift+Enter for a new line. With AI off, search uses keywords.",
       findHelp: "What can we help you with?",
@@ -1033,7 +1035,7 @@
     events.filter(function (item) { return activeEventCategory === "all" || item.category === activeEventCategory; }).forEach(function (item, index) {
       var card = document.createElement("article");
       card.className = "event-card" + (index === 0 && activeEventCategory === "all" ? " event-card--featured" : "");
-      card.innerHTML = '<button class="event-card__hit" type="button" data-event-id="' + item.id + '" aria-label="' + translations[activeLanguage].openEvent + '"><img class="event-card__poster" src="Assets/Events/' + item.image + '" alt="" loading="lazy"><span class="event-card__shade"></span><div class="event-card__date"><b>' + item.day + '</b><span>' + item.month + '</span></div><div class="event-card__content"><div class="event-card__category"><span>' + eventCategories[item.category][activeLanguage] + '</span><em>' + (activeLanguage === "ko" ? item.accessKo : item.accessEn) + '</em></div><h3>' + (activeLanguage === "ko" ? item.title : item.titleEn) + '</h3><p>' + (activeLanguage === "ko" ? item.summary : item.summaryEn) + '</p><div class="event-card__meta"><span>' + (activeLanguage === "ko" ? item.location : item.locationEn) + '</span><span>' + item.capacity + (activeLanguage === "ko" ? '명' : ' seats') + '</span></div></div><span class="event-card__arrow">↗</span></button>';
+card.innerHTML = '<button class="event-card__hit" type="button" data-event-id="' + item.id + '" aria-label="' + translations[activeLanguage].openEvent + '"><img class="event-card__poster" src="Assets/Events/' + item.image + '" alt="" loading="lazy"><span class="event-card__shade"></span><div class="event-card__date"><b>' + item.day + '</b><span>' + item.month + '</span></div><div class="event-card__content"><div class="event-card__category"><span>' + eventCategories[item.category][activeLanguage] + '</span></div><h3>' + (activeLanguage === "ko" ? item.title : item.titleEn) + '</h3><p>' + (activeLanguage === "ko" ? item.summary : item.summaryEn) + '</p><div class="event-card__meta"><span>' + (activeLanguage === "ko" ? item.location : item.locationEn) + '</span></div></div><span class="event-card__arrow">↗</span></button>';
       eventGrid.appendChild(card);
     });
   }
@@ -1043,7 +1045,7 @@
     if (!activeEvent || !eventDialog) return;
     document.getElementById("event-dialog-category").textContent = eventCategories[activeEvent.category][activeLanguage];
     document.getElementById("event-dialog-title").textContent = activeLanguage === "ko" ? activeEvent.title : activeEvent.titleEn;
-    document.getElementById("event-dialog-meta").innerHTML = '<span>' + (activeLanguage === "ko" ? activeEvent.dateKo : activeEvent.dateEn) + '</span><span>' + (activeLanguage === "ko" ? activeEvent.location : activeEvent.locationEn) + '</span><span>' + activeEvent.capacity + (activeLanguage === "ko" ? '명' : ' seats') + '</span>';
+    document.getElementById("event-dialog-meta").innerHTML = '<span>' + (activeLanguage === "ko" ? activeEvent.dateKo : activeEvent.dateEn) + '</span><span>' + (activeLanguage === "ko" ? activeEvent.location : activeEvent.locationEn) + '</span>';
     document.getElementById("event-dialog-summary").textContent = activeLanguage === "ko" ? activeEvent.summary : activeEvent.summaryEn;
     var agenda = activeLanguage === "ko" ? activeEvent.agenda : activeEvent.agendaEn;
     document.getElementById("event-dialog-agenda").innerHTML = agenda.map(function (item) { return "<li>" + item + "</li>"; }).join("");
