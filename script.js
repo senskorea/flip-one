@@ -40,7 +40,7 @@
       navResources: "자료",
       navEvents: "이벤트",
       navServices: "서비스",
-      cta: "성장 방향 상담하기",
+      cta: "문의하기",
       heroEyebrow: "한국과 세계 사이에서 성장하는 창업가를 위해",
       heroTitle1: "벤처를 만들고,",
       heroTitle2: "시장을 연결합니다.",
@@ -185,7 +185,7 @@
       courseTitle: "무엇을 함께 만들고 싶으신가요?",
       courseBody: "벤처 공동 개발, 기존 비즈니스 성장 또는 파트너십 중 관심 분야와 현재 과제를 알려주세요.",
       footerLine: "한국과 세계를 연결하는 벤처 스튜디오와 창업가 플랫폼.",
-      dialogLabel: "성장 방향 상담",
+      dialogLabel: "문의하기",
       dialogTitle: "어떻게 함께할까요?",
       close: "닫기",
       nameLabel: "이름",
@@ -237,7 +237,7 @@
       navResources: "Resources",
       navEvents: "Events",
       navServices: "Services",
-      cta: "Discuss your route",
+      cta: "Get in touch",
       heroEyebrow: "For founders building between Korea and the world",
       heroTitle1: "Build ventures.",
       heroTitle2: "Connect markets.",
@@ -382,7 +382,7 @@
       courseTitle: "What would you like to build together?",
       courseBody: "Tell us whether you want to build a venture, grow an existing business or explore a partnership—and what you need next.",
       footerLine: "A venture studio and founder platform connecting Korea with the world.",
-      dialogLabel: "Discuss your route",
+      dialogLabel: "Get in touch",
       dialogTitle: "How would you like to work together?",
       close: "Close",
       nameLabel: "Name",
@@ -568,6 +568,9 @@
     clearSearch = document.createElement("button"); clearSearch.type = "button";
     clearSearch.addEventListener("click", function () { peopleReset.click(); peopleQuery.focus(); });
     toolbar.append(filterToggle, clearSearch); filters.before(toolbar);
+    aiSettings = document.createElement("details"); aiSettings.className = "people-settings";
+    aiSettings.innerHTML = '<summary>⚙ Settings</summary><div class="people-settings__panel"></div>';
+    filterToggle.after(aiSettings);
   }
   if (peopleGrid) {
     peopleLoading = document.createElement("div");
@@ -580,6 +583,7 @@
   function setPeopleLoading(busy) {
     if (!peopleLoading) return;
     peopleLoading.hidden = !busy;
+    peopleAsk.classList.toggle("is-ai-working", busy);
     peopleGrid.setAttribute("aria-busy", String(busy));
     peopleGrid.classList.toggle("is-matching", busy);
     [peopleStage, peopleDirection, peopleExpertise, peopleQuery, peopleAsk.querySelector('button[type="submit"]')].forEach(function (control) { if (control) control.disabled = busy; });
@@ -604,7 +608,11 @@
       clearSearch.textContent = activeLanguage === "ko" ? "검색 지우기" : "Clear search";
       clearSearch.hidden = !activePeopleQuery && !filterCount;
       var aiDisclosure = document.getElementById("gemini-disclosure");
-      if (aiSettings) aiSettings.querySelector("summary").textContent = (activeLanguage === "ko" ? "⚙ 설정 · AI " : "⚙ Settings · AI ") + (document.getElementById("gemini-consent").checked ? "on" : "off");
+      if (aiSettings) {
+        var geminiToggle = document.getElementById("gemini-consent");
+        aiSettings.querySelector("summary").textContent = (activeLanguage === "ko" ? "⚙ 설정" : "⚙ Settings") + (geminiToggle ? " · AI " + (geminiToggle.checked ? "on" : "off") : "");
+        if (directoryLink) directoryLink.textContent = demoDirectory ? (activeLanguage === "ko" ? "실제 네트워크 보기" : "View network") : (activeLanguage === "ko" ? "샘플 디렉토리 보기" : "View demo directory");
+      }
       if (aiDisclosure) aiDisclosure.textContent = activeLanguage === "ko" ? "Gemini AI 사용: 검색 내용과 프로필을 Google에 전송합니다. 민감한 정보는 입력하지 마세요." : "Use Gemini AI: sends your query and profiles to Google. Avoid sensitive information.";
       var localDisclosure = document.getElementById("intro-storage-disclosure");
       if (localDisclosure) localDisclosure.textContent = activeLanguage === "ko" ? "이 컴퓨터에 정보를 저장하고 Flip One이 검토하는 데 동의합니다." : "I agree to local storage and Flip One review of my request.";
@@ -817,11 +825,7 @@
         var aiCheck = document.createElement("input"); aiCheck.type = "checkbox"; aiCheck.id = "gemini-consent"; aiCheck.checked = true;
         var aiText = document.createElement("span"); aiText.id = "gemini-disclosure";
         aiLabel.append(aiCheck, aiText);
-        aiSettings = document.createElement("details"); aiSettings.className = "people-settings";
-        var settingsSummary = document.createElement("summary");
-        var settingsPanel = document.createElement("div"); settingsPanel.className = "people-settings__panel";
-        settingsPanel.appendChild(aiLabel); aiSettings.append(settingsSummary, settingsPanel);
-        filterToggle.after(aiSettings);
+        aiSettings.querySelector(".people-settings__panel").prepend(aiLabel);
         aiCheck.addEventListener("change", function () {
           ++searchVersion; setPeopleLoading(false); aiMatches = null; renderPeopleDirectory();
         });
@@ -833,7 +837,8 @@
     directoryLink.href = demoDirectory ? "people.html" : "people.html?dataset=demo";
     directoryLink.textContent = demoDirectory ? "실제 네트워크 보기 / View network" : "샘플 디렉토리 보기 / View demo directory";
     directorySwitch.appendChild(directoryLink);
-    peopleGrid.parentNode.insertBefore(directorySwitch, peopleGrid);
+    directorySwitch.className = "people-settings__directory";
+    aiSettings.querySelector(".people-settings__panel").appendChild(directorySwitch);
     Promise.all([demoDirectory ? "people.json" : "people-network.json", "matching-policy.json"].map(function (path) { return fetch(path).then(function (response) { if (!response.ok) throw new Error("Directory unavailable"); return response.json(); }); })).then(function (data) { people = data[0]; matchingPolicy = data[1]; renderPeopleDirectory(); }).catch(function () { matchNote.textContent = activeLanguage === "ko" ? "디렉토리를 불러오지 못했습니다." : "The directory could not be loaded."; });
   }
 

@@ -891,6 +891,34 @@ html.person-panel-open { overflow: hidden; scrollbar-gutter: stable; }
 .proof-grid .coordinate { color: #9db4ff; }
 .proof-link { display:inline-block; margin-top:24px; color:#b7d7ff; text-decoration:none; font-weight:600; padding:10px 0; }
 .proof-link:hover { color:#fff; text-decoration:underline; }
+.studio-layers { padding-block: 80px; }
+.studio-layers > h2 { max-width: 850px; font-size: clamp(2.2rem,5vw,4rem); letter-spacing: -.055em; line-height: 1.08; margin: 20px 0; }
+.layers-lead { max-width: 660px; color: #556174; line-height: 1.7; }
+.layers-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 40px; }
+.layers-stack { position: relative; height: 480px; isolation: isolate; }
+.layers-stack::before { content: ''; position: absolute; inset: 16% -3% 0; z-index: -1; background: radial-gradient(ellipse, #cbdcff70, transparent 68%); }
+.layers-stack::after { content: ''; position: absolute; width: 65%; height: 38px; bottom: 10px; left: 18%; border-radius: 50%; background: #173d8c22; filter: blur(22px); }
+.layers-venture { position: absolute; top: 0; left: 12%; font-size: .75rem; letter-spacing: .12em; font-weight: 600; color: #536176; }
+.layers-venture::before { content: ''; display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 10px; background: #1647d8; box-shadow: 0 0 0 5px #1647d810; }
+.layers-stack button { position: absolute; left: 10%; top: 64px; z-index: 3; display: flex; align-items: center; gap: 18px; width: 80%; height: 174px; padding: 28px; border: 1px solid #c5d0e0; border-radius: 20px; background: linear-gradient(135deg, #fffffff5, #eef3fbea); color: #18304e; text-align: left; font: inherit; cursor: pointer; transform: perspective(950px) rotateX(48deg) rotateZ(-22deg); box-shadow: -2px 5px 0 #c9d4e5, -8px 22px 35px #20365b16, inset 0 1px 0 #fff; transition: transform 250ms ease, box-shadow 250ms ease; }
+.layers-stack button:nth-of-type(2) { top: 168px; z-index: 2; background: linear-gradient(135deg, #e5f1fff5, #a9c9f6eb); border-color: #9ebbe4; box-shadow: -2px 5px 0 #8caedb, -8px 22px 35px #20365b20, inset 0 1px 0 #fff9; }
+.layers-stack button:nth-of-type(3) { top: 272px; z-index: 1; background: linear-gradient(135deg, #3264e8, #163bba); color: #fff; border-color: #507ced; box-shadow: -2px 5px 0 #102c87, -8px 22px 35px #20365b26, inset 0 1px 0 #ffffff60; }
+.layers-stack button[aria-pressed="true"] { transform: translateY(-16px) perspective(950px) rotateX(48deg) rotateZ(-22deg); outline: 2px solid #5882ed; outline-offset: 5px; }
+.layers-stack button > span { font-size: .75rem; opacity: .75; align-self: flex-start; }
+.layers-stack strong { display:block; font-size:1.1rem; }
+.layers-stack small { display:none; }
+.layers-stack b { margin-left:auto; }
+.layers-stack button:focus-visible { outline:3px solid #2457f5; outline-offset:4px; }
+.layer-detail { padding: 12px 0 12px 36px; border-left: 1px solid #d6dfeb; background: transparent; min-height: 430px; }
+.layer-status { display:block; color:#1647d8; font-size:.875rem; }
+.layer-detail > * { box-sizing: border-box; }
+.layer-detail h3 { font-size:1.8rem; letter-spacing:-.04em; line-height:1.2; }
+.layer-detail p, .layer-detail li { font-size:1rem; color:#536176; line-height:1.65; }
+.layer-detail ul { padding-left:20px; }
+.layer-detail .layer-caveat { font-size:.875rem; padding-top:16px; border-top:1px solid #e2e7ef; }
+@media(max-width:800px) { .layers-layout { grid-template-columns:1fr; gap:24px; } .layers-stack { width: min(100%, 500px); margin-inline: auto; } .layer-detail { min-height:0; padding:24px 0 0; border-left:0; border-top:1px solid #d6dfeb; } }
+@media(max-width:480px) { .layers-stack { height:355px; } .layers-stack button { left:8%; width:84%; height:122px; top:50px; padding:20px; gap:12px; transform:perspective(950px) rotateX(30deg) rotateZ(-10deg); } .layers-stack button:nth-of-type(2) { top:135px; } .layers-stack button:nth-of-type(3) { top:220px; } .layers-stack button[aria-pressed="true"] { transform:translateY(-10px) perspective(950px) rotateX(30deg) rotateZ(-10deg); } .layers-stack strong { font-size:.95rem; } }
+@media(prefers-reduced-motion:reduce) { .layers-stack button { transition:none; } }
 .insightmatches-logo { display:flex; align-items:center; gap:14px; font-family:Inter,sans-serif; }
 .insightmatches-logo .icon { width:50px; height:50px; background:#0f172a; border-radius:15px; display:grid; place-items:center; position:relative; flex:none; }
 .insightmatches-logo .icon::before { content:''; width:28px; height:28px; border-radius:50%; border:3px solid #0ea5e999; }
