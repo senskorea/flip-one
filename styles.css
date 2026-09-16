@@ -1,3 +1,11 @@
+.studio-capabilities { padding-block: 48px; }
+.capabilities-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin-top:28px; }
+.capabilities-grid article { padding:24px; background:#fff; border:1px solid #dde1e8; border-radius:12px; }
+.capabilities-grid h3 { color:#1647d8; }
+.capabilities-grid li { margin-bottom:12px; }
+.capabilities-grid ul { padding-left:20px; }
+.capability-caveat { font-size:13px; line-height:1.6; color:#536176; border-top:1px solid #dde1e8; padding-top:16px; }
+@media(max-width:800px) { .capabilities-grid { grid-template-columns:1fr; } }
 :root {
   --blue: #1647d8;
   --blue-bright: #2457f5;

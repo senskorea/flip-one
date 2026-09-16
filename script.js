@@ -118,8 +118,8 @@
       peopleBody: "선별된 프로필에서 관련 경험을 확인하고 소개 요청을 준비하세요.",
       exploreNetwork: "디렉토리 살펴보기",
       askExample: "어떤 일을 하고 계신가요? 필요한 경험이나 도움을 알려주세요. 예: 프랑스 시장 진출을 논의할 사람을 찾고 있어요.",
-      askBody: "Enter로 검색 · Shift+Enter로 줄바꿈. AI를 끄면 키워드로 검색합니다.",
-      findHelp: "어떤 도움이 필요하세요?",
+      askBody: "필요한 도움을 설명하고 관련 경험을 가진 사람에게 소개를 요청하세요. Enter로 검색 · Shift+Enter로 줄바꿈. AI를 끄면 키워드로 검색합니다.",
+      findHelp: "AI로 찾고, 사람과 연결합니다.",
       directoryLabel: "피플 디렉토리",
       filterStage: "단계",
       filterDirection: "방향",
@@ -316,8 +316,8 @@
       peopleBody: "Browse selected profiles, check relevant experience and prepare an introduction request.",
       exploreNetwork: "Browse the directory",
       askExample: "What are you working on? Tell us the experience or help you need. For example: I’m looking for someone to discuss entering the French market.",
-      askBody: "Enter to search · Shift+Enter for a new line. With AI off, search uses keywords.",
-      findHelp: "What can we help you with?",
+      askBody: "Tell Flip One what you need. Find relevant people and request an introduction. Enter to search · Shift+Enter for a new line. With AI off, search uses keywords.",
+      findHelp: "AI-powered matching. Human connections.",
       directoryLabel: "People directory",
       filterStage: "Stage",
       filterDirection: "Direction",
@@ -557,7 +557,18 @@
     {en: "Experience with robotics and AI", ko: "로봇과 AI 경험이 있는 사람"},
     {en: "Help finding developer jobs in Korea", ko: "한국 개발자 취업을 도와줄 사람"}
   ];
-  var exampleBar, filterToggle, clearSearch, aiSettings;
+  var exampleBar, filterToggle, clearSearch, aiSettings, viewToggle;
+  var peopleView = "compact";
+  try { var savedView = localStorage.getItem("flip-one-people-view"); if (["large","compact","list"].includes(savedView)) peopleView = savedView; } catch (_) {}
+  function updatePeopleView() {
+    if (!peopleGrid || !viewToggle) return;
+    peopleGrid.dataset.view = peopleView;
+    viewToggle.setAttribute("aria-label", activeLanguage === "ko" ? "보기 방식" : "Directory view");
+    viewToggle.querySelectorAll("button").forEach(function(button) {
+      button.setAttribute("aria-pressed", String(button.dataset.view === peopleView));
+      button.textContent = ({large: ["큰 카드","Large cards"], compact:["작은 카드","Compact"],list:["목록","List"]})[button.dataset.view][activeLanguage === "ko" ? 0 : 1];
+    });
+  }
   if (peopleAsk) {
     exampleBar = document.createElement("div"); exampleBar.className = "people-examples";
     peopleAsk.after(exampleBar);
@@ -570,6 +581,13 @@
     clearSearch = document.createElement("button"); clearSearch.type = "button";
     clearSearch.addEventListener("click", function () { peopleReset.click(); peopleQuery.focus(); });
     toolbar.append(filterToggle, clearSearch); filters.before(toolbar);
+    viewToggle = document.createElement("div"); viewToggle.className = "people-view-toggle"; viewToggle.setAttribute("role","group");
+    ["large","compact","list"].forEach(function(view) {
+      var button = document.createElement("button"); button.type="button"; button.dataset.view=view;
+      button.addEventListener("click", function() { peopleView=view; try { localStorage.setItem("flip-one-people-view",view); } catch (_) {} updatePeopleView(); });
+      viewToggle.appendChild(button);
+    });
+    toolbar.appendChild(viewToggle); updatePeopleView();
     aiSettings = document.createElement("details"); aiSettings.className = "people-settings";
     aiSettings.innerHTML = '<summary>⚙ Settings</summary><div class="people-settings__panel"></div>';
     filterToggle.after(aiSettings);
@@ -607,6 +625,7 @@
   function queryKey() { return [activePeopleQuery, activeLanguage, peopleDirection.value, peopleStage.value, peopleExpertise.value].join("|"); }
   function renderPeopleDirectory() {
     if (!peopleGrid) return;
+    updatePeopleView();
     document.body.classList.toggle("people-results", Boolean(activePeopleQuery));
     if (exampleBar) {
       exampleBar.replaceChildren();
@@ -853,7 +872,7 @@
     directorySwitch.appendChild(directoryLink);
     directorySwitch.className = "people-settings__directory";
     aiSettings.querySelector(".people-settings__panel").appendChild(directorySwitch);
-    Promise.all([demoDirectory ? "people.json" : "people-network.json", "matching-policy.json"].map(function (path) { return fetch(path).then(function (response) { if (!response.ok) throw new Error("Directory unavailable"); return response.json(); }); })).then(function (data) { people = data[0]; matchingPolicy = data[1]; renderPeopleDirectory(); }).catch(function () { matchNote.textContent = activeLanguage === "ko" ? "디렉토리를 불러오지 못했습니다." : "The directory could not be loaded."; });
+    Promise.all([demoDirectory ? "people.json" : "people-network.json", "matching-policy.json"].map(function (path) { return fetch(path, {cache: "no-store"}).then(function (response) { if (!response.ok) throw new Error("Directory unavailable"); return response.json(); }); })).then(function (data) { people = data[0]; matchingPolicy = data[1]; renderPeopleDirectory(); }).catch(function () { matchNote.textContent = activeLanguage === "ko" ? "디렉토리를 불러오지 못했습니다." : "The directory could not be loaded."; });
   }
 
   var servicePathCopy = {

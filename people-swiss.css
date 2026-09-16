@@ -242,6 +242,32 @@ body.platform-page { background: #edf1f7; }
 @media(max-width:1050px) { .platform-page .people-grid, .platform-page.people-results .people-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 @media(max-width:600px) { .platform-page .people-grid, .platform-page.people-results .people-grid { grid-template-columns: 1fr; } .platform-page .people-ask > label { font-size: 1.4rem; } }
 
+/* Three presentations, one dataset and the same accessible profile buttons. */
+.platform-page .people-toolbar { align-items:center; justify-content:flex-start; gap:10px; flex-wrap:wrap; }
+.people-view-toggle { display:flex; margin-left:auto; padding:4px; gap:4px; background:#dfe6f0; border-radius:10px; }
+.platform-page .people-view-toggle button { border:0; background:transparent; padding:8px 12px; min-height:44px; }
+.platform-page .people-view-toggle button[aria-pressed="true"] { background:#14213a; color:white; box-shadow:0 2px 5px #09162f20; }
+.platform-page .people-view-toggle button:focus-visible { outline:3px solid #2457f5; outline-offset:2px; }
+.platform-page .people-grid[data-view="large"] { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.platform-page .people-grid[data-view="large"] .person-card__button { display:flex; flex-direction:column; gap:10px; padding:22px; }
+.platform-page .people-grid[data-view="large"] .person-card__portrait { width:calc(100% + 44px); height:240px; margin:-22px -22px 8px; border-radius:0; }
+.platform-page .people-grid[data-view="large"] .person-card h4 { font-size:1.5rem; }
+.platform-page .people-grid[data-view="large"] .person-card__cta { margin-top:auto; }
+.platform-page .people-grid[data-view="list"] { grid-template-columns:1fr; gap:8px; }
+.platform-page .people-grid[data-view="list"] .person-card__button { grid-template-columns:64px minmax(180px,1fr) minmax(240px,1.7fr) auto; align-items:center; gap:3px 20px; padding:18px 22px; }
+.platform-page .people-grid[data-view="list"] .person-help-chips { grid-column:3; grid-row:1 / 4; margin:0; }
+.platform-page .people-grid[data-view="list"] .person-card__cta { grid-column:4; grid-row:1 / 4; margin:0; padding:0; border:0; }
+.platform-page .people-grid[data-view="list"] .person-match { grid-column:2 / -1; }
+@media(max-width:1050px) { .platform-page .people-grid[data-view="large"] { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:700px) {
+ .people-view-toggle { margin-left:0; }
+ .platform-page .people-grid[data-view="large"] { grid-template-columns:1fr; }
+ .platform-page .people-grid[data-view="list"] .person-card__button { grid-template-columns:56px minmax(0,1fr); padding:16px; gap:5px 12px; }
+ .platform-page .people-grid[data-view="list"] .person-card__portrait { width:56px; height:64px; }
+ .platform-page .people-grid[data-view="list"] .person-help-chips { grid-column:2; grid-row:auto; margin-top:8px; }
+ .platform-page .people-grid[data-view="list"] .person-card__cta { grid-column:2; grid-row:auto; margin-top:8px; }
+}
+
 /* Profiles open as centred event-style dialogs, not a docked side sheet. */
 .platform-page .person-dialog.person-panel { inset: 0; margin: auto; width: min(760px,calc(100% - 32px)); height: min(840px,calc(100dvh - 40px)); max-height: calc(100dvh - 40px); border: 1px solid #dce3ee; border-radius: 20px; box-shadow: 0 30px 90px #09162f4d; }
 .platform-page .person-dialog::backdrop { background: #09162fae; backdrop-filter: blur(5px); }
