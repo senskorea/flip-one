@@ -512,5 +512,179 @@
         "excerpt": "EdTech Advocate"
       }
     ]
+  },
+  {
+    "id": "paul-conversy",
+    "image": "paul-conversy-harmonized-v1.png",
+    "name": {
+      "ko": "Paul Conversy",
+      "en": "Paul Conversy"
+    },
+    "role": {
+      "ko": "InsightMatches 창업자 · EU 연구개발 자금",
+      "en": "Founder, InsightMatches · EU R&D funding"
+    },
+    "location": {
+      "ko": "서울, 대한민국",
+      "en": "Seoul, South Korea"
+    },
+    "stages": [],
+    "directions": [
+      "inbound",
+      "outbound"
+    ],
+    "expertises": [
+      "funding",
+      "market",
+      "cofounder"
+    ],
+    "bio": {
+      "ko": "InsightMatches를 만들며 EU 연구개발 자금 탐색, 파트너 구성과 제안서 준비에 집중합니다. 한국에서 창업한 경험도 나눕니다.",
+      "en": "I build InsightMatches, focusing on EU R&D funding discovery, research partnerships and proposal preparation. I also share my experience of starting a business in Korea."
+    },
+    "longBio": {
+      "ko": "안녕하세요, InsightMatches 창업자 Paul입니다. 유럽과 아시아에서 국제 협력, 마케팅과 연구개발 전략을 다뤄왔습니다. InsightMatches에서는 연구팀이 지원사업을 찾고, 협력 파트너를 구성하고, 제안서를 준비하는 일을 AI로 돕는 제품을 만들고 있습니다. Digijeunes의 공동창업자이자 프로젝트 매니저이며, 부산 AD STARS에서 마케팅 업무를 맡았습니다. 한국에서 외국인 창업가로 사업을 시작한 경험과 유럽 교육·문화 프로젝트 경험을 바탕으로 EU 자금 준비, 국제 협력과 한국 창업 경험에 관한 대화에 기여할 수 있습니다.",
+      "en": "I'm Paul, founder of InsightMatches. My work spans international collaboration, marketing and R&D strategy across Europe and Asia. At InsightMatches, I build AI tools to help research teams find funding opportunities, form partnerships and prepare proposals. I'm also a co-founder and project manager at Digijeunes, and previously worked in marketing at AD STARS in Busan. My experience includes building a business in Korea as an international founder and working on European education and cultural projects. EU funding preparation, research partnerships and the practical experience of starting up in Korea are topics where I can contribute."
+    },
+    "help": {
+      "ko": [
+        "EU 연구개발 지원사업 탐색과 제안서 준비",
+        "한국·유럽 연구 협력과 파트너 구성",
+        "외국인 창업가의 한국 창업 경험",
+        "AI를 활용한 교육·문화 프로젝트"
+      ],
+      "en": [
+        "EU R&D funding discovery and proposal preparation",
+        "Korea–Europe research collaboration and partnership planning",
+        "Starting a business in Korea as an international founder",
+        "AI applications in education and cultural projects"
+      ]
+    },
+    "markets": {
+      "ko": [
+        "한국",
+        "프랑스",
+        "유럽"
+      ],
+      "en": [
+        "Korea",
+        "France",
+        "Europe"
+      ]
+    },
+    "languages": [],
+    "availability": "unknown",
+    "keywords": "Horizon Europe EU grants R&D research consortium proposal Korea France Europe education cultural heritage AI funding 한국 유럽 프랑스 연구개발 지원사업 제안서 컨소시엄",
+    "evidence": [
+      {
+        "id": "e1",
+        "section": "About",
+        "excerpt": "I founded InsightMatches to turn that manual friction into software."
+      },
+      {
+        "id": "e2",
+        "section": "Experience",
+        "excerpt": "Co-Founder and Project Manager\n\nDigijeunes"
+      },
+      {
+        "id": "e3",
+        "section": "Experience",
+        "excerpt": "Marketing Specialist\n\nAD STARS"
+      },
+      {
+        "id": "e4",
+        "section": "Paul authored post 2",
+        "excerpt": "help innovators from Korea and Japan write competitive proposals for Horizon Europe funding opportunities."
+      },
+      {
+        "id": "e5",
+        "section": "Paul authored post 7",
+        "excerpt": "Building a startup in South Korea as an international founder has been a journey, and it's always a privilege to share those lessons with fellow founders."
+      },
+      {
+        "id": "e6",
+        "section": "Paul authored post 12",
+        "excerpt": "Echoes of the Past is an EU-funded project between InsightMatches and Asociatia Small Academy (Romania)."
+      }
+    ]
+  },
+  {
+    "id": "radika-m",
+    "image": "radika-m-harmonized-v1.png",
+    "name": {
+      "ko": "Radika M.",
+      "en": "Radika M."
+    },
+    "role": {
+      "ko": "호주·한국 스타트업 프로그램",
+      "en": "Australia–Korea startup programmes"
+    },
+    "location": {
+      "ko": "호주",
+      "en": "Australia"
+    },
+    "stages": [],
+    "directions": [
+      "inbound",
+      "outbound"
+    ],
+    "expertises": [
+      "market"
+    ],
+    "bio": {
+      "ko": "Perth Landing Pad와 한국·호주 스타트업 교류 경험을 바탕으로 서호주 진출과 현지 창업 생태계 탐색에 관심 있는 창업가와 소통합니다.",
+      "en": "I work with founders exploring Western Australia, drawing on my involvement with Perth Landing Pad and Australia–Korea startup exchanges."
+    },
+    "longBio": {
+      "ko": "안녕하세요, Radika입니다. 호주를 기반으로 국제 창업가의 서호주 시장 탐색을 지원하는 Perth Landing Pad 활동에 참여하고 있습니다. 한국·호주 Landing Pad 프로그램에서는 스타트업들과 서울의 창업 생태계를 살펴보고 SkyinQ, 글로벌스타트업센터와 NextRise에서의 활동을 공유했습니다. 서호주 진출을 처음 검토하거나 호주와 한국의 창업 프로그램을 이해하려는 분들께 제 경험이 도움이 될 수 있습니다.",
+      "en": "I'm Radika, based in Australia. I'm involved with Perth Landing Pad, which supports international founders exploring Western Australia. Through the Korea–Australia Landing Pad programme, I've shared our startups' visits to Seoul's ecosystem, including SkyinQ, the Global Startup Center and NextRise. My experience may be useful if you're exploring Western Australia or want to understand startup programmes connecting Australia and Korea."
+    },
+    "help": {
+      "ko": [
+        "서호주 시장 진출과 Perth Landing Pad 탐색",
+        "한국·호주 스타트업 교류 프로그램 이해",
+        "현지 멘토링과 창업 생태계 연결 기회 탐색"
+      ],
+      "en": [
+        "Explore Western Australia and Perth Landing Pad",
+        "Understand Australia–Korea startup exchange programmes",
+        "Explore local mentoring and startup ecosystem connections"
+      ]
+    },
+    "markets": {
+      "ko": [
+        "호주",
+        "한국"
+      ],
+      "en": [
+        "Australia",
+        "Korea"
+      ]
+    },
+    "languages": [],
+    "availability": "unknown",
+    "keywords": "Australia Western Australia Perth Korea market entry soft landing Perth Landing Pad Spacecubed NextRise mentoring 호주 서호주 퍼스 한국 시장 진출",
+    "evidence": [
+      {
+        "id": "e1",
+        "section": "Authored Perth Landing Pad post",
+        "excerpt": "Perth Landing Pad is a soft landing pad program by Spacecubed."
+      },
+      {
+        "id": "e2",
+        "section": "Authored Perth Landing Pad post",
+        "excerpt": "we're here to support you every step of the way, from mentoring and curated connections to a 90-day free coworking residency in Perth CBD."
+      },
+      {
+        "id": "e3",
+        "section": "Authored NextRise post",
+        "excerpt": "And we're wrapping the Korea-Australia landing pad up with two exciting days at NextRise (넥스트라이즈)!"
+      },
+      {
+        "id": "e4",
+        "section": "Authored day 2 post",
+        "excerpt": "Today, we visited SkyinQ, a global accelerator based in Seoul and Luxembourg"
+      }
+    ]
   }
 ]

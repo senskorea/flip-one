@@ -575,12 +575,19 @@
     filterToggle.after(aiSettings);
   }
   if (peopleGrid) {
+    // The overlay sits on top of the results instead of pushing them down,
+    // so refining a search never reflows the page.
+    var resultsArea = document.createElement("div");
+    resultsArea.className = "people-results-area";
+    peopleGrid.parentNode.insertBefore(resultsArea, peopleGrid);
+    resultsArea.appendChild(peopleGrid);
+
     peopleLoading = document.createElement("div");
     peopleLoading.className = "people-loading";
     peopleLoading.hidden = true;
     peopleLoading.setAttribute("role", "status");
-    peopleLoading.innerHTML = '<span class="people-loading__orbit" aria-hidden="true"></span><div><strong></strong><p></p></div><span class="people-loading__track" aria-hidden="true"></span>';
-    peopleGrid.before(peopleLoading);
+    peopleLoading.innerHTML = '<span class="people-loading__bar" aria-hidden="true"></span><span class="people-loading__pill"><span class="people-loading__spinner" aria-hidden="true"></span><strong></strong></span>';
+    resultsArea.appendChild(peopleLoading);
   }
   function setPeopleLoading(busy) {
     if (!peopleLoading) return;
@@ -588,10 +595,13 @@
     peopleAsk.classList.toggle("is-ai-working", busy);
     peopleGrid.setAttribute("aria-busy", String(busy));
     peopleGrid.classList.toggle("is-matching", busy);
-    [peopleStage, peopleDirection, peopleExpertise, peopleQuery, peopleAsk.querySelector('button[type="submit"]')].forEach(function (control) { if (control) control.disabled = busy; });
+    // Only the submit button locks. The query and filters stay editable so a
+    // refinement can be typed during the wait; stale responses are already
+    // discarded by the searchVersion and queryKey guards.
+    var peopleSubmit = peopleAsk.querySelector('button[type="submit"]');
+    if (peopleSubmit) peopleSubmit.disabled = busy;
     if (busy) {
       peopleLoading.querySelector("strong").textContent = activeLanguage === "ko" ? "필요한 사람을 찾고 있습니다" : "Finding relevant people";
-      peopleLoading.querySelector("p").textContent = activeLanguage === "ko" ? "요청 내용과 프로필의 경험을 비교하고 있습니다. 잠시만 기다려 주세요." : "Comparing your request with profile experience. This may take a moment.";
     }
   }
   function queryKey() { return [activePeopleQuery, activeLanguage, peopleDirection.value, peopleStage.value, peopleExpertise.value].join("|"); }
@@ -646,7 +656,9 @@
       var tags = personValues(person, "expertises", "expertise").slice(0, 2).map(function (key) { return personLabels([key], expertiseNames); }).filter(Boolean);
       var photo = portraitPath(person);
       var portrait = photo ? '<img src="' + photo + '" alt="' + escapePerson(localValue(person.name)) + '" loading="lazy">' : '<span class="person-initials">' + escapePerson(localValue(person.name).split(/\s+/).slice(0,2).map(function (s) { return s[0]; }).join("")) + '</span>';
-      card.innerHTML = '<button class="person-card__button" type="button" data-person-id="' + escapePerson(person.id) + '"><div class="person-card__portrait">' + portrait + '</div><div class="person-card__head"><span class="person-direction">' + escapePerson(personLabels(personValues(person, "directions", "direction"), directionNames)) + '</span><span class="person-location">' + escapePerson(localValue(person.location)) + '</span></div><h4>' + escapePerson(localValue(person.name)) + '</h4><strong>' + escapePerson(localValue(person.role)) + '</strong><p>' + escapePerson(localValue(person.bio)) + '</p><div class="person-tags">' + tags.map(function (t) { return '<span>' + escapePerson(t) + '</span>'; }).join("") + '</div>' + reason + '<span class="person-card__cta">' + translations[activeLanguage].viewProfile + ' →</span></button>';
+      var topics = (localValue(person.help) || []).filter(Boolean).slice(0, 3);
+      if (!topics.length) topics = tags;
+      card.innerHTML = '<button class="person-card__button" type="button" data-person-id="' + escapePerson(person.id) + '"><div class="person-card__portrait">' + portrait + '</div><div class="person-card__head"><span class="person-direction">' + escapePerson(personLabels(personValues(person, "directions", "direction"), directionNames)) + '</span><span class="person-location">' + escapePerson(localValue(person.location)) + '</span></div><h4>' + escapePerson(localValue(person.name)) + '</h4><strong>' + escapePerson(localValue(person.role)) + '</strong><div class="person-help-chips">' + topics.map(function (t) { return '<span>' + escapePerson(t) + '</span>'; }).join("") + '</div>' + reason + '<span class="person-card__cta">' + translations[activeLanguage].viewProfile + ' →</span></button>';
       peopleGrid.appendChild(card);
       if (entry.ai) {
         var evidence = document.createElement("details"); evidence.className = "match-evidence";

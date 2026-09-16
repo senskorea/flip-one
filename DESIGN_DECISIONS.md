@@ -1,5 +1,9 @@
 # Flip One website: design decisions
 
+## People direction update, 2026-09-14
+
+People is the first functional product priority. Profile ingestion begins with supplied LinkedIn text through the `flip-one-profile-ingest` skill. The revised [People product and implementation plan](References/People_Product_Implementation.md) supersedes the earlier keyword-only People direction below: server-side AI matching is planned with Vercel, while the public site remains static. Rich profile drafts remain outside the website; the current live implementation still uses keyword matching and preview forms.
+
 **Approved:** 2026-09-03 by Paul  
 **Brand kit:** `04_Events_and_Marketing/Brand_Assets/Flip_One/flip-one-brand-kit.html` (version 1.1)  
 **Build plan:** the "Flip One Website MVP design and build plan" (sections 1 to 13)
